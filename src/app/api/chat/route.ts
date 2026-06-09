@@ -38,11 +38,20 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'messages array required' }, { status: 400 })
     }
 
+    // keep only last 6 messages to limit token usage
+    const trimmed = messages.slice(-6)
+
     const response = await client.messages.create({
-      model: 'claude-opus-4-5',
+      model: 'claude-haiku-4-5-20251001',
       max_tokens: 300,
-      system: SYSTEM,
-      messages,
+      system: [
+        {
+          type: 'text',
+          text: SYSTEM,
+          cache_control: { type: 'ephemeral' },
+        } as Parameters<typeof client.messages.create>[0]['system'] extends Array<infer T> ? T : never,
+      ],
+      messages: trimmed,
     })
 
     const text = response.content
