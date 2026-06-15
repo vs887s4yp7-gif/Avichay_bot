@@ -1,0 +1,5607 @@
+[
+ {
+  "id": "P0001",
+  "image_file": "P0001.jpg",
+  "image_available": true,
+  "name": "רובוט טרנספורמר לגו - חייזר על",
+  "description": "סט בנייה מסוג לגו, רובוט טרנספורמר ענק עם כלי רכב נלווים, כ-498 חלקים",
+  "nicknames": [
+   "רובוט טרנספורמר לגו",
+   "קוביות",
+   "הרכבה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 60.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0002",
+  "image_file": "P0002.jpg",
+  "image_available": true,
+  "name": "רובוט דינוזאור לגו - מסדרת חיות פרא",
+  "description": "סט בנייה לגו רובוט בצורת דינוזאור עם דינוזאורים נלווים, כ-553 חלקים",
+  "nicknames": [
+   "רובוט דינוזאור לגו",
+   "קוביות",
+   "הרכבה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 60.0,
+  "carton_qty": 16,
+  "stock_status": null
+ },
+ {
+  "id": "P0003",
+  "image_file": "P0003.jpg",
+  "image_available": true,
+  "name": "רובוט חייל לגו - לוחם אש",
+  "description": "סט בנייה לגו ענק רובוט חייל עם רכבי קרב, כ-783 קוביות",
+  "nicknames": [
+   "רובוט חייל לגו",
+   "קוביות",
+   "הרכבה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 85.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0004",
+  "image_file": "P0004.jpg",
+  "image_available": true,
+  "name": "רובוט רכבי משחק לגו - מהיר ועל",
+  "description": "סט בנייה לגו רובוט המתחבר מרכבים, כ-839 חלקים",
+  "nicknames": [
+   "רובוט רכבי משחק לגו",
+   "קוביות",
+   "הרכבה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 85.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0005",
+  "image_file": "P0005.jpg",
+  "image_available": true,
+  "name": "מסוק קרב לגו - סופת פלדה",
+  "description": "סט בנייה לגו מסוק קרב צבאי, כ-381 חלקים",
+  "nicknames": [
+   "מסוק קרב לגו",
+   "קוביות",
+   "הרכבה",
+   "הליקופטר"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 5.0,
+  "carton_qty": 16,
+  "stock_status": null
+ },
+ {
+  "id": "P0006",
+  "image_file": "P0006.jpg",
+  "image_available": true,
+  "name": "מכבי אש לגו - רכב כיבוי ומסוק",
+  "description": "סט בנייה לגו רכב כיבוי אש עם מסוק וג'יפים נלווים",
+  "nicknames": [
+   "מכבי אש לגו",
+   "קוביות",
+   "הרכבה",
+   "הליקופטר"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 5.0,
+  "carton_qty": 16,
+  "stock_status": null
+ },
+ {
+  "id": "P0007",
+  "image_file": "P0007.jpg",
+  "image_available": true,
+  "name": "אקדח מים משולש - 3 צבעים",
+  "description": "סט 3 אקדחי מים צבעוניים בגדלים שונים",
+  "nicknames": [
+   "אקדח מים משולש",
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 60.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0008",
+  "image_file": "P0008.jpg",
+  "image_available": true,
+  "name": "אקדח מים גדול עם מיכל",
+  "description": "אקדח מים גדול עם מיכל מים נשלף, נושא קיץ/חוף",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 3.5,
+  "carton_qty": 360,
+  "stock_status": null
+ },
+ {
+  "id": "P0009",
+  "image_file": "P0009.jpg",
+  "image_available": true,
+  "name": "מקל מים יורה - כחול",
+  "description": "צעצוע מים מסוג שאיבה-ירייה, נושא קיץ",
+  "nicknames": [
+   "מקל מים יורה",
+   "אקדח מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 5.0,
+  "carton_qty": 280,
+  "stock_status": null
+ },
+ {
+  "id": "P0010",
+  "image_file": "P0010.jpg",
+  "image_available": true,
+  "name": "כדורי קצף צבעוניים לאקדח",
+  "description": "חבילת כדורי ספוג/קצף צבעוניים לתחמושת אקדחי קצף",
+  "nicknames": [
+   "ספוג"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 5.5,
+  "carton_qty": 192,
+  "stock_status": null
+ },
+ {
+  "id": "P0011",
+  "image_file": "P0009.jpg",
+  "image_available": true,
+  "name": "מקל מים יורה - אדום",
+  "description": "צעצוע מים מסוג שאיבה-ירייה, דגם נוסף",
+  "nicknames": [
+   "מקל מים יורה",
+   "אקדח מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 24.0,
+  "carton_qty": 48,
+  "stock_status": null
+ },
+ {
+  "id": "P0012",
+  "image_file": "P0012.jpg",
+  "image_available": true,
+  "name": "פיגורת רובוט דרקון מתקפלת",
+  "description": "פיגורת אקשן רובוט-דרקון בקופסה, סדרת אספנות",
+  "nicknames": [
+   "פיגורה",
+   "דמות",
+   "בובה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 15.0,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0013",
+  "image_file": "P0013.jpg",
+  "image_available": true,
+  "name": "מסוק שלט רחוק",
+  "description": "מסוק צעצוע עם שלט רחוק, מצולם מעל ים",
+  "nicknames": [
+   "הליקופטר",
+   "RC"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 12.0,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0014",
+  "image_file": "P0014.jpg",
+  "image_available": true,
+  "name": "כדור מעופף אינדוקציה עם תאורה",
+  "description": "כדור פורח חיישן תנועה עם נורות LED מתחלפות",
+  "nicknames": [
+   "חיישן תנועה"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 10.0,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0015",
+  "image_file": "P0015.jpg",
+  "image_available": true,
+  "name": "מטוס פלאנר זורק כתום",
+  "description": "מטוס דאון מקצף עם תאורה בראש, נזרק ביד",
+  "nicknames": [
+   "מטוס קלקר",
+   "קלקר"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 12.0,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0016",
+  "image_file": "P0016.jpg",
+  "image_available": true,
+  "name": "שרשרת/אביזר נצנצים עם LED",
+  "description": "אביזר ראש מתנפנף עם תאורת LED צבעונית",
+  "nicknames": [],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 5.0,
+  "carton_qty": 160,
+  "stock_status": null
+ },
+ {
+  "id": "P0017",
+  "image_file": "P0017.jpg",
+  "image_available": true,
+  "name": "משקפי שמש מאירות LED",
+  "description": "משקפי מסיבה עם נורות LED מהבהבות",
+  "nicknames": [],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 2.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0018",
+  "image_file": "P0018.jpg",
+  "image_available": true,
+  "name": "פיקאצ'ו מעופף שלט/חיישן",
+  "description": "צעצוע פיקאצ'ו מעופף עם חיישן תנועה, בקופסה",
+  "nicknames": [
+   "חיישן תנועה",
+   "פוקימון"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "פיגורות ומחזיקי מפתחות",
+  "wholesale_price": 2.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0019",
+  "image_file": "P0019.jpg",
+  "image_available": true,
+  "name": "צמידי קרני אור (גלואו סטיק) - 50 יח'",
+  "description": "חבילת צמידי זוהר ניאון 50 יחידות לאירועים",
+  "nicknames": [
+   "צמידי קרני אור (גלואו סטיק)",
+   "זוהר",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 7.5,
+  "carton_qty": 60,
+  "stock_status": null
+ },
+ {
+  "id": "P0020",
+  "image_file": "P0020.jpg",
+  "image_available": true,
+  "name": "חרב לייזר מאירה - סט תאומים",
+  "description": "סט שתי חרבות צעצוע מאירות LED בצבעים שונים",
+  "nicknames": [
+   "חרב לייזר מאירה",
+   "נשק צעצוע"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 11.0,
+  "carton_qty": 200,
+  "stock_status": null
+ },
+ {
+  "id": "P0021",
+  "image_file": "P0021.jpg",
+  "image_available": true,
+  "name": "סט חרבות סמוראי שחורות - 3 יח'",
+  "description": "סט שלוש חרבות קוסטיום מפלסטיק שחור בנרתיק, סגנון נינג'ה/סמוראי",
+  "nicknames": [
+   "חרבות סמוראי שחורות",
+   "תחפושת",
+   "קוסטיום",
+   "נשק צעצוע"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 8.0,
+  "carton_qty": 192,
+  "stock_status": null
+ },
+ {
+  "id": "P0022",
+  "image_file": "P0022.jpg",
+  "image_available": true,
+  "name": "שוט/רצועת אור מתכווננת LED",
+  "description": "רצועת תאורת LED גמישה עם חיישן תנועה, אפקט זוהר",
+  "nicknames": [
+   "גלואו סטיק",
+   "זוהר",
+   "צמיד זוהר",
+   "חיישן תנועה"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 8.0,
+  "carton_qty": 192,
+  "stock_status": null
+ },
+ {
+  "id": "P0023",
+  "image_file": "P0023.jpg",
+  "image_available": true,
+  "name": "סט חרבות אור (לייטסייבר) - 3 צבעים",
+  "description": "שלוש חרבות לייזר מאירות בצבעי אדום/כחול/ירוק",
+  "nicknames": [
+   "חרבות אור (לייטסייבר)",
+   "נשק צעצוע"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 10.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0024",
+  "image_file": "P0024.jpg",
+  "image_available": true,
+  "name": "סט סכינים מאירות LED - 4 יח'",
+  "description": "סט סכיני קוסטיום מאירים בצבעים שונים",
+  "nicknames": [
+   "סכינים מאירות LED",
+   "תחפושת",
+   "קוסטיום"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 10.0,
+  "carton_qty": 160,
+  "stock_status": null
+ },
+ {
+  "id": "P0025",
+  "image_file": "P0025.jpg",
+  "image_available": true,
+  "name": "משקפי תריס מאירות LED - סט",
+  "description": "חבילת משקפי מסיבה מאירות בצבעים שונים",
+  "nicknames": [
+   "משקפי תריס מאירות LED"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 3.5,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0026",
+  "image_file": "P0026.jpg",
+  "image_available": true,
+  "name": "סט סרטי ראש פפיון מנוקדים",
+  "description": "שלושה סרטי ראש עם פפיון בצבעים ודוגמת נקודות",
+  "nicknames": [],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 2.0,
+  "carton_qty": 480,
+  "stock_status": null
+ },
+ {
+  "id": "P0027",
+  "image_file": "P0027.jpg",
+  "image_available": true,
+  "name": "שרביטי ריסוס מאירים LED - 3 יח'",
+  "description": "שרביטים ארוכים מאירים עם אפקט קצף/ריסוס",
+  "nicknames": [
+   "שרביטי ריסוס מאירים LED"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 1.8,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0028",
+  "image_file": "P0028.jpg",
+  "image_available": true,
+  "name": "סרט ראש נוצות מנצנץ מואר",
+  "description": "סרט ראש עם נוצות צבעוניות ותאורת LED",
+  "nicknames": [],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 2.5,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0029",
+  "image_file": "P0029.jpg",
+  "image_available": true,
+  "name": "סרט ראש נוצות לבן",
+  "description": "סרט ראש פשוט עם נוצות/טינסל לבן",
+  "nicknames": [],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 7.0,
+  "carton_qty": 168,
+  "stock_status": null
+ },
+ {
+  "id": "P0030",
+  "image_file": "P0030.jpg",
+  "image_available": true,
+  "name": "אקדח בועות עם כדורי קונפטי - 3 צבעים",
+  "description": "אקדח יורה כדורי בד/קונפטי צבעוניים",
+  "nicknames": [
+   "אקדח בועות עם כדורי קונפטי",
+   "אקדח סבון",
+   "בועות סבון"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 5.0,
+  "carton_qty": 96,
+  "stock_status": null
+ },
+ {
+  "id": "P0031",
+  "image_file": "P0031.jpg",
+  "image_available": true,
+  "name": "סט עניבות צבעוניות - 5 צבעים",
+  "description": "חמש עניבות קוסטיום בצבעים בולטים",
+  "nicknames": [
+   "עניבות צבעוניות",
+   "תחפושת",
+   "קוסטיום"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 1.5,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0032",
+  "image_file": "P0032.jpg",
+  "image_available": true,
+  "name": "צמידי זוהר עם וו תליה - סט",
+  "description": "מקלות זוהר ניאון בצבעים שונים עם וו לתלייה",
+  "nicknames": [
+   "צמידי זוהר עם וו תליה",
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 0.7,
+  "carton_qty": 1500,
+  "stock_status": null
+ },
+ {
+  "id": "P0033",
+  "image_file": "P0033.jpg",
+  "image_available": true,
+  "name": "צעצוע מים חד-קרן/סוסון ים 40 ס\"מ",
+  "description": "אקדח מים בצורת חד קרן או סוסון ים, גובה 40 ס\"מ",
+  "nicknames": [
+   "אקדח",
+   "אקדח מים",
+   "ספריי מים",
+   "חד קרן",
+   "יוניקורן"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 0.5,
+  "carton_qty": 3000,
+  "stock_status": null
+ },
+ {
+  "id": "P0034",
+  "image_file": "P0034.jpg",
+  "image_available": true,
+  "name": "אקדח מים כריש/דולפין 35 ס\"מ - 3 צבעים",
+  "description": "אקדח מים בצורת דולפין/כריש, שלושה צבעים",
+  "nicknames": [
+   "אקדח מים כריש/דולפין 35 ס\"מ",
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 10.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0035",
+  "image_file": "P0035.jpg",
+  "image_available": true,
+  "name": "סט חרבות סמוראי מאירות וקוליות",
+  "description": "חרבות מאירות עם אפקט קול וחיישן תנועה",
+  "nicknames": [
+   "נשק צעצוע",
+   "חיישן תנועה"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 10.0,
+  "carton_qty": 168,
+  "stock_status": null
+ },
+ {
+  "id": "P0036",
+  "image_file": "P0036.jpg",
+  "image_available": true,
+  "name": "פפיון כתום גדול לקוסטיום",
+  "description": "אביזר פפיון בד כתום גדול",
+  "nicknames": [
+   "תחפושת"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 10.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0037",
+  "image_file": "P0037.jpg",
+  "image_available": true,
+  "name": "שרביט קסמים חד-קרן מואר LED",
+  "description": "שרביט קוסמת בצורת חד קרן, אורך 36.4 ס\"מ",
+  "nicknames": [
+   "חד קרן",
+   "יוניקורן"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 0.6,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0038",
+  "image_file": "P0038.jpg",
+  "image_available": true,
+  "name": "שרביט טבעת מואר חד-קרן",
+  "description": "שרביט עם טבעת LED בקצה, נושא חד-קרן",
+  "nicknames": [
+   "חד קרן",
+   "יוניקורן"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 11.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0039",
+  "image_file": "P0039.jpg",
+  "image_available": true,
+  "name": "סט שרביטי טבעת מואר קוף - 3 צבעים",
+  "description": "שרביטי קסמים עם דמות קוף וטבעת LED",
+  "nicknames": [
+   "שרביטי טבעת מואר קוף"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 11.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0040",
+  "image_file": "P0040.jpg",
+  "image_available": true,
+  "name": "אקדח בועות מיניונים על מקל",
+  "description": "מכונת בועות בעיצוב מיניון על ידית ארוכה",
+  "nicknames": [
+   "אקדח סבון",
+   "בועות סבון"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובועות",
+  "wholesale_price": 11.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0041",
+  "image_file": "P0041.jpg",
+  "image_available": true,
+  "name": "שרביט קסם פלמינגו ורוד",
+  "description": "שרביט קוסמת בעיצוב פלמינגו עם כתר",
+  "nicknames": [],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 11.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0042",
+  "image_file": "P0042.jpg",
+  "image_available": true,
+  "name": "מדבקות משקפיים מאירות - גיליון",
+  "description": "גיליון מדבקות בצורות משקפיים/לבבות/כוכבים זוהרים",
+  "nicknames": [
+   "מדבקות משקפיים מאירות",
+   "גלואו סטיק",
+   "זוהר",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 10.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0043",
+  "image_file": "P0043.jpg",
+  "image_available": true,
+  "name": "מחזיקי זנב חיה צבעוניים - סט",
+  "description": "סט אביזרי תחפושת זנב פרוותי בצבעים שונים",
+  "nicknames": [
+   "מחזיקי זנב חיה צבעוניים",
+   "תחפושת",
+   "קוסטיום"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 10.0,
+  "carton_qty": 300,
+  "stock_status": null
+ },
+ {
+  "id": "P0044",
+  "image_file": "P0044.jpg",
+  "image_available": true,
+  "name": "מקלות זוהר מיקי מאוס - 3 יח'",
+  "description": "מקלות תאורה ניאון בצורת ראש מיקי מאוס",
+  "nicknames": [
+   "מקלות זוהר מיקי מאוס",
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 6.5,
+  "carton_qty": 288,
+  "stock_status": null
+ },
+ {
+  "id": "P0045",
+  "image_file": "P0045.jpg",
+  "image_available": true,
+  "name": "מקל זוהר כוכב",
+  "description": "מקל ניאון מאיר בצורת כוכב עם ידית מפוספסת",
+  "nicknames": [
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 6.5,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0046",
+  "image_file": "P0046.jpg",
+  "image_available": true,
+  "name": "מקלות זוהר לב - 3 יח'",
+  "description": "שלושה מקלות ניאון מאירים בצורת לב",
+  "nicknames": [
+   "מקלות זוהר לב",
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 6.5,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0047",
+  "image_file": "P0047.jpg",
+  "image_available": true,
+  "name": "מקלות זוהר חד-קרן - 3 יח'",
+  "description": "שלושה מקלות ניאון מאירים בצורת ראש חד-קרן",
+  "nicknames": [
+   "מקלות זוהר חד-קרן",
+   "גלואו סטיק",
+   "צמיד זוהר",
+   "חד קרן",
+   "יוניקורן"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 12.0,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0048",
+  "image_file": "P0048.jpg",
+  "image_available": true,
+  "name": "סט בקבוקי מילוי בלונים עם מילוי קונפטי",
+  "description": "ערכת בקבוקי משאבה למילוי בלוני מים עם קונפטי",
+  "nicknames": [
+   "בלון"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 12.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0049",
+  "image_file": "P0049.jpg",
+  "image_available": true,
+  "name": "שקית בלוני מים אדומים - 60 יח'",
+  "description": "שקית בלוני מים לטקס אדומים, 60 יחידות",
+  "nicknames": [
+   "שקית בלוני מים אדומים",
+   "בלון",
+   "בלונים"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 4.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0050",
+  "image_file": "P0050.jpg",
+  "image_available": true,
+  "name": "שקית בלונים צבעוניים - 100 יח'",
+  "description": "שקית בלוני לטקס צבעוניים מעורבים, 100 יחידות",
+  "nicknames": [
+   "שקית בלונים צבעוניים",
+   "בלון"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 5.0,
+  "carton_qty": 300,
+  "stock_status": null
+ },
+ {
+  "id": "P0051",
+  "image_file": "P0051.jpg",
+  "image_available": true,
+  "name": "שקית בלוני זוהר פלורסנט - 3 צבעים",
+  "description": "בלוני מים זוהרים פלורוסנטיים",
+  "nicknames": [
+   "שקית בלוני זוהר פלורסנט",
+   "בלון",
+   "בלונים",
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 7.5,
+  "carton_qty": 200,
+  "stock_status": null
+ },
+ {
+  "id": "P0052",
+  "image_file": "P0052.jpg",
+  "image_available": true,
+  "name": "חבילת בלוני עיצוב ארוכים (Modelling)",
+  "description": "בלוני עיצוב ארוכים ליצירת צורות, חבילה גדולה",
+  "nicknames": [
+   "בלון",
+   "בלונים"
+  ],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 18.0,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0053",
+  "image_file": "P0053.jpg",
+  "image_available": true,
+  "name": "בלוני מתכת מטאליים - סט מעורב",
+  "description": "בלוני לטקס מטאליים בצבעים שונים",
+  "nicknames": [
+   "בלוני מתכת מטאליים",
+   "בלון",
+   "בלונים"
+  ],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 15.0,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0054",
+  "image_file": "P0054.jpg",
+  "image_available": true,
+  "name": "אלבום קלפי אספנות ספורט",
+  "description": "קופסת קלפי אספנות בנושא ספורט",
+  "nicknames": [],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 1.0,
+  "carton_qty": 80,
+  "stock_status": null
+ },
+ {
+  "id": "P0055",
+  "image_file": "P0055.jpg",
+  "image_available": true,
+  "name": "חפיסת קלפי משחק קלאסיים",
+  "description": "שני חפיסות קלפים סטנדרטיות",
+  "nicknames": [
+   "קלפים",
+   "משחק קלפים"
+  ],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 10.0,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0056",
+  "image_file": "P0056.jpg",
+  "image_available": true,
+  "name": "סט בלוני מים על מקלות (Magic Balloons)",
+  "description": "צרור בלוני מים על מקלות פלסטיק להתזה מהירה",
+  "nicknames": [
+   "בלון",
+   "בלונים"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 0.7,
+  "carton_qty": 100,
+  "stock_status": null
+ },
+ {
+  "id": "P0057",
+  "image_file": "P0057.jpg",
+  "image_available": true,
+  "name": "צרור בלוני מים אדומים עם משאבה",
+  "description": "אשכול בלוני מים אדומים מתמלאים בו זמנית עם ידית",
+  "nicknames": [
+   "בלון",
+   "בלונים"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 3.0,
+  "carton_qty": 500,
+  "stock_status": null
+ },
+ {
+  "id": "P0058",
+  "image_file": "P0058.jpg",
+  "image_available": true,
+  "name": "שקיות בלוני מים אוטו-אטימה - 100 יח' (זוג)",
+  "description": "שני שקיות בלוני מים שמתאטמים אוטומטית, 100 יח' כל אחת",
+  "nicknames": [
+   "שקיות בלוני מים אוטו-אטימה",
+   "בלון",
+   "בלונים"
+  ],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 1.5,
+  "carton_qty": 500,
+  "stock_status": null
+ },
+ {
+  "id": "P0059",
+  "image_file": "P0059.jpg",
+  "image_available": true,
+  "name": "שקית בלונים צבעוניים Bright Ice - 100 יח'",
+  "description": "שקית בלוני מסיבה צבעוניים גדולה",
+  "nicknames": [
+   "שקית בלונים צבעוניים Bright Ice",
+   "בלון"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 4.0,
+  "carton_qty": 250,
+  "stock_status": null
+ },
+ {
+  "id": "P0060",
+  "image_file": "P0060.jpg",
+  "image_available": true,
+  "name": "אשכול בלוני מים מהירים Aqua Balloon",
+  "description": "אשכול בלוני מים נפרדים בקלות, התמלאות מהירה",
+  "nicknames": [
+   "בלון",
+   "בלונים"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 12.0,
+  "carton_qty": 100,
+  "stock_status": null
+ },
+ {
+  "id": "P0061",
+  "image_file": "P0061.jpg",
+  "image_available": true,
+  "name": "טחנת רוח דקורטיבית חמנייה גדולה",
+  "description": "טחנת רוח גינה צבעונית בעיצוב חמנייה",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "קישוטי גינה וריקוד",
+  "wholesale_price": 5.0,
+  "carton_qty": 100,
+  "stock_status": null
+ },
+ {
+  "id": "P0062",
+  "image_file": "P0062.jpg",
+  "image_available": true,
+  "name": "טחנת רוח דקורטיבית מעגלית צבעונית",
+  "description": "טחנת רוח גינה רב-צבעית גדולה",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "קישוטי גינה וריקוד",
+  "wholesale_price": 8.0,
+  "carton_qty": 168,
+  "stock_status": null
+ },
+ {
+  "id": "P0063",
+  "image_file": "P0063.jpg",
+  "image_available": true,
+  "name": "טחנת רוח חמנייה ופרחים",
+  "description": "טחנת רוח גינה בעיצוב פרחים צבעוניים",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 5.0,
+  "carton_qty": 168,
+  "stock_status": null
+ },
+ {
+  "id": "P0064",
+  "image_file": "P0064.jpg",
+  "image_available": true,
+  "name": "סט פאזלי חוטים/מתכת לוגיקה - 4 יח'",
+  "description": "סט חידות פאזל מתכת/חוטים לפתרון",
+  "nicknames": [
+   "פאזלי חוטים/מתכת לוגיקה"
+  ],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 7.5,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0065",
+  "image_file": "P0065.jpg",
+  "image_available": true,
+  "name": "סט פאזלי טבעות מתכת - 4 יח'",
+  "description": "חבילת חידות פאזל טבעות מתכת שזורות",
+  "nicknames": [
+   "פאזלי טבעות מתכת"
+  ],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 8.0,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0066",
+  "image_file": "P0066.jpg",
+  "image_available": true,
+  "name": "משאבת אוויר ידנית לבלונים",
+  "description": "משאבה ידנית ירוקה-ורודה לניפוח בלונים",
+  "nicknames": [
+   "בלון"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 7.5,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0067",
+  "image_file": "P0067.jpg",
+  "image_available": true,
+  "name": "תצוגת שעונים/תכשיטים למכירה - מעמד",
+  "description": "מעמד תצוגה עם 12 יחידות שעונים/אביזרים",
+  "nicknames": [
+   "תצוגת שעונים/תכשיטים למכירה"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "מתנות וגאדג'טים",
+  "wholesale_price": 4.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0068",
+  "image_file": "P0068.jpg",
+  "image_available": true,
+  "name": "מחשבון כיס צבעוני - מגוון צבעים",
+  "description": "מחשבונים קטנים בצבעים פסטליים, מגוון דגמים",
+  "nicknames": [
+   "מחשבון כיס צבעוני"
+  ],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 6.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0069",
+  "image_file": "P0069.jpg",
+  "image_available": true,
+  "name": "כובע פדורה ירוק זוהר",
+  "description": "כובע מבד עם סרט, צבע ירוק ניאון",
+  "nicknames": [
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 7.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0070",
+  "image_file": "P0070.jpg",
+  "image_available": true,
+  "name": "כובע פדורה בז'/חום",
+  "description": "כובע קלוע עם סרט שחור, צבע בז'",
+  "nicknames": [],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 12.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0071",
+  "image_file": "P0071.jpg",
+  "image_available": true,
+  "name": "כובע פדורה צהוב",
+  "description": "כובע מבד צהוב עם סרט שחור",
+  "nicknames": [],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 15.0,
+  "carton_qty": 96,
+  "stock_status": null
+ },
+ {
+  "id": "P0072",
+  "image_file": "P0072.jpg",
+  "image_available": true,
+  "name": "כובע קאובוי/פנמה לבן",
+  "description": "כובע קש לבן רחב שוליים עם סרט שחור",
+  "nicknames": [],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 12.5,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0073",
+  "image_file": "P0073.jpg",
+  "image_available": true,
+  "name": "סט שעונים בעיצוב חתולים בקופסה",
+  "description": "סט 4 שעוני קיר/שולחן בעיצוב חיות",
+  "nicknames": [],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 18.0,
+  "carton_qty": 108,
+  "stock_status": null
+ },
+ {
+  "id": "P0074",
+  "image_file": "P0074.jpg",
+  "image_available": true,
+  "name": "עטים בעיצוב יד שלד - סט צבעוני",
+  "description": "סט עטים עם ידית בצורת יד שלד, 6 צבעים",
+  "nicknames": [
+   "עטים בעיצוב יד שלד"
+  ],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 3.5,
+  "carton_qty": 500,
+  "stock_status": null
+ },
+ {
+  "id": "P0075",
+  "image_file": "P0075.jpg",
+  "image_available": true,
+  "name": "סט מקלות עץ ארוכים",
+  "description": "חבילת מקלות עץ דקים, 12 ביחידה",
+  "nicknames": [],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 6.0,
+  "carton_qty": 180,
+  "stock_status": null
+ },
+ {
+  "id": "P0076",
+  "image_file": "P0076.jpg",
+  "image_available": true,
+  "name": "קלפי הפתעה כדורגל - קופסת תצוגה",
+  "description": "קופסת תצוגה עם חבילות קלפי כדורגל להפתעה, 24 יח'",
+  "nicknames": [
+   "קלפי הפתעה כדורגל"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 2.0,
+  "carton_qty": 1000,
+  "stock_status": null
+ },
+ {
+  "id": "P0077",
+  "image_file": "P0077.jpg",
+  "image_available": true,
+  "name": "מטפחות ריקוד צבעוניות - אדום/ורוד",
+  "description": "סט מטפחות ריקוד שקופות צבעוניות",
+  "nicknames": [
+   "מטפחות ריקוד צבעוניות"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "קישוטי גינה וריקוד",
+  "wholesale_price": 2.0,
+  "carton_qty": 800,
+  "stock_status": null
+ },
+ {
+  "id": "P0078",
+  "image_file": "P0078.jpg",
+  "image_available": true,
+  "name": "מטפחות ריקוד צבעוניות - כחול/ירוק",
+  "description": "סט נוסף של מטפחות ריקוד שקופות",
+  "nicknames": [
+   "מטפחות ריקוד צבעוניות"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "קישוטי גינה וריקוד",
+  "wholesale_price": 3.0,
+  "carton_qty": 1440,
+  "stock_status": null
+ },
+ {
+  "id": "P0079",
+  "image_file": "P0079.jpg",
+  "image_available": true,
+  "name": "קלפי הפתעה סטיץ' - קופסת תצוגה",
+  "description": "קופסת תצוגה עם חבילות קלפי סטיץ' להפתעה, 24 יח'",
+  "nicknames": [
+   "קלפי הפתעה סטיץ'"
+  ],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 3.0,
+  "carton_qty": 1440,
+  "stock_status": null
+ },
+ {
+  "id": "P0080",
+  "image_file": "P0080.jpg",
+  "image_available": true,
+  "name": "קוביית פאזל קלפי כדורגל/סטארס",
+  "description": "קובייה מודפסת עם דמויות שחקנים, מארז קלפים",
+  "nicknames": [
+   "קלפים",
+   "משחק קלפים"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 1.0,
+  "carton_qty": 80,
+  "stock_status": null
+ },
+ {
+  "id": "P0081",
+  "image_file": "P0081.jpg",
+  "image_available": true,
+  "name": "סט עטים נצנצים צבעוניים - 6 יח'",
+  "description": "עטים שקופים עם נוזל נצנצים בצבעים שונים",
+  "nicknames": [
+   "עטים נצנצים צבעוניים"
+  ],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 0.7,
+  "carton_qty": 2400,
+  "stock_status": null
+ },
+ {
+  "id": "P0082",
+  "image_file": "P0082.jpg",
+  "image_available": true,
+  "name": "אקדח מים כחול קלאסי",
+  "description": "אקדח מים פלסטיק כחול-שחור בגודל בינוני",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 5.0,
+  "carton_qty": 192,
+  "stock_status": null
+ },
+ {
+  "id": "P0083",
+  "image_file": "P0083.jpg",
+  "image_available": true,
+  "name": "אקדח מים גדול לבן-כחול",
+  "description": "אקדח מים גדול עם מיכל מים נשלף",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 25.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0084",
+  "image_file": "P0084.jpg",
+  "image_available": true,
+  "name": "סט 2 אקדחי מים קטנים בשקית",
+  "description": "שני אקדחי מים קטנים צבעוניים, ארוזים בשקית",
+  "nicknames": [],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 7.5,
+  "carton_qty": 96,
+  "stock_status": null
+ },
+ {
+  "id": "P0085",
+  "image_file": "P0085.jpg",
+  "image_available": true,
+  "name": "אקדח מים שמיים כחול 900 מ\"ל",
+  "description": "אקדח מים גדול 900 מ\"ל, מידות 47x9x23 ס\"מ",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 0.8,
+  "carton_qty": 1200,
+  "stock_status": null
+ },
+ {
+  "id": "P0086",
+  "image_file": "P0086.jpg",
+  "image_available": true,
+  "name": "אקדח מים בעיצוב חלל",
+  "description": "אקדח מים עם הדפס אסטרונאוט/חלל",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 2.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0087",
+  "image_file": "P0087.jpg",
+  "image_available": true,
+  "name": "אקדח מים נושא חוף",
+  "description": "אקדח מים עם עיצוב חוף וצדפים",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 25.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0088",
+  "image_file": "P0088.jpg",
+  "image_available": true,
+  "name": "סט 3 אקדחי מים קטנים - ירוק/כתום/סגול",
+  "description": "שלושה אקדחי מים קטנים בצבעים שונים",
+  "nicknames": [
+   "3 אקדחי מים קטנים"
+  ],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 9.0,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0089",
+  "image_file": "P0089.jpg",
+  "image_available": true,
+  "name": "אקדח מים גדול לבן לחוף",
+  "description": "אקדח מים גדול לבן עם דמות חוף",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 25.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0090",
+  "image_file": "P0090.jpg",
+  "image_available": true,
+  "name": "סט אקדחי מים שקופים קטנים - 3 יח'",
+  "description": "שלושה אקדחי מים שקופים צבעוניים קטנים",
+  "nicknames": [
+   "אקדחי מים שקופים קטנים"
+  ],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 17.5,
+  "carton_qty": 48,
+  "stock_status": null
+ },
+ {
+  "id": "P0091",
+  "image_file": "P0091.jpg",
+  "image_available": true,
+  "name": "סט מכוניות מירוץ במארז תצוגה",
+  "description": "מארז 8 מכוניות מירוץ דיקאסט בקופסת תצוגה, 31 ס\"מ",
+  "nicknames": [],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "מתנות וגאדג'טים",
+  "wholesale_price": 20.0,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0092",
+  "image_file": "P0092.jpg",
+  "image_available": true,
+  "name": "אקדח מים חשמלי אדום",
+  "description": "אקדח מים חשמלי גדול עם תאורה, 25.5 ס\"מ",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 5.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0093",
+  "image_file": "P0093.jpg",
+  "image_available": true,
+  "name": "מאוורר יד פיקאצ'ו עם בועות",
+  "description": "צעצוע מאוורר יד בעיצוב פיקאצ'ו, מיוצר בועות",
+  "nicknames": [
+   "מניפה",
+   "פוקימון"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 10.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0094",
+  "image_file": "P0094.jpg",
+  "image_available": true,
+  "name": "מאוורר יד סטיץ' עם בועות",
+  "description": "צעצוע מאוורר יד בעיצוב סטיץ', מיוצר בועות",
+  "nicknames": [
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 10.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0095",
+  "image_file": null,
+  "image_available": false,
+  "name": "רובוט טרנספורמר לגו - חייזר על (חזרה)",
+  "description": "סט בנייה לגו רובוט טרנספורמר, כ-498 חלקים - זהה ל-P0001",
+  "nicknames": [
+   "רובוט טרנספורמר לגו",
+   "קוביות",
+   "הרכבה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 5.0,
+  "carton_qty": 108,
+  "stock_status": null
+ },
+ {
+  "id": "P0096",
+  "image_file": "P0096.jpg",
+  "image_available": true,
+  "name": "קוביית קסם 4x4 (Speed Cube)",
+  "description": "קובייה הונגרית מהירה 4x4, שחורה",
+  "nicknames": [],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 60.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0097",
+  "image_file": null,
+  "image_available": false,
+  "name": "רובוט דינוזאור לגו (חזרה)",
+  "description": "סט בנייה לגו רובוט דינוזאור, כ-553 חלקים - זהה ל-P0002",
+  "nicknames": [
+   "קוביות",
+   "הרכבה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 60.0,
+  "carton_qty": 16,
+  "stock_status": null
+ },
+ {
+  "id": "P0098",
+  "image_file": "P0098.jpg",
+  "image_available": true,
+  "name": "רובוט חייל צבאי לגו ענק (חזרה)",
+  "description": "סט בנייה לגו רובוט חייל ענק, כ-783 חלקים - זהה ל-P0003",
+  "nicknames": [
+   "קוביות",
+   "הרכבה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 85.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0099",
+  "image_file": "P0099.jpg",
+  "image_available": true,
+  "name": "רובוט רכבים לגו על (חזרה)",
+  "description": "סט בנייה לגו רובוט מתחבר מרכבים, כ-839 חלקים - זהה ל-P0004",
+  "nicknames": [
+   "קוביות",
+   "הרכבה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 85.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0100",
+  "image_file": "P0100.jpg",
+  "image_available": true,
+  "name": "מסוק קרב לגו - סופת פלדה (חזרה)",
+  "description": "סט בנייה לגו מסוק קרב, כ-381 חלקים - זהה ל-P0005",
+  "nicknames": [
+   "מסוק קרב לגו",
+   "קוביות",
+   "הרכבה",
+   "הליקופטר"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 5.0,
+  "carton_qty": 16,
+  "stock_status": null
+ },
+ {
+  "id": "P0101",
+  "image_file": null,
+  "image_available": false,
+  "name": "מסוק קרב לגו - סופת פלדה (חזרה)",
+  "description": "סט בנייה לגו מסוק קרב, כ-381 חלקים - זהה ל-P0005",
+  "nicknames": [
+   "מסוק קרב לגו",
+   "קוביות",
+   "הרכבה",
+   "הליקופטר"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 5.0,
+  "carton_qty": 16,
+  "stock_status": null
+ },
+ {
+  "id": "P0102",
+  "image_file": null,
+  "image_available": false,
+  "name": "פיגורת רובוט דרקון מתקפלת (חזרה)",
+  "description": "פיגורת אקשן רובוט-דרקון בקופסה - זהה ל-P0012",
+  "nicknames": [
+   "פיגורה",
+   "דמות",
+   "בובה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 60.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0103",
+  "image_file": null,
+  "image_available": false,
+  "name": "כדור מעופף אינדוקציה עם תאורה (חזרה)",
+  "description": "כדור פורח חיישן תנועה עם נורות LED - זהה ל-P0014",
+  "nicknames": [
+   "חיישן תנועה"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 3.5,
+  "carton_qty": 360,
+  "stock_status": null
+ },
+ {
+  "id": "P0104",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט 3 אקדחי מים גדולים - צהוב/כחול/כתום",
+  "description": "שלושה אקדחי מים בגדלים גדולים, צבעים שונים",
+  "nicknames": [
+   "3 אקדחי מים גדולים"
+  ],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 5.0,
+  "carton_qty": 280,
+  "stock_status": null
+ },
+ {
+  "id": "P0105",
+  "image_file": "P0105.jpg",
+  "image_available": true,
+  "name": "אקדח מים גדול ירוק-כחול לחוף (חזרה)",
+  "description": "אקדח מים גדול עם מיכל נשלף - זהה ל-P0008",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 5.5,
+  "carton_qty": 192,
+  "stock_status": null
+ },
+ {
+  "id": "P0106",
+  "image_file": null,
+  "image_available": false,
+  "name": "כדורי קצף צבעוניים לאקדח (חזרה)",
+  "description": "חבילת כדורי ספוג צבעוניים - זהה ל-P0010",
+  "nicknames": [
+   "ספוג"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 24.0,
+  "carton_qty": 48,
+  "stock_status": null
+ },
+ {
+  "id": "P0107",
+  "image_file": null,
+  "image_available": false,
+  "name": "מטוס פלאנר זורק כתום (חזרה)",
+  "description": "מטוס דאון מקצף עם תאורה - זהה ל-P0011",
+  "nicknames": [
+   "מטוס קלקר",
+   "קלקר"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 15.0,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0108",
+  "image_file": null,
+  "image_available": false,
+  "name": "מקל מים יורה - כחול (חזרה)",
+  "description": "צעצוע מים שאיבה-ירייה - זהה ל-P0009",
+  "nicknames": [
+   "מקל מים יורה",
+   "אקדח מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 12.0,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0109",
+  "image_file": null,
+  "image_available": false,
+  "name": "פיגורת רובוט דרקון מתקפלת (חזרה 2)",
+  "description": "פיגורת אקשן רובוט-דרקון - זהה ל-P0012",
+  "nicknames": [
+   "פיגורה",
+   "דמות",
+   "בובה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 10.0,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0110",
+  "image_file": "P0110.jpg",
+  "image_available": true,
+  "name": "צמידי זוהר עם וו תליה - 50 יח' (חזרה)",
+  "description": "מקלות זוהר ניאון עם וו, 50 יח' - זהה ל-P0019/P0032",
+  "nicknames": [
+   "צמידי זוהר עם וו תליה",
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 12.0,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0111",
+  "image_file": null,
+  "image_available": false,
+  "name": "פיקאצ'ו מעופף שלט/חיישן (חזרה)",
+  "description": "צעצוע פיקאצ'ו מעופף עם חיישן - זהה ל-P0018",
+  "nicknames": [
+   "חיישן תנועה",
+   "פוקימון"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "פיגורות ומחזיקי מפתחות",
+  "wholesale_price": 5.0,
+  "carton_qty": 160,
+  "stock_status": null
+ },
+ {
+  "id": "P0112",
+  "image_file": null,
+  "image_available": false,
+  "name": "סרט ראש נוצות מנצנץ מואר (חזרה)",
+  "description": "סרט ראש עם נוצות ותאורת LED - זהה ל-P0028",
+  "nicknames": [],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 2.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0113",
+  "image_file": "P0113.jpg",
+  "image_available": true,
+  "name": "סט חרבות אור LED ירוק/כחול/ורוד - 3 יח'",
+  "description": "שלוש חרבות צעצוע מאירות בגוונים שונים",
+  "nicknames": [
+   "חרבות אור LED ירוק/כחול/ורוד",
+   "נשק צעצוע"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 2.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0114",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט חרבות סמוראי שחורות - 3 יח' (חזרה)",
+  "description": "סט שלוש חרבות קוסטיום שחורות - זהה ל-P0021",
+  "nicknames": [
+   "חרבות סמוראי שחורות",
+   "תחפושת",
+   "קוסטיום",
+   "נשק צעצוע"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 7.5,
+  "carton_qty": 60,
+  "stock_status": null
+ },
+ {
+  "id": "P0115",
+  "image_file": "P0115.jpg",
+  "image_available": true,
+  "name": "שוט/רצועת אור מתכווננת LED (חזרה)",
+  "description": "רצועת תאורת LED גמישה - זהה ל-P0022",
+  "nicknames": [],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 11.0,
+  "carton_qty": 200,
+  "stock_status": null
+ },
+ {
+  "id": "P0116",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט חרבות אור (לייטסייבר) - 3 צבעים (חזרה)",
+  "description": "שלוש חרבות לייזר מאירות - זהה ל-P0023",
+  "nicknames": [
+   "חרבות אור (לייטסייבר)",
+   "נשק צעצוע"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 8.0,
+  "carton_qty": 192,
+  "stock_status": null
+ },
+ {
+  "id": "P0117",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט סכינים מאירות LED - 4 יח' (חזרה)",
+  "description": "סט סכיני קוסטיום מאירים - זהה ל-P0024",
+  "nicknames": [
+   "סכינים מאירות LED",
+   "תחפושת",
+   "קוסטיום"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 8.0,
+  "carton_qty": 192,
+  "stock_status": null
+ },
+ {
+  "id": "P0118",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט חרבות סמוראי שחורות - 3 יח' (חזרה 2)",
+  "description": "סט שלוש חרבות קוסטיום שחורות - זהה ל-P0021",
+  "nicknames": [
+   "חרבות סמוראי שחורות",
+   "תחפושת",
+   "קוסטיום",
+   "נשק צעצוע"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 10.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0119",
+  "image_file": null,
+  "image_available": false,
+  "name": "שוט/רצועת אור מתכווננת LED (חזרה 2)",
+  "description": "רצועת תאורת LED גמישה - זהה ל-P0022",
+  "nicknames": [],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 10.0,
+  "carton_qty": 160,
+  "stock_status": null
+ },
+ {
+  "id": "P0120",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט חרבות אור (לייטסייבר) - 3 צבעים (חזרה 2)",
+  "description": "שלוש חרבות לייזר מאירות - זהה ל-P0023",
+  "nicknames": [
+   "חרבות אור (לייטסייבר)",
+   "נשק צעצוע"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 3.5,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0121",
+  "image_file": null,
+  "image_available": false,
+  "name": "משקפי תריס מאירות LED - סט (חזרה)",
+  "description": "חבילת משקפי מסיבה מאירות - זהה ל-P0025",
+  "nicknames": [
+   "משקפי תריס מאירות LED"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 2.0,
+  "carton_qty": 480,
+  "stock_status": null
+ },
+ {
+  "id": "P0122",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט סרטי ראש פפיון מנוקדים (חזרה)",
+  "description": "שלושה סרטי ראש עם פפיון - זהה ל-P0026",
+  "nicknames": [],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 1.8,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0123",
+  "image_file": null,
+  "image_available": false,
+  "name": "שרביטי ריסוס מאירים LED - 3 יח' (חזרה)",
+  "description": "שרביטים ארוכים מאירים - זהה ל-P0027",
+  "nicknames": [
+   "שרביטי ריסוס מאירים LED"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 2.5,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0124",
+  "image_file": null,
+  "image_available": false,
+  "name": "סרט ראש נוצות מנצנץ מואר (חזרה 2)",
+  "description": "סרט ראש עם נוצות ותאורת LED - זהה ל-P0028",
+  "nicknames": [],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 7.0,
+  "carton_qty": 168,
+  "stock_status": null
+ },
+ {
+  "id": "P0125",
+  "image_file": null,
+  "image_available": false,
+  "name": "אקדח בועות עם כדורי קונפטי - 3 צבעים (חזרה)",
+  "description": "אקדח יורה כדורי בד צבעוניים - זהה ל-P0030",
+  "nicknames": [
+   "אקדח בועות עם כדורי קונפטי",
+   "אקדח סבון",
+   "בועות סבון"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 5.0,
+  "carton_qty": 96,
+  "stock_status": null
+ },
+ {
+  "id": "P0126",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט חרבות סמוראי מאירות וקוליות (חזרה)",
+  "description": "חרבות מאירות עם אפקט קול - זהה ל-P0035",
+  "nicknames": [
+   "נשק צעצוע"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 1.5,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0127",
+  "image_file": null,
+  "image_available": false,
+  "name": "מדבקות משקפיים מאירות - גיליון (חזרה)",
+  "description": "גיליון מדבקות צורות זוהרות - זהה ל-P0042",
+  "nicknames": [
+   "מדבקות משקפיים מאירות",
+   "גלואו סטיק",
+   "זוהר",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 0.7,
+  "carton_qty": 1500,
+  "stock_status": null
+ },
+ {
+  "id": "P0128",
+  "image_file": null,
+  "image_available": false,
+  "name": "פפיון כתום גדול לקוסטיום (חזרה)",
+  "description": "אביזר פפיון בד כתום גדול - זהה ל-P0036",
+  "nicknames": [
+   "תחפושת"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 0.5,
+  "carton_qty": 3000,
+  "stock_status": null
+ },
+ {
+  "id": "P0129",
+  "image_file": null,
+  "image_available": false,
+  "name": "מחזיקי זנב חיה צבעוניים - סט (חזרה 2)",
+  "description": "אביזרי תחפושת זנב פרוותי - זהה ל-P0043",
+  "nicknames": [
+   "מחזיקי זנב חיה צבעוניים",
+   "תחפושת",
+   "קוסטיום"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 10.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0130",
+  "image_file": "P0035.jpg",
+  "image_available": true,
+  "name": "שרביט קסמים חד-קרן מואר - זוג",
+  "description": "שני שרביטי חד-קרן מאירים, 36.4 ס\"מ",
+  "nicknames": [
+   "שרביט קסמים חד-קרן מואר",
+   "חד קרן",
+   "יוניקורן"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 10.0,
+  "carton_qty": 168,
+  "stock_status": null
+ },
+ {
+  "id": "P0131",
+  "image_file": null,
+  "image_available": false,
+  "name": "שרביט קסמים סטיץ' מואר - זוג",
+  "description": "שני שרביטי קסם בעיצוב סטיץ', 36.4 ס\"מ",
+  "nicknames": [
+   "שרביט קסמים סטיץ' מואר"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 10.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0132",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט שרביטי טבעת מואר קוף - 3 צבעים (חזרה)",
+  "description": "שרביטי קסמים עם דמות קוף - זהה ל-P0039",
+  "nicknames": [
+   "שרביטי טבעת מואר קוף"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 0.6,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0133",
+  "image_file": null,
+  "image_available": false,
+  "name": "אקדח בועות מיניונים על מקל (חזרה)",
+  "description": "מכונת בועות מיניון על ידית - זהה ל-P0040",
+  "nicknames": [
+   "אקדח סבון",
+   "בועות סבון"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובועות",
+  "wholesale_price": 11.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0134",
+  "image_file": "P0134.jpg",
+  "image_available": true,
+  "name": "שרביט קסמים נסיכה ורודה מואר",
+  "description": "שרביט עם דמות נסיכה ותאורת LED, ורוד",
+  "nicknames": [],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 11.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0135",
+  "image_file": null,
+  "image_available": false,
+  "name": "מקלות זוהר מיקי מאוס - 3 יח' (חזרה)",
+  "description": "מקלות ניאון בצורת ראש מיקי מאוס - זהה ל-P0044",
+  "nicknames": [
+   "מקלות זוהר מיקי מאוס",
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 11.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0136",
+  "image_file": null,
+  "image_available": false,
+  "name": "מקל זוהר כוכב (חזרה)",
+  "description": "מקל ניאון מאיר בצורת כוכב - זהה ל-P0045",
+  "nicknames": [
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 11.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0137",
+  "image_file": null,
+  "image_available": false,
+  "name": "מקל זוהר כוכב (חזרה 2)",
+  "description": "מקל ניאון מאיר בצורת כוכב - זהה ל-P0045",
+  "nicknames": [
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 10.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0138",
+  "image_file": "P0041.jpg",
+  "image_available": true,
+  "name": "שרביט קסמים נסיכה ורודה מואר",
+  "description": "שרביט עם דמות נסיכה ותאורת LED, ורוד",
+  "nicknames": [],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 10.0,
+  "carton_qty": 300,
+  "stock_status": null
+ },
+ {
+  "id": "P0139",
+  "image_file": "P0139.jpg",
+  "image_available": true,
+  "name": "מקלות זוהר מיקי מאוס - 3 יח' (חזרה)",
+  "description": "מקלות ניאון בצורת ראש מיקי מאוס - זהה ל-P0044",
+  "nicknames": [
+   "מקלות זוהר מיקי מאוס",
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 6.5,
+  "carton_qty": 288,
+  "stock_status": null
+ },
+ {
+  "id": "P0140",
+  "image_file": null,
+  "image_available": false,
+  "name": "מקל זוהר כוכב (חזרה)",
+  "description": "מקל ניאון מאיר בצורת כוכב - זהה ל-P0045",
+  "nicknames": [
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 6.5,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0141",
+  "image_file": null,
+  "image_available": false,
+  "name": "מקלות זוהר לב - 3 יח' (חזרה)",
+  "description": "שלושה מקלות ניאון בצורת לב - זהה ל-P0046",
+  "nicknames": [
+   "מקלות זוהר לב",
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 6.5,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0142",
+  "image_file": null,
+  "image_available": false,
+  "name": "מקלות זוהר חד-קרן - 3 יח' (חזרה)",
+  "description": "שלושה מקלות ניאון בצורת חד-קרן - זהה ל-P0047",
+  "nicknames": [
+   "מקלות זוהר חד-קרן",
+   "גלואו סטיק",
+   "צמיד זוהר",
+   "חד קרן",
+   "יוניקורן"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 12.0,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0143",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט בקבוקי מילוי בלונים עם קונפטי (חזרה)",
+  "description": "ערכת בקבוקי משאבה למילוי בלוני מים - זהה ל-P0048",
+  "nicknames": [
+   "בלון"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 12.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0144",
+  "image_file": "P0144.jpg",
+  "image_available": true,
+  "name": "שקית בלוני מים אדומים - 60 יח' (חזרה)",
+  "description": "שקית בלוני מים לטקס אדומים - זהה ל-P0049",
+  "nicknames": [
+   "שקית בלוני מים אדומים",
+   "בלון",
+   "בלונים"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 4.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0145",
+  "image_file": "P0145.jpg",
+  "image_available": true,
+  "name": "שקית בלונים צבעוניים - 100 יח' (חזרה)",
+  "description": "שקית בלוני לטקס מעורבים - זהה ל-P0050",
+  "nicknames": [
+   "שקית בלונים צבעוניים",
+   "בלון"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 5.0,
+  "carton_qty": 300,
+  "stock_status": null
+ },
+ {
+  "id": "P0146",
+  "image_file": null,
+  "image_available": false,
+  "name": "שקית בלוני זוהר פלורסנט (חזרה)",
+  "description": "בלוני מים פלורוסנטיים - זהה ל-P0051",
+  "nicknames": [
+   "בלון",
+   "בלונים",
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 7.5,
+  "carton_qty": 200,
+  "stock_status": null
+ },
+ {
+  "id": "P0147",
+  "image_file": null,
+  "image_available": false,
+  "name": "חבילת בלוני עיצוב ארוכים (חזרה)",
+  "description": "בלוני עיצוב ארוכים - זהה ל-P0052",
+  "nicknames": [
+   "בלון",
+   "בלונים"
+  ],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 18.0,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0148",
+  "image_file": null,
+  "image_available": false,
+  "name": "בלוני מתכת מטאליים - סט מעורב (חזרה)",
+  "description": "בלוני לטקס מטאליים - זהה ל-P0053",
+  "nicknames": [
+   "בלוני מתכת מטאליים",
+   "בלון",
+   "בלונים"
+  ],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 15.0,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0149",
+  "image_file": null,
+  "image_available": false,
+  "name": "אלבום קלפי אספנות ספורט (חזרה)",
+  "description": "קופסת קלפי אספנות ספורט - זהה ל-P0054",
+  "nicknames": [],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 1.0,
+  "carton_qty": 80,
+  "stock_status": null
+ },
+ {
+  "id": "P0150",
+  "image_file": null,
+  "image_available": false,
+  "name": "שקית בלונים Bright Ice - 100 יח' (חזרה)",
+  "description": "שקית בלוני מסיבה - זהה ל-P0059",
+  "nicknames": [
+   "שקית בלונים Bright Ice",
+   "בלון"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 10.0,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0151",
+  "image_file": null,
+  "image_available": false,
+  "name": "חפיסת קלפי משחק קלאסיים (חזרה)",
+  "description": "שני חפיסות קלפים - זהה ל-P0055",
+  "nicknames": [
+   "קלפים",
+   "משחק קלפים"
+  ],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 0.7,
+  "carton_qty": 100,
+  "stock_status": null
+ },
+ {
+  "id": "P0152",
+  "image_file": null,
+  "image_available": false,
+  "name": "מחזיק מפתחות סטיץ' כחול",
+  "description": "מחזיק מפתחות גומי בעיצוב דמות סטיץ'",
+  "nicknames": [],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "פיגורות ומחזיקי מפתחות",
+  "wholesale_price": 3.0,
+  "carton_qty": 500,
+  "stock_status": null
+ },
+ {
+  "id": "P0153",
+  "image_file": null,
+  "image_available": false,
+  "name": "אשכול בלוני מים אדומים עם משאבה (חזרה)",
+  "description": "אשכול בלוני מים אדומים - זהה ל-P0057",
+  "nicknames": [
+   "בלון",
+   "בלונים"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 1.5,
+  "carton_qty": 500,
+  "stock_status": null
+ },
+ {
+  "id": "P0154",
+  "image_file": null,
+  "image_available": false,
+  "name": "שקיות בלוני מים אוטו-אטימה (חזרה)",
+  "description": "שקיות בלוני מים אוטומטיות - זהה ל-P0058",
+  "nicknames": [
+   "בלון",
+   "בלונים"
+  ],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 4.0,
+  "carton_qty": 250,
+  "stock_status": null
+ },
+ {
+  "id": "P0155",
+  "image_file": null,
+  "image_available": false,
+  "name": "אשכול בלוני מים Aqua Balloon (חזרה)",
+  "description": "אשכול בלוני מים מהיר - זהה ל-P0060",
+  "nicknames": [
+   "בלון",
+   "בלונים"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 12.0,
+  "carton_qty": 100,
+  "stock_status": null
+ },
+ {
+  "id": "P0156",
+  "image_file": "P0156.jpg",
+  "image_available": true,
+  "name": "מחזיק מפתחות דמויות מצויר - סט",
+  "description": "סט מחזיקי מפתחות גומי בעיצובי דמויות",
+  "nicknames": [
+   "מחזיק מפתחות דמויות מצויר"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "פיגורות ומחזיקי מפתחות",
+  "wholesale_price": 3.5,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0157",
+  "image_file": "P0157.jpg",
+  "image_available": true,
+  "name": "זר ורדים מלאכותיים צבעוני",
+  "description": "זר פרחי ורד מלאכותיים בצבעים שונים",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 8.0,
+  "carton_qty": 500,
+  "stock_status": null
+ },
+ {
+  "id": "P0158",
+  "image_file": "P0158.jpg",
+  "image_available": true,
+  "name": "תליית פרחים מלאכותית - וויסטריה",
+  "description": "פרחי קישוט תלויים בצבעים מגוונים",
+  "nicknames": [
+   "תליית פרחים מלאכותית"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 5.0,
+  "carton_qty": 500,
+  "stock_status": null
+ },
+ {
+  "id": "P0159",
+  "image_file": "P0159.jpg",
+  "image_available": true,
+  "name": "זרי פרחים מלאכותיים תלויים - 4 צבעים",
+  "description": "ארבעה זרי פרחים מלאכותיים לתלייה",
+  "nicknames": [
+   "זרי פרחים מלאכותיים תלויים"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 6.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0160",
+  "image_file": "P0160.jpg",
+  "image_available": true,
+  "name": "זר פרחים/קישוט ראש מעורב",
+  "description": "אביזרי קישוט פרחוני צבעוני",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 5.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0161",
+  "image_file": "P0161.jpg",
+  "image_available": true,
+  "name": "סט צמידי דמויות + מחזיקי מפתחות",
+  "description": "סט צמידי בד וצעצועי דמויות תלויים על מתלה",
+  "nicknames": [],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 5.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0162",
+  "image_file": "P0162.jpg",
+  "image_available": true,
+  "name": "שרשרת אורות LED על סוללה",
+  "description": "שרשרת חוטי נחושת עם נורות LED קטנות, פועלת על סוללות",
+  "nicknames": [],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 18.0,
+  "carton_qty": 100,
+  "stock_status": null
+ },
+ {
+  "id": "P0163",
+  "image_file": "P0163.jpg",
+  "image_available": true,
+  "name": "נרות יום הולדת מספרים 0-9 - סט",
+  "description": "סט נרות מספרים אדומים ליום הולדת",
+  "nicknames": [
+   "נרות יום הולדת מספרים 0-9"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 5.0,
+  "carton_qty": 100,
+  "stock_status": null
+ },
+ {
+  "id": "P0164",
+  "image_file": "P0164.jpg",
+  "image_available": true,
+  "name": "נרות יום הולדת מספרים כסופים - סט",
+  "description": "סט נרות מספרים בצבע כסף",
+  "nicknames": [
+   "נרות יום הולדת מספרים כסופים"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 20.0,
+  "carton_qty": 100,
+  "stock_status": null
+ },
+ {
+  "id": "P0165",
+  "image_file": "P0165.jpg",
+  "image_available": true,
+  "name": "שרשרת אורות LED קופסת מתנה",
+  "description": "שרשרת אורות LED בקופסת מתנה",
+  "nicknames": [],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 40.0,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0166",
+  "image_file": "P0166.jpg",
+  "image_available": true,
+  "name": "שרשרת אורות LED קישוטי מטבעות זהב",
+  "description": "שרשרת אורות עם תליוני מטבע זהב מוארים",
+  "nicknames": [],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 10.0,
+  "carton_qty": 100,
+  "stock_status": null
+ },
+ {
+  "id": "P0167",
+  "image_file": null,
+  "image_available": false,
+  "name": "שרשרת אורות LED קישוטי מטבעות (חזרה)",
+  "description": "שרשרת אורות מטבעות זהב - זהה ל-P0166",
+  "nicknames": [],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 0.8,
+  "carton_qty": 900,
+  "stock_status": null
+ },
+ {
+  "id": "P0168",
+  "image_file": null,
+  "image_available": false,
+  "name": "שרשרת אורות LED מטבעות זהב (חזרה 2)",
+  "description": "שרשרת אורות מטבעות - זהה ל-P0166",
+  "nicknames": [],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 1.5,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0169",
+  "image_file": "P0166.jpg",
+  "image_available": true,
+  "name": "נרות עוגה ארוכים צבעוניים - סט",
+  "description": "סט נרות יום הולדת ארוכים בצבעי קשת",
+  "nicknames": [
+   "נרות עוגה ארוכים צבעוניים"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": null,
+  "carton_qty": null,
+  "stock_status": null
+ },
+ {
+  "id": "P0170",
+  "image_file": "P0170.jpg",
+  "image_available": true,
+  "name": "מחצלת קישוט עלים ירוקים",
+  "description": "רשת קישוט עלי גפן מלאכותיים לקיר",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 1.5,
+  "carton_qty": 360,
+  "stock_status": null
+ },
+ {
+  "id": "P0171",
+  "image_file": "P0171.jpg",
+  "image_available": true,
+  "name": "מקלות זוהר עבים - 6 צבעים",
+  "description": "מקלות אור עבים בצבעים שונים",
+  "nicknames": [
+   "מקלות זוהר עבים",
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 25.0,
+  "carton_qty": 40,
+  "stock_status": null
+ },
+ {
+  "id": "P0172",
+  "image_file": "P0172.jpg",
+  "image_available": true,
+  "name": "ורדים מלאכותיים בודדים - מגוון צבעים",
+  "description": "פרחי ורד בודדים להרכבה/קישוט",
+  "nicknames": [
+   "ורדים מלאכותיים בודדים"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 0.35,
+  "carton_qty": 4000,
+  "stock_status": null
+ },
+ {
+  "id": "P0173",
+  "image_file": "P0173.jpg",
+  "image_available": true,
+  "name": "מטוס נייר DIY להרכבה - דגם 1",
+  "description": "ערכת הרכבה למטוס קצף/נייר עם הדפס",
+  "nicknames": [
+   "מטוס נייר DIY להרכבה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 1.0,
+  "carton_qty": 1000,
+  "stock_status": null
+ },
+ {
+  "id": "P0174",
+  "image_file": "P0174.jpg",
+  "image_available": true,
+  "name": "מטוס נייר DIY להרכבה - דגם 2",
+  "description": "ערכת הרכבה נוספת למטוס קצף",
+  "nicknames": [
+   "מטוס נייר DIY להרכבה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 0.6,
+  "carton_qty": 1728,
+  "stock_status": null
+ },
+ {
+  "id": "P0175",
+  "image_file": "P0175.jpg",
+  "image_available": true,
+  "name": "פיניאטה חמור צבעונית",
+  "description": "פיניאטה לחגיגות בצורת חמור צבעוני",
+  "nicknames": [],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 0.5,
+  "carton_qty": 2000,
+  "stock_status": null
+ },
+ {
+  "id": "P0176",
+  "image_file": "P0176.jpg",
+  "image_available": true,
+  "name": "פנסי נייר עגולים צבעוניים - סט",
+  "description": "סט פנסים סינים מנייר בצבעי קשת",
+  "nicknames": [
+   "פנסי נייר עגולים צבעוניים"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 5.0,
+  "carton_qty": 300,
+  "stock_status": null
+ },
+ {
+  "id": "P0177",
+  "image_file": "P0177.jpg",
+  "image_available": true,
+  "name": "מאוורר יד מיני דובי",
+  "description": "מאוורר יד קטן בעיצוב דובי",
+  "nicknames": [
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 2.5,
+  "carton_qty": 432,
+  "stock_status": null
+ },
+ {
+  "id": "P0178",
+  "image_file": "P0178.jpg",
+  "image_available": true,
+  "name": "מאוורר יד כריש - מארז תצוגה",
+  "description": "קופסת תצוגה עם מאווררי יד בעיצוב כריש",
+  "nicknames": [
+   "מאוורר יד כריש",
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 2.5,
+  "carton_qty": 720,
+  "stock_status": null
+ },
+ {
+  "id": "P0179",
+  "image_file": "P0179.jpg",
+  "image_available": true,
+  "name": "מאוורר יד צפרדע/דמות ירוק-ורוד",
+  "description": "מאוורר יד ידני בעיצוב דמות חמודה",
+  "nicknames": [
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 2.5,
+  "carton_qty": 576,
+  "stock_status": null
+ },
+ {
+  "id": "P0180",
+  "image_file": "P0180.jpg",
+  "image_available": true,
+  "name": "מאוורר יד ידני - דגם נוסף",
+  "description": "מאוורר יד ידני בעיצוב צבעוני",
+  "nicknames": [
+   "מאוורר יד ידני",
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 40.0,
+  "carton_qty": 4,
+  "stock_status": null
+ },
+ {
+  "id": "P0181",
+  "image_file": null,
+  "image_available": false,
+  "name": "משאבת אוויר ידנית לבלונים (חזרה)",
+  "description": "משאבה ידנית לניפוח בלונים - זהה ל-P0066",
+  "nicknames": [
+   "בלון"
+  ],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 5.0,
+  "carton_qty": 100,
+  "stock_status": null
+ },
+ {
+  "id": "P0182",
+  "image_file": null,
+  "image_available": false,
+  "name": "טחנת רוח דקורטיבית חמנייה גדולה (חזרה)",
+  "description": "טחנת רוח גינה חמנייה - זהה ל-P0061",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "קישוטי גינה וריקוד",
+  "wholesale_price": 8.0,
+  "carton_qty": 168,
+  "stock_status": null
+ },
+ {
+  "id": "P0183",
+  "image_file": null,
+  "image_available": false,
+  "name": "טחנת רוח דקורטיבית מעגלית (חזרה)",
+  "description": "טחנת רוח רב-צבעית - זהה ל-P0062",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "קישוטי גינה וריקוד",
+  "wholesale_price": 5.0,
+  "carton_qty": 168,
+  "stock_status": null
+ },
+ {
+  "id": "P0184",
+  "image_file": null,
+  "image_available": false,
+  "name": "טחנת רוח חמנייה ופרחים (חזרה)",
+  "description": "טחנת רוח עם פרחים - זהה ל-P0063",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 7.5,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0185",
+  "image_file": "P0185.jpg",
+  "image_available": true,
+  "name": "סט פאזלי חוטים/מתכת לוגיקה (חזרה)",
+  "description": "סט חידות פאזל מתכת/חוטים - זהה ל-P0064",
+  "nicknames": [],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 8.0,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0186",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט פאזלי טבעות מתכת (חזרה)",
+  "description": "חבילת חידות פאזל טבעות מתכת - זהה ל-P0065",
+  "nicknames": [],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 7.5,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0187",
+  "image_file": null,
+  "image_available": false,
+  "name": "תצוגת שעונים/תכשיטים למכירה - מעמד (חזרה)",
+  "description": "מעמד תצוגה עם 12 יחידות - זהה ל-P0067",
+  "nicknames": [
+   "תצוגת שעונים/תכשיטים למכירה"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "מתנות וגאדג'טים",
+  "wholesale_price": 4.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0188",
+  "image_file": null,
+  "image_available": false,
+  "name": "מחשבון כיס צבעוני (חזרה)",
+  "description": "מחשבונים קטנים בצבעים פסטליים - זהה ל-P0068",
+  "nicknames": [],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 6.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0189",
+  "image_file": "P0189.jpg",
+  "image_available": true,
+  "name": "כובע פדורה ירוק זוהר (חזרה)",
+  "description": "כובע מבד עם סרט, ירוק - זהה ל-P0069",
+  "nicknames": [
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 7.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0190",
+  "image_file": null,
+  "image_available": false,
+  "name": "כובע פדורה בז'/חום (חזרה)",
+  "description": "כובע קלוע עם סרט שחור - זהה ל-P0070",
+  "nicknames": [],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 12.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0191",
+  "image_file": "P0191.jpg",
+  "image_available": true,
+  "name": "כובע פדורה צהוב (חזרה)",
+  "description": "כובע מבד צהוב - זהה ל-P0071",
+  "nicknames": [],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 15.0,
+  "carton_qty": 96,
+  "stock_status": null
+ },
+ {
+  "id": "P0192",
+  "image_file": null,
+  "image_available": false,
+  "name": "כובע קאובוי/פנמה לבן (חזרה)",
+  "description": "כובע קש לבן רחב שוליים - זהה ל-P0072",
+  "nicknames": [],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 12.5,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0193",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט שעונים בעיצוב חתולים (חזרה)",
+  "description": "סט שעוני קיר בעיצוב חיות - זהה ל-P0073",
+  "nicknames": [],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 18.0,
+  "carton_qty": 108,
+  "stock_status": null
+ },
+ {
+  "id": "P0194",
+  "image_file": "P0194.jpg",
+  "image_available": true,
+  "name": "עטים יד-שלד צבעוניים (חזרה)",
+  "description": "סט עטים בעיצוב יד שלד - זהה ל-P0074",
+  "nicknames": [],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 3.5,
+  "carton_qty": 500,
+  "stock_status": null
+ },
+ {
+  "id": "P0195",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט מקלות עץ ארוכים (חזרה)",
+  "description": "חבילת מקלות עץ - זהה ל-P0075",
+  "nicknames": [],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "מתנות וגאדג'טים",
+  "wholesale_price": 6.0,
+  "carton_qty": 180,
+  "stock_status": null
+ },
+ {
+  "id": "P0196",
+  "image_file": null,
+  "image_available": false,
+  "name": "קלפי הפתעה כדורגל - קופסת תצוגה (חזרה)",
+  "description": "קופסת תצוגה קלפי כדורגל - זהה ל-P0076",
+  "nicknames": [
+   "קלפי הפתעה כדורגל"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 2.0,
+  "carton_qty": 1000,
+  "stock_status": null
+ },
+ {
+  "id": "P0197",
+  "image_file": "P0197.jpg",
+  "image_available": true,
+  "name": "מטפחות ריקוד צבעוניות - אדום/ורוד (חזרה)",
+  "description": "סט מטפחות ריקוד שקופות - זהה ל-P0077",
+  "nicknames": [
+   "מטפחות ריקוד צבעוניות"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "קישוטי גינה וריקוד",
+  "wholesale_price": 2.0,
+  "carton_qty": 800,
+  "stock_status": null
+ },
+ {
+  "id": "P0198",
+  "image_file": null,
+  "image_available": false,
+  "name": "מטפחות ריקוד צבעוניות - כחול/ירוק (חזרה)",
+  "description": "סט מטפחות ריקוד נוסף - זהה ל-P0078",
+  "nicknames": [
+   "מטפחות ריקוד צבעוניות"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "קישוטי גינה וריקוד",
+  "wholesale_price": 3.0,
+  "carton_qty": 1440,
+  "stock_status": null
+ },
+ {
+  "id": "P0199",
+  "image_file": null,
+  "image_available": false,
+  "name": "קלפי הפתעה סטיץ' - קופסת תצוגה (חזרה)",
+  "description": "קופסת תצוגה קלפי סטיץ' - זהה ל-P0079",
+  "nicknames": [
+   "קלפי הפתעה סטיץ'"
+  ],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 3.0,
+  "carton_qty": 1440,
+  "stock_status": null
+ },
+ {
+  "id": "P0200",
+  "image_file": "P0200.jpg",
+  "image_available": true,
+  "name": "קוביית פאזל קלפי כדורגל/סטארס (חזרה)",
+  "description": "קובייה מודפסת עם דמויות שחקנים - זהה ל-P0080",
+  "nicknames": [],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 1.0,
+  "carton_qty": 80,
+  "stock_status": null
+ },
+ {
+  "id": "P0201",
+  "image_file": null,
+  "image_available": false,
+  "name": "מאוורר יד מיני דובי (רך)",
+  "description": "מאוורר יד עם להבים רכים בעיצוב דובי",
+  "nicknames": [
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 0.7,
+  "carton_qty": 2400,
+  "stock_status": null
+ },
+ {
+  "id": "P0202",
+  "image_file": "P0202.jpg",
+  "image_available": true,
+  "name": "זר שושנים/חבצלות מלאכותי",
+  "description": "זר פרחי חבצלת מלאכותיים ורודים-לבנים",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 6.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0203",
+  "image_file": "P0203.jpg",
+  "image_available": true,
+  "name": "כרית/פטיש אוויר מתנפח כחול",
+  "description": "פטיש אוויר מתנפח לצעצוע, כחול",
+  "nicknames": [
+   "מנופח"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 4.0,
+  "carton_qty": 360,
+  "stock_status": null
+ },
+ {
+  "id": "P0204",
+  "image_file": "P0204.jpg",
+  "image_available": true,
+  "name": "משקפי שחייה - סט צבעים",
+  "description": "סט משקפי שחייה למבוגרים/ילדים, מגוון צבעים",
+  "nicknames": [
+   "משקפי שחייה"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 2.8,
+  "carton_qty": 576,
+  "stock_status": null
+ },
+ {
+  "id": "P0205",
+  "image_file": "P0205.jpg",
+  "image_available": true,
+  "name": "מאוורר יד מיני חיות - סט",
+  "description": "מאווררי יד בעיצובי חיות שונות (צפרדע, דוב פנדה)",
+  "nicknames": [
+   "מאוורר יד מיני חיות",
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 2.5,
+  "carton_qty": 576,
+  "stock_status": null
+ },
+ {
+  "id": "P0206",
+  "image_file": "P0206.jpg",
+  "image_available": true,
+  "name": "סרטי מתנה דקורטיביים - גליל",
+  "description": "גלילי סרטי קישוט צבעוניים למתנות",
+  "nicknames": [
+   "סרטי מתנה דקורטיביים"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 5.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0207",
+  "image_file": "P0207.jpg",
+  "image_available": true,
+  "name": "צמח דקורטיבי מלאכותי - שרך",
+  "description": "ענפי שרך/פרנים מלאכותיים לקישוט",
+  "nicknames": [
+   "צמח דקורטיבי מלאכותי"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 10.0,
+  "carton_qty": 200,
+  "stock_status": null
+ },
+ {
+  "id": "P0208",
+  "image_file": "P0208.jpg",
+  "image_available": true,
+  "name": "כתר פרחים LED לראש",
+  "description": "זר כתר פרחים עם תאורת LED צבעונית",
+  "nicknames": [],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 4.0,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0209",
+  "image_file": "P0209.jpg",
+  "image_available": true,
+  "name": "מאוורר יד אננס",
+  "description": "מאוורר יד מיני בעיצוב אננס",
+  "nicknames": [
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 12.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0210",
+  "image_file": "P0210.jpg",
+  "image_available": true,
+  "name": "מאווררי יד מיני - מארז תצוגה",
+  "description": "קופסת תצוגה עם מאווררי יד קטנים",
+  "nicknames": [
+   "מאווררי יד מיני"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 12.0,
+  "carton_qty": 100,
+  "stock_status": null
+ },
+ {
+  "id": "P0211",
+  "image_file": "P0211.jpg",
+  "image_available": true,
+  "name": "מאוורר יד סטיץ' - מארז תצוגה",
+  "description": "קופסת תצוגה מאווררי יד דמות סטיץ'",
+  "nicknames": [
+   "מאוורר יד סטיץ'",
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 2.5,
+  "carton_qty": 720,
+  "stock_status": null
+ },
+ {
+  "id": "P0212",
+  "image_file": "P0212.jpg",
+  "image_available": true,
+  "name": "מזרון מים מתנפח לבריכה - פסים",
+  "description": "מזרון ציפה מתנפח לבריכה/ים",
+  "nicknames": [
+   "מזרון מים מתנפח לבריכה",
+   "מנופח",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 2.5,
+  "carton_qty": 720,
+  "stock_status": null
+ },
+ {
+  "id": "P0213",
+  "image_file": "P0213.jpg",
+  "image_available": true,
+  "name": "מצוף בריכה דונאט שוקולד",
+  "description": "מצוף מתנפח בצורת דונאט שוקולד",
+  "nicknames": [
+   "מתנפח",
+   "מנופח",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 2.5,
+  "carton_qty": 720,
+  "stock_status": null
+ },
+ {
+  "id": "P0214",
+  "image_file": "P0214.jpg",
+  "image_available": true,
+  "name": "מאוורר יד נטען USB - חום",
+  "description": "מאוורר יד אישי נטען עם כבל USB",
+  "nicknames": [
+   "מאוורר יד נטען USB",
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 3.0,
+  "carton_qty": 576,
+  "stock_status": null
+ },
+ {
+  "id": "P0215",
+  "image_file": "P0215.jpg",
+  "image_available": true,
+  "name": "סט מאווררי יד נטענים - 3 צבעים",
+  "description": "מאווררי יד אישיים נטענים, מגוון צבעים פסטל",
+  "nicknames": [
+   "מאווררי יד נטענים"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 12.0,
+  "carton_qty": 36,
+  "stock_status": null
+ },
+ {
+  "id": "P0216",
+  "image_file": "P0216.jpg",
+  "image_available": true,
+  "name": "מזרון ציפה מתנפח לבריכה (חזרה)",
+  "description": "מזרון מתנפח פסים - זהה ל-P0212",
+  "nicknames": [
+   "מנופח",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 3.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0217",
+  "image_file": "P0217.jpg",
+  "image_available": true,
+  "name": "ענף שרך ירוק מלאכותי",
+  "description": "ענף צמח שרך מלאכותי לקישוט",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 12.0,
+  "carton_qty": 160,
+  "stock_status": null
+ },
+ {
+  "id": "P0218",
+  "image_file": "P0218.jpg",
+  "image_available": true,
+  "name": "צמחי תלייה מלאכותיים - 22 ס\"מ - סט 3",
+  "description": "שלושה ענפי צמח תלויים מלאכותיים",
+  "nicknames": [
+   "צמחי תלייה מלאכותיים"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "קישוטי גינה וריקוד",
+  "wholesale_price": 12.0,
+  "carton_qty": 150,
+  "stock_status": null
+ },
+ {
+  "id": "P0219",
+  "image_file": "P0219.jpg",
+  "image_available": true,
+  "name": "ענף פרחי שלגיה לבנים",
+  "description": "ענף פרחים לבנים קטנים מלאכותי",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 5.0,
+  "carton_qty": 360,
+  "stock_status": null
+ },
+ {
+  "id": "P0220",
+  "image_file": "P0220.jpg",
+  "image_available": true,
+  "name": "מניפה מתקפלת קשת בענן",
+  "description": "מניפת נייר מתקפלת בצבעי קשת",
+  "nicknames": [
+   "רינבו"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 8.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0221",
+  "image_file": "P0221.jpg",
+  "image_available": true,
+  "name": "מטריית נייר דקורטיבית לבנה",
+  "description": "מטריה יפנית מסורתית מנייר/במבוק",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 10.0,
+  "carton_qty": 300,
+  "stock_status": null
+ },
+ {
+  "id": "P0222",
+  "image_file": "P0222.jpg",
+  "image_available": true,
+  "name": "סט מטריות נייר צבעוניות קטנות",
+  "description": "מטריות נייר דקורטיביות קטנות, מגוון צבעים",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 5.0,
+  "carton_qty": 1000,
+  "stock_status": null
+ },
+ {
+  "id": "P0223",
+  "image_file": "P0223.jpg",
+  "image_available": true,
+  "name": "סט מניפות מתקפלות צבעוניות",
+  "description": "מניפות בד/נייר בצבעים שונים",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 10.0,
+  "carton_qty": 300,
+  "stock_status": null
+ },
+ {
+  "id": "P0224",
+  "image_file": "P0224.jpg",
+  "image_available": true,
+  "name": "מניפה מתקפלת אדומה",
+  "description": "מניפת בד מתקפלת אדומה קלאסית",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 4.5,
+  "carton_qty": 1000,
+  "stock_status": null
+ },
+ {
+  "id": "P0225",
+  "image_file": "P0225.jpg",
+  "image_available": true,
+  "name": "זר פרחי גבסופילה צבעוני (עיגול)",
+  "description": "סידור פרחי נשימת תינוק צבעוניים",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 2.5,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0226",
+  "image_file": "P0226.jpg",
+  "image_available": true,
+  "name": "מאווררי יד בצורת פירות - סט",
+  "description": "מאווררי יד מיני בצורות פירות שונות",
+  "nicknames": [
+   "מאווררי יד בצורת פירות"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 2.5,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0227",
+  "image_file": "P0227.jpg",
+  "image_available": true,
+  "name": "מאוורר יד מיני חד-קרן - סט",
+  "description": "מאווררי יד לחיצה בעיצוב חד-קרן",
+  "nicknames": [
+   "מאוורר יד מיני חד-קרן",
+   "מניפה",
+   "חד קרן",
+   "יוניקורן"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 7.5,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0228",
+  "image_file": "P0228.jpg",
+  "image_available": true,
+  "name": "מאוורר יד תפוז עם בועות",
+  "description": "מאוורר יד בעיצוב תפוז, מיוצר בועות סבון",
+  "nicknames": [
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 11.0,
+  "carton_qty": 200,
+  "stock_status": null
+ },
+ {
+  "id": "P0229",
+  "image_file": "P0229.jpg",
+  "image_available": true,
+  "name": "אקדח/שרביט בועות סטיץ' - מארז",
+  "description": "מארז תצוגה שרביטי בועות בעיצוב סטיץ'",
+  "nicknames": [
+   "אקדח/שרביט בועות סטיץ'"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 11.0,
+  "carton_qty": 200,
+  "stock_status": null
+ },
+ {
+  "id": "P0230",
+  "image_file": "P0230.jpg",
+  "image_available": true,
+  "name": "מאוורר בועות - מארז תצוגה",
+  "description": "קופסת תצוגה מאווררי בועות צעצוע",
+  "nicknames": [
+   "מאוורר בועות"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 4.5,
+  "carton_qty": 192,
+  "stock_status": null
+ },
+ {
+  "id": "P0231",
+  "image_file": "P0231.jpg",
+  "image_available": true,
+  "name": "מאוורר יד גלידה - מארז תצוגה",
+  "description": "קופסת תצוגה מאווררי יד בצורת גלידה",
+  "nicknames": [
+   "מאוורר יד גלידה",
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 4.5,
+  "carton_qty": 288,
+  "stock_status": null
+ },
+ {
+  "id": "P0232",
+  "image_file": "P0232.jpg",
+  "image_available": true,
+  "name": "מאוורר שולחני אוזני חתול - סט צבעים",
+  "description": "מאוורר שולחני קטן בעיצוב אוזני חתול",
+  "nicknames": [
+   "מאוורר שולחני אוזני חתול"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 2.75,
+  "carton_qty": 720,
+  "stock_status": null
+ },
+ {
+  "id": "P0233",
+  "image_file": "P0233.jpg",
+  "image_available": true,
+  "name": "מאוורר שולחני עם וו תליה שקט",
+  "description": "מאוורר שולחני קטן עם בסיס יניקה ותליה",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 2.5,
+  "carton_qty": 720,
+  "stock_status": null
+ },
+ {
+  "id": "P0234",
+  "image_file": "P0234.jpg",
+  "image_available": true,
+  "name": "מאוורר יד מיני בקופסה - ורוד",
+  "description": "מאוורר יד אישי בקופסת מתנה ורודה",
+  "nicknames": [
+   "מאוורר יד מיני בקופסה",
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 2.8,
+  "carton_qty": 576,
+  "stock_status": null
+ },
+ {
+  "id": "P0235",
+  "image_file": "P0235.jpg",
+  "image_available": true,
+  "name": "מאוורר יד USB נטען - תות",
+  "description": "מאוורר יד נטען עיצוב תות שדה",
+  "nicknames": [
+   "מאוורר יד USB נטען",
+   "מניפה"
+  ],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 2.8,
+  "carton_qty": 576,
+  "stock_status": null
+ },
+ {
+  "id": "P0236",
+  "image_file": "P0236.jpg",
+  "image_available": true,
+  "name": "צעצועי פלסטיק בעיצוב מזון מהיר - מארז",
+  "description": "קופסת תצוגה צעצועים בצורת המבורגר/צ'יפס",
+  "nicknames": [
+   "צעצועי פלסטיק בעיצוב מזון מהיר"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "מתנות וגאדג'טים",
+  "wholesale_price": 2.8,
+  "carton_qty": 576,
+  "stock_status": null
+ },
+ {
+  "id": "P0237",
+  "image_file": "P0237.jpg",
+  "image_available": true,
+  "name": "גיליונות מדבקות ילדים - סט",
+  "description": "חבילת גיליונות מדבקות מגוונות לילדים",
+  "nicknames": [
+   "גיליונות מדבקות ילדים"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "מתנות וגאדג'טים",
+  "wholesale_price": 6.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0238",
+  "image_file": "P0238.jpg",
+  "image_available": true,
+  "name": "פריט לבדיקה (תמונה לא ברורה)",
+  "description": "פריט מקטלוג, התמונה ריקה/לא ברורה, נדרשת בדיקה",
+  "nicknames": [],
+  "category": "לסיווג ידני",
+  "subcategory": "תמונה חסרה - נדרשת בדיקה",
+  "wholesale_price": 10.0,
+  "carton_qty": 168,
+  "stock_status": null
+ },
+ {
+  "id": "P0239",
+  "image_file": "P0239.jpg",
+  "image_available": true,
+  "name": "אקדח בועות סטיץ' חשמלי",
+  "description": "מכונת בועות בעיצוב סטיץ', פעולה בלחיצה",
+  "nicknames": [
+   "אקדח סבון",
+   "בועות סבון"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובועות",
+  "wholesale_price": 12.5,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0240",
+  "image_file": "P0240.jpg",
+  "image_available": true,
+  "name": "שרביט בועות חתול ורוד 21 ס\"מ",
+  "description": "מכונת בועות בעיצוב חתול, גובה 21 ס\"מ",
+  "nicknames": [],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 15.0,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0241",
+  "image_file": "P0241.jpg",
+  "image_available": true,
+  "name": "כדורגל הדפס דגלים - דגם 1",
+  "description": "כדורגל מעוטר בדגלי מדינות, דגם ירוק-אדום",
+  "nicknames": [
+   "כדורגל הדפס דגלים"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 0.7,
+  "carton_qty": 2400,
+  "stock_status": null
+ },
+ {
+  "id": "P0242",
+  "image_file": "P0242.jpg",
+  "image_available": true,
+  "name": "כדורגל הדפס דגלים - דגם 2 + כיסוי",
+  "description": "כדורגל הדפס דגלים עם כיסוי נוסף",
+  "nicknames": [
+   "כדורגל הדפס דגלים"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": null,
+  "carton_qty": null,
+  "stock_status": null
+ },
+ {
+  "id": "P0243",
+  "image_file": "P0243.jpg",
+  "image_available": true,
+  "name": "מחזיקי מפתחות שחקני כדורגל - סט",
+  "description": "סט מחזיקי מפתחות פיגורות שחקני כדורגל",
+  "nicknames": [
+   "מחזיקי מפתחות שחקני כדורגל"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 4.5,
+  "carton_qty": 192,
+  "stock_status": null
+ },
+ {
+  "id": "P0244",
+  "image_file": "P0244.jpg",
+  "image_available": true,
+  "name": "משאבת אוויר לאופניים/כדורים - עמוד",
+  "description": "משאבת רגל/יד גדולה לניפוח גלגלים וכדורים",
+  "nicknames": [
+   "משאבת אוויר לאופניים/כדורים"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 4.5,
+  "carton_qty": 192,
+  "stock_status": null
+ },
+ {
+  "id": "P0245",
+  "image_file": "P0245.jpg",
+  "image_available": true,
+  "name": "חישוק הולה הופ צבעוני",
+  "description": "חישוק התעמלות מפלסטיק צבעוני",
+  "nicknames": [],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 20.0,
+  "carton_qty": 100,
+  "stock_status": null
+ },
+ {
+  "id": "P0246",
+  "image_file": "P0246.jpg",
+  "image_available": true,
+  "name": "רצועת LED ניאון RGB - 5 מטר",
+  "description": "רצועת תאורת LED צבעונית עם שלט, 5 מ'",
+  "nicknames": [
+   "רצועת LED ניאון RGB",
+   "גלואו סטיק",
+   "זוהר",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 20.0,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0247",
+  "image_file": "P0247.jpg",
+  "image_available": true,
+  "name": "רצועת LED ניאון RGB - 10 מטר",
+  "description": "רצועת תאורת LED צבעונית עם שלט, 10 מ'",
+  "nicknames": [
+   "רצועת LED ניאון RGB",
+   "גלואו סטיק",
+   "זוהר",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 4.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0248",
+  "image_file": "P0248.jpg",
+  "image_available": true,
+  "name": "שרשרת דגלי מדינות לקישוט",
+  "description": "גירלנדת דגלי מדינות שונות לתלייה",
+  "nicknames": [],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 20.0,
+  "carton_qty": 100,
+  "stock_status": null
+ },
+ {
+  "id": "P0249",
+  "image_file": "P0249.jpg",
+  "image_available": true,
+  "name": "גביע ניצחון זהב - גדול",
+  "description": "גביע פלסטיק/מתכת מצופה זהב, ידיות מעוטרות",
+  "nicknames": [
+   "גביע ניצחון זהב"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 40.0,
+  "carton_qty": 40,
+  "stock_status": null
+ },
+ {
+  "id": "P0250",
+  "image_file": "P0250.jpg",
+  "image_available": true,
+  "name": "גביע ניצחון זהב - קלאסי",
+  "description": "גביע מצופה זהב בעיצוב קלאסי",
+  "nicknames": [
+   "גביע ניצחון זהב"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 75.0,
+  "carton_qty": 20,
+  "stock_status": null
+ },
+ {
+  "id": "P0251",
+  "image_file": "P0251.jpg",
+  "image_available": true,
+  "name": "כדורי כדורגל קטנים - לבן/צהוב/אדום",
+  "description": "כדורי כדורגל מיני בצבעים שונים",
+  "nicknames": [
+   "כדורי כדורגל קטנים"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 10.0,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0252",
+  "image_file": "P0252.jpg",
+  "image_available": true,
+  "name": "כדורי כדורגל קטנים - סט 6 צבעים",
+  "description": "סט כדורי כדורגל מיני צבעוניים",
+  "nicknames": [
+   "כדורי כדורגל קטנים"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 60.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0253",
+  "image_file": "P0253.jpg",
+  "image_available": true,
+  "name": "כדור כדורגל הדפס מיוחד - זוג 1",
+  "description": "זוג כדורי כדורגל בהדפס צבעוני",
+  "nicknames": [
+   "כדור כדורגל הדפס מיוחד"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 4.0,
+  "carton_qty": 200,
+  "stock_status": null
+ },
+ {
+  "id": "P0254",
+  "image_file": "P0254.jpg",
+  "image_available": true,
+  "name": "כדור כדורגל הדפס מיוחד - זוג 2",
+  "description": "זוג כדורי כדורגל בהדפס נוסף",
+  "nicknames": [
+   "כדור כדורגל הדפס מיוחד"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 18.0,
+  "carton_qty": 200,
+  "stock_status": null
+ },
+ {
+  "id": "P0255",
+  "image_file": "P0255.jpg",
+  "image_available": true,
+  "name": "שרשרת דגלי מדינות לקישוט (חזרה)",
+  "description": "גירלנדת דגלים - זהה ל-P0248",
+  "nicknames": [],
+  "category": "מסיבות ואירועים",
+  "subcategory": "בלונים וקישוטי מסיבה",
+  "wholesale_price": 13.0,
+  "carton_qty": 300,
+  "stock_status": null
+ },
+ {
+  "id": "P0256",
+  "image_file": "P0256.jpg",
+  "image_available": true,
+  "name": "מסכת תחפושת שחורה באריזה",
+  "description": "מסכת קוסטיום גומי שחורה, עם תווית",
+  "nicknames": [
+   "קוסטיום",
+   "מסכה",
+   "מסיכה"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 10.0,
+  "carton_qty": 96,
+  "stock_status": null
+ },
+ {
+  "id": "P0257",
+  "image_file": null,
+  "image_available": false,
+  "name": "עפיפון משולש קשת בענן גדול",
+  "description": "עפיפון בד צבעוני בצורת משולש עם זנבות",
+  "nicknames": [
+   "רינבו"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 9.0,
+  "carton_qty": 96,
+  "stock_status": null
+ },
+ {
+  "id": "P0258",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט עפיפונים משולשים - דמויות",
+  "description": "סט עפיפונים בעיצובי דמויות שונות",
+  "nicknames": [
+   "עפיפונים משולשים"
+  ],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 3.5,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0259",
+  "image_file": "P0259.jpg",
+  "image_available": true,
+  "name": "עפיפון נשר/כריש מעוטר",
+  "description": "עפיפון גדול בעיצוב נשר וכריש",
+  "nicknames": [],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 4.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0260",
+  "image_file": "P0260.jpg",
+  "image_available": true,
+  "name": "מסכת/קסדת תחפושת באריזה",
+  "description": "אביזר תחפושת ראש באריזת בלון, נושא חוץ-ביתי",
+  "nicknames": [
+   "קוסטיום",
+   "מסכה",
+   "מסיכה"
+  ],
+  "category": "תחפושות ופורים",
+  "subcategory": "אביזרי תחפושת ונשק צעצוע",
+  "wholesale_price": 25.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0261",
+  "image_file": "P0261.jpg",
+  "image_available": true,
+  "name": "זר ראש פרחים לבן",
+  "description": "כתר/זר פרחי קיץ לבנים לראש",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": 15.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0262",
+  "image_file": "P0262.jpg",
+  "image_available": true,
+  "name": "אקדח בועות אדום עם נוזל",
+  "description": "אקדח בועות חשמלי אדום, כולל בקבוקון נוזל",
+  "nicknames": [
+   "אקדח סבון",
+   "בועות סבון"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובועות",
+  "wholesale_price": 7.5,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0263",
+  "image_file": "P0263.jpg",
+  "image_available": true,
+  "name": "משחק הרפתקאות תנין - מארז",
+  "description": "קופסת משחק שולחני בנושא תנין/הרפתקה",
+  "nicknames": [
+   "משחק הרפתקאות תנין"
+  ],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 4.5,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0264",
+  "image_file": "P0264.jpg",
+  "image_available": true,
+  "name": "קלפי הפתעה סטיץ' - מארז (חזרה)",
+  "description": "קופסת תצוגה קלפי סטיץ' נוספת",
+  "nicknames": [
+   "קלפי הפתעה סטיץ'"
+  ],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 6.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0265",
+  "image_file": "P0265.jpg",
+  "image_available": true,
+  "name": "משחק תנין שיניים בקופסה",
+  "description": "משחק 'אל תעיר את התנין' בקופסה",
+  "nicknames": [],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "מתנות וגאדג'טים",
+  "wholesale_price": 8.0,
+  "carton_qty": 300,
+  "stock_status": null
+ },
+ {
+  "id": "P0266",
+  "image_file": "P0266.jpg",
+  "image_available": true,
+  "name": "אקדח בועות פיקאצ'ו צהוב",
+  "description": "אקדח בועות חשמלי בעיצוב פיקאצ'ו",
+  "nicknames": [
+   "אקדח סבון",
+   "בועות סבון",
+   "פוקימון"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "פיגורות ומחזיקי מפתחות",
+  "wholesale_price": 10.0,
+  "carton_qty": 36,
+  "stock_status": null
+ },
+ {
+  "id": "P0267",
+  "image_file": "P0267.jpg",
+  "image_available": true,
+  "name": "אקדח בועות סטיץ' כחול",
+  "description": "אקדח בועות חשמלי בעיצוב סטיץ'",
+  "nicknames": [
+   "אקדח סבון",
+   "בועות סבון"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובועות",
+  "wholesale_price": 8.0,
+  "carton_qty": 48,
+  "stock_status": null
+ },
+ {
+  "id": "P0268",
+  "image_file": "P0268.jpg",
+  "image_available": true,
+  "name": "אקדח בועות שקוף עם נוזל - בליסטר",
+  "description": "אקדח בועות שקוף עם בקבוקון נוזל באריזת בליסטר",
+  "nicknames": [
+   "אקדח בועות שקוף עם נוזל",
+   "אקדח סבון",
+   "בועות סבון"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובועות",
+  "wholesale_price": 7.0,
+  "carton_qty": 36,
+  "stock_status": null
+ },
+ {
+  "id": "P0269",
+  "image_file": "P0269.jpg",
+  "image_available": true,
+  "name": "כדורי ספוג מים מרושתים - מארז",
+  "description": "מארז 12 כדורי ספוג סופגי מים, רשת",
+  "nicknames": [
+   "כדורי ספוג מים מרושתים",
+   "קצף",
+   "כדורי קצף"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 9.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0270",
+  "image_file": "P0270.jpg",
+  "image_available": true,
+  "name": "מקלות בועות ענק - סט",
+  "description": "סט מקלות לבועות סבון ענקיות",
+  "nicknames": [
+   "מקלות בועות ענק"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובועות",
+  "wholesale_price": 10.0,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0271",
+  "image_file": "P0271.jpg",
+  "image_available": true,
+  "name": "אקדח בועות דוב חום",
+  "description": "אקדח בועות חשמלי בעיצוב דובי חום",
+  "nicknames": [
+   "אקדח סבון",
+   "בועות סבון"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובועות",
+  "wholesale_price": 15.0,
+  "carton_qty": 36,
+  "stock_status": null
+ },
+ {
+  "id": "P0272",
+  "image_file": "P0272.jpg",
+  "image_available": true,
+  "name": "אקדח בועות ארנב - 3 צבעים",
+  "description": "סט אקדחי בועות חשמליים בעיצוב ארנב",
+  "nicknames": [
+   "אקדח בועות ארנב",
+   "אקדח סבון",
+   "בועות סבון"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "פיגורות ומחזיקי מפתחות",
+  "wholesale_price": 15.0,
+  "carton_qty": 36,
+  "stock_status": null
+ },
+ {
+  "id": "P0273",
+  "image_file": "P0273.jpg",
+  "image_available": true,
+  "name": "כדורי קפיצה דקורטיביים נוצצים - סט",
+  "description": "כדורי קפיצה שקופים עם נצנצים בפנים",
+  "nicknames": [
+   "כדורי קפיצה דקורטיביים נוצצים"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 15.0,
+  "carton_qty": 36,
+  "stock_status": null
+ },
+ {
+  "id": "P0274",
+  "image_file": "P0274.jpg",
+  "image_available": true,
+  "name": "בקבוק נוזל בועות 'Happy Bubble'",
+  "description": "בקבוק מילוי נוזל סבון לבועות",
+  "nicknames": [],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובועות",
+  "wholesale_price": 15.0,
+  "carton_qty": 36,
+  "stock_status": null
+ },
+ {
+  "id": "P0275",
+  "image_file": "P0275.jpg",
+  "image_available": true,
+  "name": "כדורי ג'ל לחיצה מרושתים - מארז",
+  "description": "מארז כדורי ג'ל אנטי-סטרס ברשת",
+  "nicknames": [
+   "כדורי ג'ל לחיצה מרושתים"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 3.5,
+  "carton_qty": 96,
+  "stock_status": null
+ },
+ {
+  "id": "P0276",
+  "image_file": "P0276.jpg",
+  "image_available": true,
+  "name": "קוביות ספוג צהובות - סט",
+  "description": "סט קוביות ספוג צהוב לחיצה",
+  "nicknames": [
+   "קוביות ספוג צהובות"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 5.0,
+  "carton_qty": 20,
+  "stock_status": null
+ },
+ {
+  "id": "P0277",
+  "image_file": "P0277.jpg",
+  "image_available": true,
+  "name": "סקוויש ארנב בקופסה - 6 יח'",
+  "description": "צעצועי סקוויש בעיצוב ארנב, מארז 6",
+  "nicknames": [
+   "סקוויש ארנב בקופסה"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "פיגורות ומחזיקי מפתחות",
+  "wholesale_price": 2.5,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0278",
+  "image_file": "P0278.jpg",
+  "image_available": true,
+  "name": "בוץ קסם (סלים) דלי רב-צבעי",
+  "description": "דלי בוץ קסם מחולק לצבעים",
+  "nicknames": [
+   "סליים",
+   "ג'לי"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 2.0,
+  "carton_qty": 288,
+  "stock_status": null
+ },
+ {
+  "id": "P0279",
+  "image_file": "P0279.jpg",
+  "image_available": true,
+  "name": "בוץ קסם 2 צנצנות גלגל צבעים",
+  "description": "שני קופסאות בוץ קסם מעורב",
+  "nicknames": [
+   "סלים",
+   "סליים",
+   "ג'לי"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 1.6,
+  "carton_qty": 288,
+  "stock_status": null
+ },
+ {
+  "id": "P0280",
+  "image_file": "P0280.jpg",
+  "image_available": true,
+  "name": "בוץ קסם דלי 6 צבעים - 125 יח'",
+  "description": "דלי בוץ קסם גדול, 6 צבעים, 125 יחידות",
+  "nicknames": [
+   "בוץ קסם דלי 6 צבעים",
+   "סלים",
+   "סליים",
+   "ג'לי"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 2.5,
+  "carton_qty": 288,
+  "stock_status": null
+ },
+ {
+  "id": "P0281",
+  "image_file": "P0281.jpg",
+  "image_available": true,
+  "name": "חימר אוויר 12 צבעים - סט",
+  "description": "סט חתיכות חימר אוויר רך, 12 צבעים, עם כלי עיצוב",
+  "nicknames": [
+   "חימר אוויר 12 צבעים",
+   "סלים",
+   "סליים",
+   "ג'לי",
+   "בוץ"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 2.5,
+  "carton_qty": 288,
+  "stock_status": null
+ },
+ {
+  "id": "P0282",
+  "image_file": "P0282.jpg",
+  "image_available": true,
+  "name": "סט סלים 3D תנין - 5 צנצנות",
+  "description": "אריזת 5 צנצנות סלים נושא תנין",
+  "nicknames": [
+   "סלים 3D תנין",
+   "סליים",
+   "ג'לי",
+   "בוץ"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 6.0,
+  "carton_qty": 48,
+  "stock_status": null
+ },
+ {
+  "id": "P0283",
+  "image_file": "P0283.jpg",
+  "image_available": true,
+  "name": "כדורי סלים קריסטל - מארז תצוגה",
+  "description": "קופסת תצוגה כדורי סלים בעיצוב פנדה/דובים",
+  "nicknames": [
+   "כדורי סלים קריסטל",
+   "סליים",
+   "ג'לי",
+   "בוץ"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 4.0,
+  "carton_qty": 80,
+  "stock_status": null
+ },
+ {
+  "id": "P0284",
+  "image_file": "P0284.jpg",
+  "image_available": true,
+  "name": "בוץ קריסטל (Crystal Mud) - מארז צינורות",
+  "description": "קופסת תצוגה צינורות בוץ קריסטל נוצץ, נושא ארנב",
+  "nicknames": [
+   "בוץ קריסטל (Crystal Mud)",
+   "סלים",
+   "סליים",
+   "ג'לי"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 3.0,
+  "carton_qty": 125,
+  "stock_status": null
+ },
+ {
+  "id": "P0285",
+  "image_file": "P0285.jpg",
+  "image_available": true,
+  "name": "פריט לבדיקה (תמונה חסרה)",
+  "description": "פריט מקטלוג, התמונה לא נשמרה כראוי - נדרשת בדיקה",
+  "nicknames": [],
+  "category": "לסיווג ידני",
+  "subcategory": "תמונה חסרה - נדרשת בדיקה",
+  "wholesale_price": 6.0,
+  "carton_qty": 56,
+  "stock_status": null
+ },
+ {
+  "id": "P0286",
+  "image_file": "P0286.jpg",
+  "image_available": true,
+  "name": "סלים 5 צנצנות עם חץ הדגמה",
+  "description": "אריזת 5 צנצנות סלים צבעוני",
+  "nicknames": [
+   "סליים",
+   "ג'לי",
+   "בוץ"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 4.0,
+  "carton_qty": 96,
+  "stock_status": null
+ },
+ {
+  "id": "P0287",
+  "image_file": "P0287.jpg",
+  "image_available": true,
+  "name": "סלים צנצנות מעורבות - מגוון דמויות",
+  "description": "צנצנות סלים בודדות, מגוון צבעים ודמויות",
+  "nicknames": [
+   "סלים צנצנות מעורבות",
+   "סליים",
+   "ג'לי",
+   "בוץ"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 7.5,
+  "carton_qty": 96,
+  "stock_status": null
+ },
+ {
+  "id": "P0288",
+  "image_file": "P0288.jpg",
+  "image_available": true,
+  "name": "בוץ קריסטל - מארז צינורות (חזרה)",
+  "description": "קופסת תצוגה צינורות בוץ קריסטל - זהה ל-P0284",
+  "nicknames": [
+   "בוץ קריסטל",
+   "סלים",
+   "סליים",
+   "ג'לי"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 2.0,
+  "carton_qty": 200,
+  "stock_status": null
+ },
+ {
+  "id": "P0289",
+  "image_file": "P0289.jpg",
+  "image_available": true,
+  "name": "פריט לבדיקה (תמונה חסרה)",
+  "description": "פריט מקטלוג, התמונה לא נשמרה כראוי - נדרשת בדיקה",
+  "nicknames": [],
+  "category": "לסיווג ידני",
+  "subcategory": "תמונה חסרה - נדרשת בדיקה",
+  "wholesale_price": 2.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0290",
+  "image_file": "P0290.jpg",
+  "image_available": true,
+  "name": "בוץ קריסטל - מארז צינורות (חזרה 2)",
+  "description": "קופסת תצוגה צינורות בוץ קריסטל - זהה ל-P0284",
+  "nicknames": [
+   "בוץ קריסטל",
+   "סלים",
+   "סליים",
+   "ג'לי"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 3.5,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0291",
+  "image_file": "P0291.jpg",
+  "image_available": true,
+  "name": "פריט לבדיקה (תמונה חסרה)",
+  "description": "פריט מקטלוג, התמונה לא נשמרה כראוי - נדרשת בדיקה",
+  "nicknames": [],
+  "category": "לסיווג ידני",
+  "subcategory": "תמונה חסרה - נדרשת בדיקה",
+  "wholesale_price": null,
+  "carton_qty": null,
+  "stock_status": null
+ },
+ {
+  "id": "P0292",
+  "image_file": "P0292.jpg",
+  "image_available": true,
+  "name": "בוץ קריסטל - מארז צינורות (חזרה 3)",
+  "description": "קופסת תצוגה צינורות בוץ קריסטל - זהה ל-P0284",
+  "nicknames": [
+   "בוץ קריסטל",
+   "סלים",
+   "סליים",
+   "ג'לי"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 3.5,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0293",
+  "image_file": "P0293.jpg",
+  "image_available": true,
+  "name": "פריט לבדיקה (תמונה חסרה)",
+  "description": "פריט מקטלוג, התמונה לא נשמרה כראוי - נדרשת בדיקה",
+  "nicknames": [],
+  "category": "לסיווג ידני",
+  "subcategory": "תמונה חסרה - נדרשת בדיקה",
+  "wholesale_price": 3.5,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0294",
+  "image_file": "P0294.jpg",
+  "image_available": true,
+  "name": "בוץ קריסטל - מארז צינורות ירח (חזרה)",
+  "description": "קופסת תצוגה צינורות בוץ קריסטל - זהה ל-P0284",
+  "nicknames": [
+   "בוץ קריסטל",
+   "סלים",
+   "סליים",
+   "ג'לי"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 3.5,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0295",
+  "image_file": "P0295.jpg",
+  "image_available": true,
+  "name": "פריט לבדיקה (תמונה חסרה)",
+  "description": "פריט מקטלוג, התמונה לא נשמרה כראוי - נדרשת בדיקה",
+  "nicknames": [],
+  "category": "לסיווג ידני",
+  "subcategory": "תמונה חסרה - נדרשת בדיקה",
+  "wholesale_price": 3.5,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0296",
+  "image_file": "P0296.jpg",
+  "image_available": true,
+  "name": "בוץ קריסטל צינורות בודדים - ערימה",
+  "description": "צינורות בוץ קריסטל נוצץ, צבעים שונים, ללא קופסה",
+  "nicknames": [
+   "בוץ קריסטל צינורות בודדים",
+   "סלים",
+   "סליים",
+   "ג'לי"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 3.5,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0297",
+  "image_file": "P0297.jpg",
+  "image_available": true,
+  "name": "פריט לבדיקה (תמונה חסרה)",
+  "description": "פריט מקטלוג, התמונה לא נשמרה כראוי - נדרשת בדיקה",
+  "nicknames": [],
+  "category": "לסיווג ידני",
+  "subcategory": "תמונה חסרה - נדרשת בדיקה",
+  "wholesale_price": 3.5,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0298",
+  "image_file": "P0298.jpg",
+  "image_available": true,
+  "name": "בוץ קריסטל - מארז צינורות (חזרה 4)",
+  "description": "קופסת תצוגה צינורות בוץ קריסטל - זהה ל-P0284",
+  "nicknames": [
+   "בוץ קריסטל",
+   "סלים",
+   "סליים",
+   "ג'לי"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": null,
+  "carton_qty": null,
+  "stock_status": null
+ },
+ {
+  "id": "P0299",
+  "image_file": "P0299.jpg",
+  "image_available": true,
+  "name": "מקלות ארוכים שחורים - זוג",
+  "description": "פריט מקלות/אביזרי הרכבה דקים - נדרש בדיקה",
+  "nicknames": [
+   "מקלות ארוכים שחורים"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": null,
+  "carton_qty": null,
+  "stock_status": null
+ },
+ {
+  "id": "P0300",
+  "image_file": "P0300.jpg",
+  "image_available": true,
+  "name": "צעצועי רקטה מאירה LED - 6 יח'",
+  "description": "צעצועי שיגור רקטה מאירה בצינורות, מגוון צבעים",
+  "nicknames": [
+   "צעצועי רקטה מאירה LED"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": null,
+  "carton_qty": null,
+  "stock_status": null
+ },
+ {
+  "id": "P0301",
+  "image_file": "P0301.jpg",
+  "image_available": true,
+  "name": "סט גומיות לורם (Loom Bands) פרחוניות",
+  "description": "סט גומיות צבעוניות ליצירת צמידים, צורת פרח",
+  "nicknames": [],
+  "category": "קיץ וקישוט",
+  "subcategory": "מאווררים וקישוטי קיץ",
+  "wholesale_price": null,
+  "carton_qty": null,
+  "stock_status": null
+ },
+ {
+  "id": "P0302",
+  "image_file": "P0302.jpg",
+  "image_available": true,
+  "name": "סלים בצינור ירוק-אדום",
+  "description": "צינור סלים דו-גוני ירוק ואדום",
+  "nicknames": [
+   "סליים",
+   "ג'לי",
+   "בוץ"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": null,
+  "carton_qty": null,
+  "stock_status": null
+ },
+ {
+  "id": "P0303",
+  "image_file": "P0303.jpg",
+  "image_available": true,
+  "name": "דלי בוץ קסם צהוב",
+  "description": "דלי בוץ קסם צהוב גדול",
+  "nicknames": [
+   "סלים",
+   "סליים",
+   "ג'לי"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": null,
+  "carton_qty": null,
+  "stock_status": null
+ },
+ {
+  "id": "P0304",
+  "image_file": "P0304.jpg",
+  "image_available": true,
+  "name": "רקטת LED מעופפת עם להבים",
+  "description": "צעצוע רקטה מאירה הנורית בעזרת חוט/קפיץ",
+  "nicknames": [],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 3.5,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0305",
+  "image_file": "P0305.jpg",
+  "image_available": true,
+  "name": "סלים בצינורות רב-גוניים - סט",
+  "description": "סט צינורות סלים דו-גוניים, צבעים שונים",
+  "nicknames": [
+   "סלים בצינורות רב-גוניים",
+   "סליים",
+   "ג'לי",
+   "בוץ"
+  ],
+  "category": "צעצועי חישה (Sensory)",
+  "subcategory": "סלים ובוצי קסם",
+  "wholesale_price": 3.5,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0306",
+  "image_file": "P0306.jpg",
+  "image_available": true,
+  "name": "פריט לבדיקה (תמונה חסרה)",
+  "description": "פריט מקטלוג, התמונה לא נשמרה כראוי - נדרשת בדיקה",
+  "nicknames": [],
+  "category": "לסיווג ידני",
+  "subcategory": "תמונה חסרה - נדרשת בדיקה",
+  "wholesale_price": 5.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0307",
+  "image_file": "P0307.jpg",
+  "image_available": true,
+  "name": "סט פריזבי מעופף - 4 צבעים",
+  "description": "אריזת 4 צלחות פריזבי בצבעים שונים",
+  "nicknames": [
+   "פריזבי מעופף"
+  ],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 5.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0308",
+  "image_file": "P0308.jpg",
+  "image_available": true,
+  "name": "מסוקוני קצף מעופפים - סט",
+  "description": "סט מסוקוני קצף נזרקים (UFO spinners)",
+  "nicknames": [
+   "מסוקוני קצף מעופפים",
+   "הליקופטר"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 6.0,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0309",
+  "image_file": "P0309.jpg",
+  "image_available": true,
+  "name": "מסוקוני קצף מעופפים בשמיים",
+  "description": "צילום שימוש במסוקוני קצף מעופפים",
+  "nicknames": [
+   "הליקופטר"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 1.2,
+  "carton_qty": 1200,
+  "stock_status": null
+ },
+ {
+  "id": "P0310",
+  "image_file": "P0310.jpg",
+  "image_available": true,
+  "name": "צעצועי דמויות נדבקות (Sticky Hands) - סט",
+  "description": "סט דמויות גומי נדבקות לזריקה על קיר",
+  "nicknames": [
+   "צעצועי דמויות נדבקות (Sticky Hands)"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "מתנות וגאדג'טים",
+  "wholesale_price": null,
+  "carton_qty": null,
+  "stock_status": null
+ },
+ {
+  "id": "P0311",
+  "image_file": "P0311.jpg",
+  "image_available": true,
+  "name": "רקטת LED מעופפת (חזרה)",
+  "description": "צעצוע רקטה מאירה - זהה ל-P0304",
+  "nicknames": [],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 1.2,
+  "carton_qty": 1200,
+  "stock_status": null
+ },
+ {
+  "id": "P0312",
+  "image_file": "P0312.jpg",
+  "image_available": true,
+  "name": "פריזבי מעופף בודד - 4 צבעים",
+  "description": "צלחות פריזבי בודדות בצבעים שונים",
+  "nicknames": [
+   "פריזבי מעופף בודד"
+  ],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 5.0,
+  "carton_qty": 144,
+  "stock_status": null
+ },
+ {
+  "id": "P0313",
+  "image_file": "P0313.jpg",
+  "image_available": true,
+  "name": "מדליות זהב על סרט - סט",
+  "description": "סט מדליות זהב לפרסים על סרט תלת-צבעי",
+  "nicknames": [
+   "מדליות זהב על סרט"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 0.3,
+  "carton_qty": 5000,
+  "stock_status": null
+ },
+ {
+  "id": "P0314",
+  "image_file": "P0314.jpg",
+  "image_available": true,
+  "name": "ידיים נדבקות (Sticky Hands) - 3 צבעים",
+  "description": "כפות יד גומי נדבקות, 3 צבעים",
+  "nicknames": [
+   "ידיים נדבקות (Sticky Hands)"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "מתנות וגאדג'טים",
+  "wholesale_price": 0.4,
+  "carton_qty": 1000,
+  "stock_status": null
+ },
+ {
+  "id": "P0315",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט מחבטי משחק כדור - עם חוט",
+  "description": "מחבטים עם כדור על חוט אלסטי",
+  "nicknames": [
+   "מחבטי משחק כדור"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 2.5,
+  "carton_qty": 300,
+  "stock_status": null
+ },
+ {
+  "id": "P0316",
+  "image_file": "P0316.jpg",
+  "image_available": true,
+  "name": "סט טניס שולחן בתיק נשיאה",
+  "description": "מחבטי פינג פונג + כדורים בתיק",
+  "nicknames": [],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 0.4,
+  "carton_qty": 3000,
+  "stock_status": null
+ },
+ {
+  "id": "P0317",
+  "image_file": "P0317.jpg",
+  "image_available": true,
+  "name": "סט מחבטי טניס שולחן - דגם 1",
+  "description": "סט מחבטים+כדורים בבליסטר",
+  "nicknames": [
+   "מחבטי טניס שולחן"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 0.4,
+  "carton_qty": 3000,
+  "stock_status": null
+ },
+ {
+  "id": "P0318",
+  "image_file": "P0318.jpg",
+  "image_available": true,
+  "name": "סט מחבטי טניס שולחן - דגם 2",
+  "description": "סט מחבטים+כדורים+רשת בבליסטר",
+  "nicknames": [
+   "מחבטי טניס שולחן"
+  ],
+  "category": "ספורט ומשחקי חוץ",
+  "subcategory": "כדורים וציוד ספורט",
+  "wholesale_price": 0.7,
+  "carton_qty": 1200,
+  "stock_status": null
+ },
+ {
+  "id": "P0319",
+  "image_file": "P0319.jpg",
+  "image_available": true,
+  "name": "אקדח מים כחול-שחור גדול (חזרה)",
+  "description": "אקדח מים גדול - דומה ל-P0082",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 7.5,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0320",
+  "image_file": "P0320.jpg",
+  "image_available": true,
+  "name": "אקדח מים לבן-כתום גדול (חזרה)",
+  "description": "אקדח מים גדול - דומה ל-P0083",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 8.0,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0321",
+  "image_file": "P0321.jpg",
+  "image_available": true,
+  "name": "סט 2 אקדחי מים קטנים בשקית (חזרה)",
+  "description": "שני אקדחי מים קטנים - זהה ל-P0084",
+  "nicknames": [],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 18.0,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0322",
+  "image_file": "P0322.jpg",
+  "image_available": true,
+  "name": "סט אקדחי מים שקופים - 3 יח' (חזרה)",
+  "description": "שלושה אקדחי מים שקופים - זהה ל-P0090",
+  "nicknames": [
+   "אקדחי מים שקופים"
+  ],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 12.0,
+  "carton_qty": 50,
+  "stock_status": null
+ },
+ {
+  "id": "P0323",
+  "image_file": null,
+  "image_available": false,
+  "name": "אקדח מים ירוק-כתום (חזרה)",
+  "description": "אקדח מים - זהה ל-P0084 דגם",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 5.0,
+  "carton_qty": 192,
+  "stock_status": null
+ },
+ {
+  "id": "P0324",
+  "image_file": "P0324.jpg",
+  "image_available": true,
+  "name": "אקדח מים לבן לחוף - WATER GUN (חזרה)",
+  "description": "אקדח מים גדול לבן - זהה ל-P0089",
+  "nicknames": [
+   "אקדח מים לבן לחוף",
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 25.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0325",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט מכוניות מירוץ במארז תצוגה (חזרה)",
+  "description": "מארז מכוניות דיקאסט - זהה ל-P0091",
+  "nicknames": [],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "מתנות וגאדג'טים",
+  "wholesale_price": 7.5,
+  "carton_qty": 96,
+  "stock_status": null
+ },
+ {
+  "id": "P0326",
+  "image_file": "P0326.jpg",
+  "image_available": true,
+  "name": "אקדח מים חשמלי אדום (חזרה)",
+  "description": "אקדח מים חשמלי גדול - זהה ל-P0092",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 0.8,
+  "carton_qty": 1200,
+  "stock_status": null
+ },
+ {
+  "id": "P0327",
+  "image_file": null,
+  "image_available": false,
+  "name": "אקדח מים פיקאצ'ו על מקל",
+  "description": "אקדח מים בעיצוב פיקאצ'ו על ידית ארוכה",
+  "nicknames": [
+   "ספריי מים",
+   "פוקימון"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 2.0,
+  "carton_qty": 600,
+  "stock_status": null
+ },
+ {
+  "id": "P0328",
+  "image_file": null,
+  "image_available": false,
+  "name": "אקדח מים שמיים כחול 900 מ\"ל (חזרה)",
+  "description": "אקדח מים גדול 900 מ\"ל - זהה ל-P0085",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 25.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0329",
+  "image_file": null,
+  "image_available": false,
+  "name": "אקדח מים אסטרונאוט (חזרה)",
+  "description": "אקדח מים עיצוב חלל - זהה ל-P0086",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 9.0,
+  "carton_qty": 120,
+  "stock_status": null
+ },
+ {
+  "id": "P0330",
+  "image_file": null,
+  "image_available": false,
+  "name": "אקדח מים נושא חוף (חזרה)",
+  "description": "אקדח מים עיצוב חוף - זהה ל-P0087",
+  "nicknames": [
+   "ספריי מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 25.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0331",
+  "image_file": null,
+  "image_available": false,
+  "name": "סט אקדחי מים שקופים קטנים - זוג (חזרה)",
+  "description": "שני אקדחי מים שקופים - דומה ל-P0090",
+  "nicknames": [
+   "אקדחי מים שקופים קטנים"
+  ],
+  "category": "כללי",
+  "subcategory": "לסיווג ידני",
+  "wholesale_price": 17.5,
+  "carton_qty": 48,
+  "stock_status": null
+ },
+ {
+  "id": "P0332",
+  "image_file": "P0332.jpg",
+  "image_available": true,
+  "name": "רובוט טרנספורמר לגו - חייזר על (חזרה 3)",
+  "description": "סט בנייה לגו - זהה ל-P0001",
+  "nicknames": [
+   "רובוט טרנספורמר לגו",
+   "קוביות",
+   "הרכבה"
+  ],
+  "category": "צעצועי בנייה ורכבים",
+  "subcategory": "סטים להרכבה / לגו",
+  "wholesale_price": 20.0,
+  "carton_qty": 72,
+  "stock_status": null
+ },
+ {
+  "id": "P0333",
+  "image_file": null,
+  "image_available": false,
+  "name": "קוביית קסם 3x3 (Speed Cube)",
+  "description": "קובייה הונגרית קלאסית 3x3",
+  "nicknames": [],
+  "category": "צעצועים ומשחקים",
+  "subcategory": "חידות ומשחקי שולחן",
+  "wholesale_price": 5.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0334",
+  "image_file": null,
+  "image_available": false,
+  "name": "ארנבון פלאש מהלך - ורוד",
+  "description": "צעצוע ארנב פרוותי הולך/מקפיץ עם סוללות",
+  "nicknames": [
+   "ארנבון פלאש מהלך"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "פיגורות ומחזיקי מפתחות",
+  "wholesale_price": 10.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0335",
+  "image_file": "P0335.jpg",
+  "image_available": true,
+  "name": "סט כלבי משחק מהלכים - 4 יח'",
+  "description": "סט כלבי צעצוע פרוותיים מהלכים",
+  "nicknames": [
+   "כלבי משחק מהלכים"
+  ],
+  "category": "צעצועים ומתנות קטנות",
+  "subcategory": "פיגורות ומחזיקי מפתחות",
+  "wholesale_price": 10.0,
+  "carton_qty": 240,
+  "stock_status": null
+ },
+ {
+  "id": "P0336",
+  "image_file": "P0336.jpg",
+  "image_available": true,
+  "name": "מקלות קצף זוהרים LED מתחלפים - סט",
+  "description": "מקלות קצף עם תאורת LED מתחלפת אוטומטית, 48 ס\"מ",
+  "nicknames": [
+   "מקלות קצף זוהרים LED מתחלפים",
+   "גלואו סטיק",
+   "צמיד זוהר"
+  ],
+  "category": "צעצועים מאירים",
+  "subcategory": "מקלות וכלי תאורה",
+  "wholesale_price": 5.0,
+  "carton_qty": 108,
+  "stock_status": null
+ },
+ {
+  "id": "P0337",
+  "image_file": null,
+  "image_available": false,
+  "name": "משקפי שחייה INTEX - זוג בכרטיס",
+  "description": "משקפי שחייה למבוגר/נער, מותג INTEX",
+  "nicknames": [
+   "משקפי שחייה INTEX"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 60.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0338",
+  "image_file": "P0338.jpg",
+  "image_available": true,
+  "name": "סט משקפי שחייה ילדים - 3 צבעים",
+  "description": "משקפי שחייה לילדים, מגוון צבעים",
+  "nicknames": [
+   "משקפי שחייה ילדים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 1.8,
+  "carton_qty": 400,
+  "stock_status": null
+ },
+ {
+  "id": "P0339",
+  "image_file": "P0339.jpg",
+  "image_available": true,
+  "name": "מסכת צלילה + שנורקל ירוק",
+  "description": "מסכת צלילה עם שנורקל מחובר, ירוק",
+  "nicknames": [
+   "מסכה",
+   "מסיכה"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 10.0,
+  "carton_qty": 140,
+  "stock_status": null
+ },
+ {
+  "id": "P0340",
+  "image_file": "P0340.jpg",
+  "image_available": true,
+  "name": "מצוף בריכה דונאט מנומר",
+  "description": "מצוף מתנפח בצורת דונאט עם פסים",
+  "nicknames": [
+   "מתנפח",
+   "מנופח",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 7.5,
+  "carton_qty": 140,
+  "stock_status": null
+ },
+ {
+  "id": "P0341",
+  "image_file": "P0341.jpg",
+  "image_available": true,
+  "name": "סט מסכת צלילה + שנורקל - שחור",
+  "description": "מסכה ושנורקל לצלילה, שחור-כתום",
+  "nicknames": [
+   "מסכת צלילה + שנורקל",
+   "מסכה",
+   "מסיכה"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 8.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0342",
+  "image_file": "P0342.jpg",
+  "image_available": true,
+  "name": "תמונת שיווק - ילדים שוחים עם משקפי INTEX",
+  "description": "תמונת לייפסטייל שיווקית למשקפי שחייה",
+  "nicknames": [
+   "תמונת שיווק"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 7.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0343",
+  "image_file": "P0343.jpg",
+  "image_available": true,
+  "name": "מצוף רכיבה דולפין מתנפח",
+  "description": "מצוף מתנפח לילדים בצורת דולפין לרכיבה",
+  "nicknames": [
+   "מנופח"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 40.0,
+  "carton_qty": 6,
+  "stock_status": null
+ },
+ {
+  "id": "P0344",
+  "image_file": "P0344.jpg",
+  "image_available": true,
+  "name": "כדור בריכה מתנפח מפוספס",
+  "description": "כדור ים גדול מתנפח, פסים צבעוניים",
+  "nicknames": [
+   "מנופח",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 25.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0345",
+  "image_file": "P0345.jpg",
+  "image_available": true,
+  "name": "תמונת שיווק - שרוולי ציפה לילדים",
+  "description": "תמונה שיווקית להמחשת שימוש בשרוולוני ציפה",
+  "nicknames": [
+   "תמונת שיווק"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 20.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0346",
+  "image_file": "P0346.jpg",
+  "image_available": true,
+  "name": "מושב ציפה לתינוק - צהוב",
+  "description": "מצוף ישיבה מתנפח לתינוקות, צהוב",
+  "nicknames": [
+   "מושב ציפה לתינוק",
+   "מתנפח",
+   "מנופח"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 60.0,
+  "carton_qty": 6,
+  "stock_status": null
+ },
+ {
+  "id": "P0347",
+  "image_file": "P0347.jpg",
+  "image_available": true,
+  "name": "שרוולוני ציפה INTEX - כתום",
+  "description": "זוג שרוולוני ציפה לזרועות, כתום",
+  "nicknames": [
+   "שרוולוני ציפה INTEX"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 40.0,
+  "carton_qty": 6,
+  "stock_status": null
+ },
+ {
+  "id": "P0348",
+  "image_file": "P0348.jpg",
+  "image_available": true,
+  "name": "מושב ציפה לתינוק עם גגון צל",
+  "description": "מצוף ישיבה לתינוק עם גגון הצללה נשלף",
+  "nicknames": [],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 40.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0349",
+  "image_file": "P0349.jpg",
+  "image_available": true,
+  "name": "תמונת שיווק - שרוולוני ציפה (חזרה)",
+  "description": "תמונה שיווקית נוספת לשרוולוני ציפה",
+  "nicknames": [
+   "תמונת שיווק"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 25.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0350",
+  "image_file": "P0350.jpg",
+  "image_available": true,
+  "name": "מזרון ציפה מתנפח מתקפל - כחול",
+  "description": "מזרון בריכה מתקפל לשלוש קפלים, כחול",
+  "nicknames": [
+   "מזרון ציפה מתנפח מתקפל",
+   "מנופח",
+   "בריכה",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 5.0,
+  "carton_qty": 36,
+  "stock_status": null
+ },
+ {
+  "id": "P0351",
+  "image_file": "P0351.jpg",
+  "image_available": true,
+  "name": "בריכת פעוטות מתנפחת עגולה - כחולה",
+  "description": "בריכה מתנפחת קטנה לחצר, INTEX",
+  "nicknames": [
+   "בריכת פעוטות מתנפחת עגולה",
+   "מנופח",
+   "בריכה",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 18.0,
+  "carton_qty": 24,
+  "stock_status": null
+ },
+ {
+  "id": "P0352",
+  "image_file": "P0352.jpg",
+  "image_available": true,
+  "name": "סט מצופי בריכה INTEX - קופסה",
+  "description": "קופסת מארז סט מצופים/שרוולונים INTEX",
+  "nicknames": [
+   "מצופי בריכה INTEX",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 7.0,
+  "carton_qty": 36,
+  "stock_status": null
+ },
+ {
+  "id": "P0353",
+  "image_file": "P0353.jpg",
+  "image_available": true,
+  "name": "פריט לבדיקה (תמונה ריקה)",
+  "description": "פריט מקטלוג, התמונה ריקה - נדרשת בדיקה",
+  "nicknames": [],
+  "category": "לסיווג ידני",
+  "subcategory": "תמונה חסרה - נדרשת בדיקה",
+  "wholesale_price": 7.5,
+  "carton_qty": 36,
+  "stock_status": null
+ },
+ {
+  "id": "P0354",
+  "image_file": "P0354.jpg",
+  "image_available": true,
+  "name": "בריכה מתנפחת מלבנית משפחתית - בחצר",
+  "description": "בריכה מתנפחת גדולה למשפחה, על דשא",
+  "nicknames": [
+   "בריכה מתנפחת מלבנית משפחתית",
+   "מנופח",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 50.0,
+  "carton_qty": 6,
+  "stock_status": null
+ },
+ {
+  "id": "P0355",
+  "image_file": "P0355.jpg",
+  "image_available": true,
+  "name": "בריכה מתנפחת מלבנית - על דשא (חזרה)",
+  "description": "בריכה מתנפחת משפחתית - דומה ל-P0354",
+  "nicknames": [
+   "בריכה מתנפחת מלבנית",
+   "מנופח",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 180.0,
+  "carton_qty": 2,
+  "stock_status": null
+ },
+ {
+  "id": "P0356",
+  "image_file": "P0356.jpg",
+  "image_available": true,
+  "name": "סט מצופי בריכה INTEX - קופסה (חזרה)",
+  "description": "קופסת מארז סט מצופים INTEX - זהה ל-P0352",
+  "nicknames": [
+   "מצופי בריכה INTEX",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 130.0,
+  "carton_qty": 3,
+  "stock_status": null
+ },
+ {
+  "id": "P0357",
+  "image_file": "P0357.jpg",
+  "image_available": true,
+  "name": "בריכה מלבנית משפחתית - תמונת שיווק",
+  "description": "תמונה שיווקית לבריכה מתנפחת מלבנית",
+  "nicknames": [
+   "בריכה מלבנית משפחתית",
+   "מתנפח",
+   "מנופח",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 40.0,
+  "carton_qty": 6,
+  "stock_status": null
+ },
+ {
+  "id": "P0358",
+  "image_file": "P0358.jpg",
+  "image_available": true,
+  "name": "בריכה מלבנית משפחתית בחצר (חזרה)",
+  "description": "בריכה מתנפחת משפחתית - דומה ל-P0354",
+  "nicknames": [
+   "מתנפח",
+   "מנופח",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 40.0,
+  "carton_qty": 6,
+  "stock_status": null
+ },
+ {
+  "id": "P0359",
+  "image_file": "P0359.jpg",
+  "image_available": true,
+  "name": "בריכה מלבנית על דשא (חזרה)",
+  "description": "בריכה מתנפחת משפחתית - דומה ל-P0354",
+  "nicknames": [
+   "מתנפח",
+   "מנופח",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": null,
+  "carton_qty": null,
+  "stock_status": null
+ },
+ {
+  "id": "P0360",
+  "image_file": "P0360.jpg",
+  "image_available": true,
+  "name": "מצוף תנין מתנפח (חזרה)",
+  "description": "מצוף ילדים תנין - דומה ל-P0362",
+  "nicknames": [
+   "מנופח"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 25.0,
+  "carton_qty": 6,
+  "stock_status": null
+ },
+ {
+  "id": "P0361",
+  "image_file": "P0361.jpg",
+  "image_available": true,
+  "name": "פריט לבדיקה (תמונה ריקה)",
+  "description": "פריט מקטלוג, התמונה ריקה - נדרשת בדיקה",
+  "nicknames": [],
+  "category": "לסיווג ידני",
+  "subcategory": "תמונה חסרה - נדרשת בדיקה",
+  "wholesale_price": 40.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0362",
+  "image_file": "P0362.jpg",
+  "image_available": true,
+  "name": "מצוף תנין מתנפח לרכיבה - ירוק",
+  "description": "מצוף ילדים בצורת תנין ירוק לרכיבה במים",
+  "nicknames": [
+   "מצוף תנין מתנפח לרכיבה",
+   "מנופח"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 90.0,
+  "carton_qty": 3,
+  "stock_status": null
+ },
+ {
+  "id": "P0363",
+  "image_file": "P0363.jpg",
+  "image_available": true,
+  "name": "בריכת פעוטות מתנפחת עגולה (חזרה)",
+  "description": "בריכה מתנפחת קטנה - דומה ל-P0351",
+  "nicknames": [
+   "מנופח",
+   "בריכה",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 50.0,
+  "carton_qty": 8,
+  "stock_status": null
+ },
+ {
+  "id": "P0364",
+  "image_file": "P0364.jpg",
+  "image_available": true,
+  "name": "מזרוני ים מתנפחים - תמונת שיווק",
+  "description": "תמונה שיווקית למזרוני ים מתנפחים",
+  "nicknames": [
+   "מזרוני ים מתנפחים",
+   "מנופח",
+   "מזרון ים",
+   "מזרון מתנפח"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובועות",
+  "wholesale_price": 48.0,
+  "carton_qty": 6,
+  "stock_status": null
+ },
+ {
+  "id": "P0365",
+  "image_file": "P0365.jpg",
+  "image_available": true,
+  "name": "משאבת רגל לבריכה/מזרונים",
+  "description": "משאבת רגל גדולה לניפוח מהיר",
+  "nicknames": [
+   "מזרון ים",
+   "מזרון מתנפח",
+   "בריכת מים"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": 15.0,
+  "carton_qty": 12,
+  "stock_status": null
+ },
+ {
+  "id": "P0366",
+  "image_file": "P0366.jpg",
+  "image_available": true,
+  "name": "מזרוני ים מתנפחים - אדום וירוק",
+  "description": "זוג מזרוני ציפה קטנים לבריכה, אדום וירוק",
+  "nicknames": [
+   "מזרוני ים מתנפחים",
+   "מנופח",
+   "מזרון ים",
+   "מזרון מתנפח",
+   "בריכה"
+  ],
+  "category": "קיץ ובריכה",
+  "subcategory": "צעצועי מים ובריכה",
+  "wholesale_price": null,
+  "carton_qty": null,
+  "stock_status": null
+ }
+]
