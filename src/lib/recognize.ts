@@ -376,6 +376,17 @@ export function recognize(
     intent = "order"
   }
 
+  // 🔧 "מה יש לך לX" / "מה יש לX" = עיון בקטגוריה תמיד
+  // גם אם יש מוצר ספציפי בשם - הלקוח רוצה לראות מה יש בקטגוריה
+  const BROWSE_PATTERN = /^מה יש (לך |לכם )?ל/
+  if (intent !== null && BROWSE_PATTERN.test(message.trim())) {
+    const browseCategory = recognizeCategory(message)
+    if (browseCategory) {
+      intent = "category_browse"
+      category = browseCategory
+    }
+  }
+
   if (intent === null) {
     // שאילתה משתמעת ("קוביית פאזל" בלי מילת שאלה) דורשת רף גבוה יותר:
     // 2+ ראיות חזקות. בלי מילת intent אין שום אות כוונה - ראיה בודדת
