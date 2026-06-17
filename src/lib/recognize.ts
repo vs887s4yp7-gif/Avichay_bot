@@ -422,15 +422,19 @@ export function recognize(
   // 🔧 follow-up "ומה עם X" / "ומה יש לך בX" אחרי רשימה = stock (המשך שיחה).
   // אם אין pendingOptions ומדובר בקטגוריה -> category_browse.
   const DELIVERY_FOLLOWUP = /משלוח|משלח|דליברי|יגיע המשלוח|המשלוח הבא|מתי יגיע|מתי מגיע|ומה עם משלוח|מתי יגיע המשלוח הבא/
+  const ORDER_URGENT = /דחוק|הרגיל שלי|אני לוקח|תכין לי|תוסיף לי/
   const BROWSE_PATTERN = /^ו?מה יש (לך |לכם )?[לב]/
-  if (DELIVERY_FOLLOWUP.test(message)) {
-    // נשאיר ל-keyword matching של delivery לטפל; לא נחטוף לקטגוריה
+  // order keywords (urgent / explicit) win over a delivery mention in same message
+  if (ORDER_URGENT.test(message) && intent !== "debt") {
+    intent = "order"
+  } else if (DELIVERY_FOLLOWUP.test(message)) {
+    // "ומה עם משלוח?" / "ומתי יגיע המשלוח הבא?" = delivery, גם כהמשך שיחה
     intent = "delivery"
   } else if (BROWSE_PATTERN.test(message.trim())) {
     const browseCategory = recognizeCategory(message)
     if (browseCategory) {
-      // "מה יש לך לX" / "ומה יש לך בX" = browse the category (show options, no escalate)
-      intent = "category_browse"
+      // "מה יש לך לX" / "ומה יש לך בX" = stock על הקטגוריה (מציג אפשרויות, לא escalate)
+      intent = "stock"
       category = browseCategory
     }
   }
@@ -440,6 +444,32 @@ export function recognize(
     if (followCat) {
       intent = "stock"
       category = followCat
+    }
+  }
+  // 🔧 short follow-up after a list with no category match ("וכחול?", "ומה עם 5?")
+  // - keep showing the existing options instead of escalating.
+  if (intent === null && pendingOptions.length > 0) {
+    const m = message.trim()
+    const isShortFollowup = m.length <= 25 && (/^ו/.test(m) || /^עוד/.test(m) || /\?$/.test(m))
+    if (isShortFollowup) {
+      const context: IntentContext = {
+        userMessage: message,
+        product: null,
+        matches: [],
+        quantity: null,
+        category: null,
+        categoryProducts: [],
+        needsConfirmation: false,
+        options: pendingOptions,
+        optionsOffset: pendingOffset,
+      }
+      return {
+        intent: "stock",
+        context,
+        response: formatOptions(pendingOptions, "הנה האפשרויות:", pendingOffset),
+        escalate: false,
+        debug: { topMatches: [], hasStrongProduct: false, category: null },
+      }
     }
   }
   // 🔧 follow-up phrases after a list: "אוקיי, מה יש?", "מה יש?", "עוד" → stock
@@ -559,6 +589,27 @@ export function recognize(
       } else if (GENERAL_TOYS_PATTERN.test(message)) {
         intent = "category_browse"
         category = "games_puzzles"
+      } else if (pendingOptions.length > 0) {
+        // לאחר רשימה - אם לא זוהה כלום, נשאר במצב הצגת אפשרויות במקום להסלים
+        intent = "stock"
+        const ctxF: IntentContext = {
+          userMessage: message,
+          product: null,
+          matches: [],
+          quantity: null,
+          category: null,
+          categoryProducts: [],
+          needsConfirmation: false,
+          options: pendingOptions,
+          optionsOffset: pendingOffset,
+        }
+        return {
+          intent: "stock",
+          context: ctxF,
+          response: formatOptions(pendingOptions, "הנה האפשרויות:", pendingOffset),
+          escalate: false,
+          debug: { topMatches: [], hasStrongProduct: false, category: null },
+        }
       } else {
         intent = "escalate_other"
       }
