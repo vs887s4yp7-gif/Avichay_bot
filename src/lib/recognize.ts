@@ -370,11 +370,37 @@ export function recognize(
           return { intent: "send_photo", context: ctxPhoto, response: INTENT_RULES.send_photo.template(ctxPhoto), escalate: INTENT_RULES.send_photo.requiresEscalation(ctxPhoto), debug: { topMatches: [{ id: refSel.id, name: refSel.name, score: 999 }], hasStrongProduct: true, category: null } }
         }
       }
-      const context: IntentContext = {
-        userMessage: message, product: null, matches: [], quantity: null, category: null,
-        categoryProducts: [], needsConfirmation: false, options: pendingOptions, optionsOffset: pendingOffset,
+
+      // Option A: קטגוריה חדשה שונה → אפס ועשה search חדש
+      const freshCat = recognizeCategory(message)
+      if (freshCat) {
+        const pendingCat = pendingOptions.length > 0
+          ? recognizeCategory(pendingOptions.map(p => p.name).join(" ")) : null
+        if (freshCat !== pendingCat) {
+          // נותן ל-flow הרגיל להמשיך עם הקטגוריה החדשה — לא מחזיר כאן
+          intent = "category_browse"
+          category = freshCat
+        }
       }
-      return { intent: "stock", context, response: formatOptions(pendingOptions, "הנה האפשרויות:", pendingOffset), escalate: false, debug: { topMatches: [], hasStrongProduct: false, category: null } }
+
+      // Option C: מוצר חזק בקטלוג → אפס ועשה search חדש
+      if (!intent) {
+        const freshScored = dedupeScoredByBaseName(
+          searchCatalog(message, catalog).filter(s => s.strongEvidence.length >= 1)
+        )
+        const freshTop = freshScored[0]
+        if (freshTop && freshTop.score >= CONFIDENT_SCORE_THRESHOLD) {
+          // יש מוצר ברור → המשך ל-flow הרגיל (לא חוזר pendingOptions)
+          // intent נשאר null, הלוגיקה הרגילה תמצא אותו
+        } else {
+          // אין מוצר חזק ואין קטגוריה חדשה → החזר pendingOptions
+          const context: IntentContext = {
+            userMessage: message, product: null, matches: [], quantity: null, category: null,
+            categoryProducts: [], needsConfirmation: false, options: pendingOptions, optionsOffset: pendingOffset,
+          }
+          return { intent: "stock", context, response: formatOptions(pendingOptions, "הנה האפשרויות:", pendingOffset), escalate: false, debug: { topMatches: [], hasStrongProduct: false, category: null } }
+        }
+      }
     }
   }
 
