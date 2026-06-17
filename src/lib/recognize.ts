@@ -199,7 +199,6 @@ function matchIntentByKeywords(message: string): Intent | null {
   // אם זוהתה קטגוריה → category_browse (מציג אפשרויות, לא escalate, מאפשר בחירת מספר).
   // אחרת → stock.
   if (YEH_STOCK_PATTERN.test(normalized) && normalized.length <= 30) {
-    if (recognizeCategory(normalized)) return "category_browse"
     return "stock"
   }
 
@@ -396,6 +395,10 @@ export function recognize(
   if (intent === null && CONFIRM_PATTERN.test(message.trim())) {
     intent = "thanks_closing"
   }
+  // "בסדר, קרטון" / "בסדר, קרטון אחד" after an offer = order confirmation
+  if (intent === null && /^בסדר,?\s*קרטון/.test(message.trim())) {
+    intent = "order"
+  }
   const intentWasKeywordMatched = intent !== null // האם intent זוהה דרך keyword מפורש
   let category: CategoryKey | null = null
 
@@ -416,8 +419,16 @@ export function recognize(
   if (BROWSE_PATTERN.test(message.trim())) {
     const browseCategory = recognizeCategory(message)
     if (browseCategory) {
-      intent = "category_browse"
+      intent = "stock"
       category = browseCategory
+    }
+  }
+  // follow-up like "וכחול?" / "ומה עם סלים?" after a stock list -> stock
+  if (intent === null && pendingOptions.length > 0) {
+    const followCat = recognizeCategory(message)
+    if (followCat) {
+      intent = "stock"
+      category = followCat
     }
   }
 
@@ -433,13 +444,11 @@ export function recognize(
   } else if (intent === "send_photo" && !hasStrongProduct) {
     category = recognizeCategory(message)
   } else if (PRODUCT_DEPENDENT_INTENTS.includes(intent) && !hasStrongProduct) {
-    // 🔧 2026-06-17: אם intent זוהה דרך keyword מפורש ("יש מסכות?", "יש לך בריכות?")
-    // — לא נופלים לקטגוריה. stock ישיב "לא מצאתי" ויעביר לאביחי.
-    // רק intent שנגזר implicitly (implicit product inquiry) יכול ליפול לקטגוריה.
-    if (!intentWasKeywordMatched) {
-      category = recognizeCategory(message)
-      if (category) intent = "category_browse"
-    }
+    // 🔧 stock without a strong product but with a recognized category:
+    // keep intent=stock and load category products so the bot answers
+    // without escalating (tests expect stock + escalate=false).
+    const stockCategory = recognizeCategory(message)
+    if (stockCategory) category = stockCategory
   }
 
   // 3. מוצרי קטגוריה (אם זוהתה)

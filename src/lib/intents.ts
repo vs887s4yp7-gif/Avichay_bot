@@ -261,6 +261,7 @@ export const INTENT_RULES: Record<Intent, IntentRule> = {
   // מלאי / קיום
   // מבוסס על: "יש לכם X?", "יש X בקוסטיומי ספיידרמן?", "יש סלים?"
   // ──────────────────────────────────────────────────────────
+  // stock template needs category access; categoryProducts populated by recognize
   stock: {
     intent: "stock",
     // "יש" לבד הוסר - גנרי מדי ("יש לי", ברכות חג עם "יש"...) - false positives
@@ -284,6 +285,10 @@ export const INTENT_RULES: Record<Intent, IntentRule> = {
       if (p.price === null || p.cartonQty === null) {
         return `${p.name} - יש לנו, אבל צריך לבדוק מחיר/כמות עדכניים מול אביחי 🙏`
       }
+      const catProducts = ctx.categoryProducts ?? []
+      if (!ctx.product && catProducts.length > 0) {
+        return formatOptions(catProducts, `יש לנו כמה אפשרויות${ctx.category ? ` ב${CATEGORY_RULES[ctx.category].displayName}` : ""}:`, ctx.optionsOffset ?? 0)
+      }
       if (ctx.needsConfirmation) {
         const opts = ctx.options ?? []
         if (opts.length >= 2) return formatOptions(opts, "מצאתי כמה אפשרויות מתאימות:", ctx.optionsOffset ?? 0)
@@ -291,8 +296,11 @@ export const INTENT_RULES: Record<Intent, IntentRule> = {
       }
       return `כן, יש! ${p.name} [[PRODUCT:${p.id}]] - ₪${p.price}, כמות בקרטון: ${p.cartonQty} יח'`
     },
-    requiresEscalation: (ctx) =>
-      !ctx.product || ctx.product.price === null || ctx.product.cartonQty === null,
+    requiresEscalation: (ctx) => {
+      if (ctx.product && ctx.product.price !== null && ctx.product.cartonQty !== null) return false
+      if (!ctx.product && (ctx.categoryProducts ?? []).length > 0) return false
+      return true
+    },
   },
 
   // ──────────────────────────────────────────────────────────
