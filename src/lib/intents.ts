@@ -50,7 +50,7 @@ export type CategoryKey =
 export const CATEGORY_RULES: Record<CategoryKey, { displayName: string; catalogCategory: string; keywords: string[]; priority?: number }> = {
   sensory: { displayName: "צעצועי חישה", catalogCategory: "צעצועי חישה (Sensory)", keywords: ["סלים", "סליים", "בוץ קסם", "חישה", "סנסורי", "פופ איט", "פידג'ט"], priority: 100 },
   building_vehicles: { displayName: "צעצועי בנייה ורכבים", catalogCategory: "צעצועי בנייה ורכבים", keywords: ["לגו", "קוביות", "הרכבה", "מכונית", "רכב", "מסוק"], priority: 100 },
-  summer_pool: { displayName: "קיץ ובריכה", catalogCategory: "קיץ ובריכה", keywords: ["בריכה", "צעצועי מים", "אקדחי מים", "מזרון ים", "מתנפח", "מתנפחים"], priority: 50 },
+  summer_pool: { displayName: "קיץ ובריכה", catalogCategory: "קיץ ובריכה", keywords: ["בריכה", "צעצועי מים", "אקדחי מים", "מזרון ים"], priority: 50 },
   summer_decor: { displayName: "קיץ וקישוט", catalogCategory: "קיץ וקישוט", keywords: ["מאוורר", "מניפה", "טחנת רוח", "קישוטי גינה", "לקיץ וקישוט"], priority: 50 },
   costumes_purim: { displayName: "תחפושות ופורים", catalogCategory: "תחפושות ופורים", keywords: ["תחפושת", "תחפושות", "פורים", "קוסטיום", "קוסטיומים", "מסכה", "מסכות", "פאה", "כירוגי", "כירורגי"], priority: 80 },
   light_toys: { displayName: "צעצועים מאירים", catalogCategory: "צעצועים מאירים", keywords: ["מאיר", "מאירים", "זוהר", "זוהרים", "גלואו", "led", "נורות", "מקל זוהר", "צמיד זוהר"], priority: 60 },
