@@ -305,8 +305,9 @@ export function recognize(
   pendingOptions = Array.isArray(pendingOptions) ? pendingOptions : []
   // -1. "עוד"? -> דף הבא מתוך אותו pool (pendingOptions), בלי לחשב מחדש
   if (pendingOptions.length > 0 && recognizeMore(message)) {
-    const nextOffset = pendingOffset + 5
-    if (nextOffset < pendingOptions.length) {
+    let nextOffset = pendingOffset + 5
+    if (nextOffset >= pendingOptions.length) nextOffset = 0
+    {
       const context: IntentContext = {
         userMessage: message,
         product: null,
@@ -326,7 +327,6 @@ export function recognize(
         debug: { topMatches: [], hasStrongProduct: false, category: null },
       }
     }
-    // אין עוד - נמשיך לזרימה הרגילה (סביר שיגיע ל-escalation)
   }
 
   // 0. בחירה ממוצרים שהוצעו בתור הקודם? ("2" -> options[offset+1])
@@ -419,7 +419,7 @@ export function recognize(
   // 🔧 follow-up "ומה עם X" / "ומה יש לך בX" אחרי רשימה = stock (המשך שיחה).
   // אם אין pendingOptions ומדובר בקטגוריה -> category_browse.
   const DELIVERY_FOLLOWUP = /משלוח|משלח|דליברי|יגיע המשלוח|המשלוח הבא/
-  const BROWSE_PATTERN = /^ו?מה יש (לך |לכם )?[לב]|^ו?מה עם /
+  const BROWSE_PATTERN = /^ו?מה יש (לך |לכם )?[לב]/
   if (DELIVERY_FOLLOWUP.test(message)) {
     // נשאיר ל-keyword matching של delivery לטפל; לא נחטוף לקטגוריה
     intent = "delivery"
@@ -440,6 +440,58 @@ export function recognize(
     if (followCat) {
       intent = "stock"
       category = followCat
+    }
+  }
+  // 🔧 follow-up phrases after a list: "אוקיי, מה יש?", "מה יש?", "עוד" → stock
+  if (intent === null && pendingOptions.length > 0) {
+    const m = message.trim().toLowerCase()
+    if (/^(אוקיי?,?\s*)?מה יש[?!.]*$|^נו[?!.]*$|^טוב,?\s*מה יש[?!.]*$/.test(m)) {
+      const context: IntentContext = {
+        userMessage: message,
+        product: null,
+        matches: [],
+        quantity: null,
+        category: null,
+        categoryProducts: [],
+        needsConfirmation: false,
+        options: pendingOptions,
+        optionsOffset: pendingOffset,
+      }
+      return {
+        intent: "stock",
+        context,
+        response: formatOptions(pendingOptions, "הנה האפשרויות:", pendingOffset),
+        escalate: false,
+        debug: { topMatches: [], hasStrongProduct: false, category: null },
+      }
+    }
+  }
+  // 🔧 bare/loose number after a list that recognizeSelection missed (offset/format) → still treat as selection
+  if (intent === null && pendingOptions.length > 0) {
+    const bare = message.trim().match(/^([1-9][0-9]?)[.!?]*$/)
+    if (bare) {
+      const n = parseInt(bare[1], 10)
+      const idx = n - 1
+      if (idx >= 0 && idx < pendingOptions.length) {
+        const sel = pendingOptions[idx]
+        const ctxN: IntentContext = {
+          userMessage: message,
+          product: sel,
+          matches: [sel],
+          quantity: null,
+          category: null,
+          categoryProducts: [],
+          needsConfirmation: false,
+          options: [],
+        }
+        return {
+          intent: "stock",
+          context: ctxN,
+          response: INTENT_RULES.stock.template(ctxN),
+          escalate: false,
+          debug: { topMatches: [{ id: sel.id, name: sel.name, score: 999 }], hasStrongProduct: true, category: null },
+        }
+      }
     }
   }
   // follow-up referencing a numbered option from prior list ("ומה עם 5?", "מס 2 מעניין")
