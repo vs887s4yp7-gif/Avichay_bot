@@ -184,8 +184,18 @@ export function recognizeCategory(message: string): CategoryKey | null {
 const WEAK_INTENTS: Intent[] = ["greeting", "thanks_closing", "identity"]
 const WEAK_INTENT_MAX_LENGTH = 35
 
+// 🔧 2026-06-17: "יש X?" - הודעה קצרה שמתחילה ב"יש " = שאלת מלאי
+// "יש לך/לכם" כבר מכוסה ב-stock.keywords; זה מכסה "יש מסכות?", "יש כריש?" וכד'.
+const YEH_STOCK_PATTERN = /^יש\s+\S/
+
 function matchIntentByKeywords(message: string): Intent | null {
   const normalized = message.toLowerCase().trim()
+
+  // "יש X?" קצרה (עד 30 תווים) שמתחילה ב"יש" → stock ישירות
+  if (YEH_STOCK_PATTERN.test(normalized) && normalized.length <= 30) {
+    return "stock"
+  }
+
   for (const intent of INTENT_PRIORITY_ORDER) {
     const rule = INTENT_RULES[intent]
     if (rule.keywords.length === 0) continue
