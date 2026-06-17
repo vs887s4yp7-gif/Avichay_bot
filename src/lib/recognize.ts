@@ -202,8 +202,13 @@ function matchIntentByKeywords(message: string): Intent | null {
   // אם זוהתה קטגוריה → category_browse (מציג אפשרויות, לא escalate, מאפשר בחירת מספר).
   // אחרת → stock.
   if (YEH_STOCK_PATTERN.test(normalized) && normalized.length <= 40) {
-    // 🔧 'יש X?' = שאלת מלאי. תמיד stock (גם אם זוהתה קטגוריה) -
-    // recognize() יטען categoryProducts ל-ctx כך שהבוט מציג אפשרויות בלי להסלים.
+    // 🔧 'יש X?' = שאלת מלאי. אם זוהתה קטגוריה ספציפית (מסיבה/סטים/פורים)
+    // → category_browse (מציג אפשרויות, לא escalate). אחרת stock.
+    const yehCat = recognizeCategory(normalized)
+    const CATEGORY_BROWSE_HINT = /מסיב|סטים|סט למסיב|פורים|תחפושות|למסיבות/
+    if (yehCat && CATEGORY_BROWSE_HINT.test(normalized)) {
+      return "category_browse"
+    }
     return "stock"
   }
 
@@ -396,6 +401,34 @@ export function recognize(
     (top.score >= CONFIDENT_SCORE_THRESHOLD ||
       top.strongEvidence.length >= CONFIDENT_EVIDENCE_COUNT)
 
+  // 1.5 number-reference follow-up after a list, even if a keyword would match
+  // ("ומה עם 5?", "מס 2 מעניין", "שלח תמונות של מס 2") -> select that option
+  if (pendingOptions.length > 0) {
+    const refSel = recognizeSelection(message, pendingOptions, pendingOffset)
+    if (refSel) {
+      const ctxRef: IntentContext = {
+        userMessage: message,
+        product: refSel,
+        matches: [refSel],
+        quantity: extractQuantity(message),
+        category: null,
+        categoryProducts: [],
+        needsConfirmation: false,
+        options: [],
+      }
+      const wantsPhoto = /תמונ|תמונות|שלח/.test(message)
+      const useIntent = wantsPhoto ? "send_photo" : "stock"
+      const ruleRef = INTENT_RULES[useIntent]
+      return {
+        intent: useIntent,
+        context: ctxRef,
+        response: ruleRef.template(ctxRef),
+        escalate: ruleRef.requiresEscalation(ctxRef),
+        debug: { topMatches: [{ id: refSel.id, name: refSel.name, score: 999 }], hasStrongProduct: true, category: null },
+      }
+    }
+  }
+
   // 2. זיהוי intent ראשוני
   let intent = matchIntentByKeywords(message)
   // 🔧 confirmation קצר ("זה בסדר", "כן זה בסדר") אחרי הצעה = אישור, לא escalate
@@ -422,9 +455,12 @@ export function recognize(
     intent = "order"
   }
 
+  // 🔧 delivery follow-up takes priority over keyword-matched intent
+  // ("ומתי יגיע המשלוח הבא?" must be delivery, not escalate_other/stock)
+  // checked here so it overrides even a wrong keyword match below.
   // 🔧 follow-up "ומה עם X" / "ומה יש לך בX" אחרי רשימה = stock (המשך שיחה).
   // אם אין pendingOptions ומדובר בקטגוריה -> category_browse.
-  const DELIVERY_FOLLOWUP = /משלוח|משלח|דליברי|יגיע המשלוח|המשלוח הבא|מתי יגיע|מתי מגיע|ומה עם משלוח|מתי יגיע המשלוח הבא/
+  const DELIVERY_FOLLOWUP = /משלוח|משלח|דליברי|יגיע המשלוח|המשלוח הבא|מתי יגיע|מתי מגיע|ומה עם משלוח|מתי יגיע המשלוח הבא|יגיע המשלוח הבא|מתי המשלוח/
   const ORDER_URGENT = /דחוק|הרגיל שלי|אני לוקח|תכין לי|תוסיף לי/
   const BROWSE_PATTERN = /^ו?מה יש (לך |לכם )?[לב]/
   // order keywords (urgent / explicit) win over a delivery mention in same message
@@ -433,7 +469,7 @@ export function recognize(
     intent = "price"
   } else if (ORDER_URGENT.test(message) && intent !== "debt") {
     intent = "order"
-  } else if (DELIVERY_FOLLOWUP.test(message)) {
+  } else if (DELIVERY_FOLLOWUP.test(message) && intent !== "order" && intent !== "debt") {
     // "ומה עם משלוח?" / "ומתי יגיע המשלוח הבא?" = delivery, גם כהמשך שיחה
     intent = "delivery"
   } else if (BROWSE_PATTERN.test(message.trim())) {
