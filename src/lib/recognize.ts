@@ -202,6 +202,9 @@ function matchIntentByKeywords(message: string): Intent | null {
   // אם זוהתה קטגוריה → category_browse (מציג אפשרויות, לא escalate, מאפשר בחירת מספר).
   // אחרת → stock.
   if (YEH_STOCK_PATTERN.test(normalized) && normalized.length <= 40) {
+    // אם זוהתה קטגוריה -> category_browse (מציג אפשרויות, לא escalate)
+    const yehCat = recognizeCategory(normalized)
+    if (yehCat) return "category_browse"
     return "stock"
   }
 
@@ -219,6 +222,13 @@ function matchIntentByKeywords(message: string): Intent | null {
       // 🔧 greeting עם תוכן אישי → escalate_other במקום greeting
       if (intent === "greeting" && PERSONAL_GREETING_PHRASES.some(p => normalized.includes(p))) {
         return null // ייפול ל-escalate_other
+      }
+      // "יש סטים?" / "יש זוהרים?" וכו' - אם זוהתה קטגוריה, עדיף category_browse
+      if (intent === "stock") {
+        const stockCat = recognizeCategory(normalized)
+        if (stockCat && /^יש\s/.test(normalized) && normalized.length <= 40) {
+          return "category_browse"
+        }
       }
       return intent
     }
@@ -322,10 +332,11 @@ export function recognize(
         options: pendingOptions,
         optionsOffset: nextOffset,
       }
+      const moreResp = formatOptions(pendingOptions, "עוד אפשרויות:", nextOffset)
       return {
         intent: "category_browse", // נדרש intent קיים כדי להריץ template; הטקסט עצמו גנרי
         context,
-        response: formatOptions(pendingOptions, "עוד אפשרויות:", nextOffset),
+        response: moreResp,
         escalate: false,
         debug: { topMatches: [], hasStrongProduct: false, category: null },
       }
@@ -433,8 +444,8 @@ export function recognize(
   } else if (BROWSE_PATTERN.test(message.trim())) {
     const browseCategory = recognizeCategory(message)
     if (browseCategory) {
-      // "מה יש לך לX" / "ומה יש לך בX" = stock על הקטגוריה (מציג אפשרויות, לא escalate)
-      intent = "stock"
+      // "מה יש לך לX" / "ומה יש לך בX" = category_browse (מציג אפשרויות, לא escalate)
+      intent = "category_browse"
       category = browseCategory
     }
   }
@@ -580,6 +591,27 @@ export function recognize(
   if (intent === null) {
     const implicitProductInquiry =
       hasStrongProduct && top.strongEvidence.length >= 2
+    if (pendingOptions.length > 0) {
+      // לאחר רשימה - "עוד"/בחירה/המשך נכשלו לעיל, נשאר במצב הצגת אפשרויות במקום escalate
+      const ctxP: IntentContext = {
+        userMessage: message,
+        product: null,
+        matches: [],
+        quantity: null,
+        category: null,
+        categoryProducts: [],
+        needsConfirmation: false,
+        options: pendingOptions,
+        optionsOffset: pendingOffset,
+      }
+      return {
+        intent: "category_browse",
+        context: ctxP,
+        response: formatOptions(pendingOptions, "הנה האפשרויות:", pendingOffset),
+        escalate: false,
+        debug: { topMatches: [], hasStrongProduct: false, category: null },
+      }
+    }
     if (implicitProductInquiry) {
       intent = "stock"
     } else {
