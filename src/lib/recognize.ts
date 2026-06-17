@@ -185,8 +185,12 @@ const WEAK_INTENTS: Intent[] = ["greeting", "thanks_closing", "identity"]
 const WEAK_INTENT_MAX_LENGTH = 35
 
 // 🔧 2026-06-17: "יש X?" - הודעה קצרה שמתחילה ב"יש " = שאלת מלאי
-// "יש לך/לכם" כבר מכוסה ב-stock.keywords; זה מכסה "יש מסכות?", "יש כריש?" וכד'.
 const YEH_STOCK_PATTERN = /^יש\s+\S/
+
+// ביטויי ברכה אישית/חברתית שאמורים ללכת לאביחי, לא לבוט
+const PERSONAL_GREETING_PHRASES = [
+  "יום לא דברנו", "לא מצליח", "כאן שוב", "כמה יום", "לא מצליח להתחבר", "בעיה", "בעיות",
+]
 
 function matchIntentByKeywords(message: string): Intent | null {
   const normalized = message.toLowerCase().trim()
@@ -206,6 +210,10 @@ function matchIntentByKeywords(message: string): Intent | null {
         const isShort = normalized.length <= WEAK_INTENT_MAX_LENGTH
         const startsWith = normalized.startsWith(kw)
         if (!isShort && !startsWith) continue
+      }
+      // 🔧 greeting עם תוכן אישי → escalate_other במקום greeting
+      if (intent === "greeting" && PERSONAL_GREETING_PHRASES.some(p => normalized.includes(p))) {
+        return null // ייפול ל-escalate_other
       }
       return intent
     }
@@ -376,18 +384,22 @@ export function recognize(
 
   // 2. זיהוי intent ראשוני
   let intent = matchIntentByKeywords(message)
+  const intentWasKeywordMatched = intent !== null // האם intent זוהה דרך keyword מפורש
   let category: CategoryKey | null = null
 
-  // היוריסטיקת רשימת הזמנה: 3+ מספרי כמות בהודעה = כמעט תמיד
-  // הזמנה מרובת פריטים ("12 תנין 3 כלב 40 מטוס..."), גם אם זוהה
-  // intent אחר (greeting בפתיחה, stock בגלל "יש לך" בסוף...)
+  // היוריסטיקת רשימת הזמנה: 3+ מספרי כמות בהודעה = כמעט תמיד הזמנה
   const quantityCount = (message.replace(/\d{1,2}[./]\d{1,2}[./]\d{2,4}/g, " ").match(/(?<![\d-])\d{1,4}(?![\d-])/g) ?? []).length
   if (quantityCount >= 3 && intent !== "debt") {
     intent = "order"
   }
 
+  // 🔧 2026-06-17: "בסדר, 5 קרטון" / "100 קרטון" - מספר + קרטון = הזמנה
+  // (כמה קרטון? כבר מכוסה ב-price keywords ולא יגיע לכאן)
+  if (intent === null && quantityCount >= 1 && /\d+\s*קרטון|קרטון\s*אחד/.test(message)) {
+    intent = "order"
+  }
+
   // 🔧 "מה יש לך לX" / "מה יש לX" = עיון בקטגוריה תמיד
-  // גם אם יש מוצר ספציפי בשם - הלקוח רוצה לראות מה יש בקטגוריה
   const BROWSE_PATTERN = /^מה יש (לך |לכם )?ל/
   if (intent !== null && BROWSE_PATTERN.test(message.trim())) {
     const browseCategory = recognizeCategory(message)
@@ -398,25 +410,24 @@ export function recognize(
   }
 
   if (intent === null) {
-    // שאילתה משתמעת ("קוביית פאזל" בלי מילת שאלה) דורשת רף גבוה יותר:
-    // 2+ ראיות חזקות. בלי מילת intent אין שום אות כוונה - ראיה בודדת
-    // ("חשבון"⊂"מחשבון") היא לא מספיק. עם ראיה אחת בלבד -> escalation.
     const implicitProductInquiry =
       hasStrongProduct && top.strongEvidence.length >= 2
     if (implicitProductInquiry) {
       intent = "stock"
     } else {
-      // אין intent keyword וגם אין מוצר - אולי קטגוריה?
       category = recognizeCategory(message)
       intent = category ? "category_browse" : "escalate_other"
     }
   } else if (intent === "send_photo" && !hasStrongProduct) {
-    // send_photo בלי מוצר חזק - שומר intent, מקבל קטגוריה כ-context
     category = recognizeCategory(message)
   } else if (PRODUCT_DEPENDENT_INTENTS.includes(intent) && !hasStrongProduct) {
-    // price/stock בלי מוצר חזק - fallback לקטגוריה
-    category = recognizeCategory(message)
-    if (category) intent = "category_browse"
+    // 🔧 2026-06-17: אם intent זוהה דרך keyword מפורש ("יש מסכות?", "יש לך בריכות?")
+    // — לא נופלים לקטגוריה. stock ישיב "לא מצאתי" ויעביר לאביחי.
+    // רק intent שנגזר implicitly (implicit product inquiry) יכול ליפול לקטגוריה.
+    if (!intentWasKeywordMatched) {
+      category = recognizeCategory(message)
+      if (category) intent = "category_browse"
+    }
   }
 
   // 3. מוצרי קטגוריה (אם זוהתה)
