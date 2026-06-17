@@ -27,6 +27,7 @@ export type Intent =
   | "send_photo"
   | "category_browse"
   | "thanks_closing"
+  | "confirmation"
   | "escalate_other"
 
 // ================================================================
@@ -361,7 +362,7 @@ export const INTENT_RULES: Record<Intent, IntentRule> = {
   // ──────────────────────────────────────────────────────────
   discount: {
     intent: "discount",
-    keywords: ["הנחה", "הנחות", "מחיר טוב יותר", "אפשר זול יותר", "VIP"],
+    keywords: ["מחיר טוב יותר", "אפשר זול יותר", "VIP"],
     priority: 13,
     template: () => "על הנחות/כמויות גדולות אביחי מתאם אישית - מעביר אליו 🙏",
     requiresEscalation: () => true,
@@ -458,6 +459,17 @@ export const INTENT_RULES: Record<Intent, IntentRule> = {
       return formatOptions(products, `יש לנו כמה אפשרויות ב${ctx.category ? CATEGORY_RULES[ctx.category].displayName : "קטגוריה הזו"}:`, ctx.optionsOffset ?? 0)
     },
     requiresEscalation: (ctx) => (ctx.categoryProducts ?? []).length === 0,
+  },
+
+  // ──────────────────────────────────────────────────────────
+  // אישור קצר ("זה בסדר", "כן זה בסדר") אחרי הצעה
+  // ──────────────────────────────────────────────────────────
+  confirmation: {
+    intent: "confirmation",
+    keywords: [],
+    priority: 5,
+    template: () => "מעולה 🙏 ממשיכים!",
+    requiresEscalation: () => false,
   },
 
   // ──────────────────────────────────────────────────────────

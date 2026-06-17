@@ -262,13 +262,15 @@ export function recognizeSelection(message: string, pendingOptions: Product[], o
   // 🔧 learning loop 2026-06-14: תופס גם "תביא לי מס׳ 4", "קח את ה-3",
   // "אני רוצה את מספר 2" - לא רק מספר נקי.
   // שני patterns: (א) מספר נקי אופציונלי עם prefix, (ב) משפט עם מספר בסוף
-  const PURE = /^(?:מספר|אפשרות|את ה|ה)?\s*([1-9][0-9]?)\.?\s*$/
+  const PURE = /^(?:מספר|אפשרות|את ה|ה)?\s*([0-9][0-9]?)\.?\s*$/
   const PHRASE = /(?:תביא לי|קח|אני רוצה|תן לי|תביא את|את ה|מס['׳]?\s*)(?:את\s+)?(?:מספר\s*)?([1-9][0-9]?)(?:\s|$|\.)/
   const SUFFIX = /(?:מספר|אפשרות)\s*([1-9][0-9]?)\s*$/
 
   const m = cleaned.match(PURE) ?? cleaned.match(PHRASE) ?? cleaned.match(SUFFIX)
   if (!m) return null
-  const idx = parseInt(m[1], 10) - 1
+  const num = parseInt(m[1], 10)
+  if (num < 1) return null
+  const idx = num - 1
   const pageEnd = Math.min(offset + 5, pendingOptions.length)
   if (idx < 0 || idx >= pageEnd) return null
   return pendingOptions[idx]
@@ -393,7 +395,7 @@ export function recognize(
   // 🔧 confirmation קצר ("זה בסדר", "כן זה בסדר") אחרי הצעה = אישור, לא escalate
   const CONFIRM_PATTERN = /^(כן,?\s*)?זה בסדר[!.?]*$|^בסדר גמור[!.?]*$|^אוקיי?,?\s*זה בסדר[!.?]*$|^כן,?\s*זה בסדר[!.?]*$|^זה בסדר[!.?]*$/
   if (intent === null && CONFIRM_PATTERN.test(message.trim())) {
-    intent = "thanks_closing"
+    intent = "confirmation"
   }
   // "בסדר, קרטון" / "בסדר, קרטון אחד" after an offer = order confirmation
   if (intent === null && /^בסדר,?\s*קרטון/.test(message.trim())) {
@@ -414,12 +416,21 @@ export function recognize(
     intent = "order"
   }
 
-  // 🔧 "מה יש לך לX" / "מה יש לX" / "ומה יש לך לX" / "ומה עם X" = עיון בקטגוריה
+  // 🔧 follow-up "ומה עם X" / "ומה יש לך בX" אחרי רשימה = stock (המשך שיחה).
+  // אם אין pendingOptions ומדובר בקטגוריה -> category_browse.
+  const DELIVERY_FOLLOWUP = /משלוח|משלח|דליברי|יגיע|מגיע/
   const BROWSE_PATTERN = /^ו?מה יש (לך |לכם )?[לב]|^ו?מה עם /
-  if (BROWSE_PATTERN.test(message.trim())) {
+  if (DELIVERY_FOLLOWUP.test(message)) {
+    // נשאיר ל-keyword matching של delivery לטפל; לא נחטוף לקטגוריה
+    if (intent === null) intent = "delivery"
+  } else if (BROWSE_PATTERN.test(message.trim())) {
     const browseCategory = recognizeCategory(message)
     if (browseCategory) {
-      intent = "category_browse"
+      if (pendingOptions.length > 0) {
+        intent = "stock"
+      } else {
+        intent = "category_browse"
+      }
       category = browseCategory
     }
   }
@@ -471,7 +482,7 @@ export function recognize(
     // 🔧 stock without a strong product but with a recognized category:
     // keep intent=stock and load category products so the bot answers
     // without escalating (tests expect stock + escalate=false).
-    const stockCategory = recognizeCategory(message)
+    const stockCategory = category ?? recognizeCategory(message)
     if (stockCategory) category = stockCategory
   }
 
