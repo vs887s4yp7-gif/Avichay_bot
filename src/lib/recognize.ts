@@ -202,9 +202,8 @@ function matchIntentByKeywords(message: string): Intent | null {
   // אם זוהתה קטגוריה → category_browse (מציג אפשרויות, לא escalate, מאפשר בחירת מספר).
   // אחרת → stock.
   if (YEH_STOCK_PATTERN.test(normalized) && normalized.length <= 40) {
-    // אם זוהתה קטגוריה -> category_browse (מציג אפשרויות, לא escalate)
-    const yehCat = recognizeCategory(normalized)
-    if (yehCat) return "category_browse"
+    // 🔧 'יש X?' = שאלת מלאי. תמיד stock (גם אם זוהתה קטגוריה) -
+    // recognize() יטען categoryProducts ל-ctx כך שהבוט מציג אפשרויות בלי להסלים.
     return "stock"
   }
 
@@ -222,13 +221,6 @@ function matchIntentByKeywords(message: string): Intent | null {
       // 🔧 greeting עם תוכן אישי → escalate_other במקום greeting
       if (intent === "greeting" && PERSONAL_GREETING_PHRASES.some(p => normalized.includes(p))) {
         return null // ייפול ל-escalate_other
-      }
-      // "יש סטים?" / "יש זוהרים?" וכו' - אם זוהתה קטגוריה, עדיף category_browse
-      if (intent === "stock") {
-        const stockCat = recognizeCategory(normalized)
-        if (stockCat && /^יש\s/.test(normalized) && normalized.length <= 40) {
-          return "category_browse"
-        }
       }
       return intent
     }
@@ -334,7 +326,7 @@ export function recognize(
       }
       const moreResp = formatOptions(pendingOptions, "עוד אפשרויות:", nextOffset)
       return {
-        intent: "category_browse", // נדרש intent קיים כדי להריץ template; הטקסט עצמו גנרי
+        intent: "stock", // המשך הצגת אפשרויות = stock (לא escalate)
         context,
         response: moreResp,
         escalate: false,
@@ -605,7 +597,7 @@ export function recognize(
         optionsOffset: pendingOffset,
       }
       return {
-        intent: "category_browse",
+        intent: "stock",
         context: ctxP,
         response: formatOptions(pendingOptions, "הנה האפשרויות:", pendingOffset),
         escalate: false,
