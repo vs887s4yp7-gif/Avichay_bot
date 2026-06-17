@@ -199,6 +199,8 @@ function matchIntentByKeywords(message: string): Intent | null {
   // אם זוהתה קטגוריה → category_browse (מציג אפשרויות, לא escalate, מאפשר בחירת מספר).
   // אחרת → stock.
   if (YEH_STOCK_PATTERN.test(normalized) && normalized.length <= 30) {
+    const cat = recognizeCategory(normalized)
+    if (cat) return "category_browse"
     return "stock"
   }
 
@@ -391,7 +393,7 @@ export function recognize(
   // 2. זיהוי intent ראשוני
   let intent = matchIntentByKeywords(message)
   // 🔧 confirmation קצר ("זה בסדר", "כן זה בסדר") אחרי הצעה = אישור, לא escalate
-  const CONFIRM_PATTERN = /^(כן,?\s*)?זה בסדר[!.?]*$|^בסדר גמור[!.?]*$|^אוקיי?,?\s*זה בסדר[!.?]*$/
+  const CONFIRM_PATTERN = /^(כן,?\s*)?זה בסדר[!.?]*$|^בסדר גמור[!.?]*$|^אוקיי?,?\s*זה בסדר[!.?]*$|^כן,?\s*זה בסדר[!.?]*$|^זה בסדר[!.?]*$/
   if (intent === null && CONFIRM_PATTERN.test(message.trim())) {
     intent = "thanks_closing"
   }
@@ -415,11 +417,11 @@ export function recognize(
   }
 
   // 🔧 "מה יש לך לX" / "מה יש לX" / "ומה יש לך לX" / "ומה עם X" = עיון בקטגוריה
-  const BROWSE_PATTERN = /^ו?מה יש (לך |לכם )?ל|^ו?מה עם /
+  const BROWSE_PATTERN = /^ו?מה יש (לך |לכם )?[לב]|^ו?מה עם /
   if (BROWSE_PATTERN.test(message.trim())) {
     const browseCategory = recognizeCategory(message)
     if (browseCategory) {
-      intent = "stock"
+      intent = "category_browse"
       category = browseCategory
     }
   }
@@ -429,6 +431,30 @@ export function recognize(
     if (followCat) {
       intent = "stock"
       category = followCat
+    }
+  }
+  // follow-up referencing a numbered option from prior list ("ומה עם 5?", "מס 2 מעניין")
+  if (intent === null && pendingOptions.length > 0) {
+    const numSel = recognizeSelection(message, pendingOptions, pendingOffset)
+    if (numSel) {
+      const ctx2: IntentContext = {
+        userMessage: message,
+        product: numSel,
+        matches: [numSel],
+        quantity: extractQuantity(message),
+        category: null,
+        categoryProducts: [],
+        needsConfirmation: false,
+        options: [],
+      }
+      const r2 = INTENT_RULES.stock
+      return {
+        intent: "stock",
+        context: ctx2,
+        response: r2.template(ctx2),
+        escalate: r2.requiresEscalation(ctx2),
+        debug: { topMatches: [{ id: numSel.id, name: numSel.name, score: 999 }], hasStrongProduct: true, category: null },
+      }
     }
   }
 
