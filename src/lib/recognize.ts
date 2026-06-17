@@ -460,7 +460,7 @@ export function recognize(
   }
 
   if (intent === null) {
-    const implicitProductInquiry = hasStrongProduct && top.strongEvidence.length >= 2
+    const implicitProductInquiry = hasStrongProduct && top.strongEvidence.length >= 1
     if (pendingOptions.length > 0) {
       const ctxP: IntentContext = {
         userMessage: message, product: null, matches: [], quantity: null, category: null,
