@@ -205,8 +205,8 @@ function matchIntentByKeywords(message: string): Intent | null {
     // 🔧 'יש X?' = שאלת מלאי. אם זוהתה קטגוריה ספציפית (מסיבה/סטים/פורים)
     // → category_browse (מציג אפשרויות, לא escalate). אחרת stock.
     const yehCat = recognizeCategory(normalized)
-    const CATEGORY_BROWSE_HINT = /מסיב|סטים|סט למסיב|פורים|תחפושות|למסיבות/
-    if (yehCat && CATEGORY_BROWSE_HINT.test(normalized)) {
+    // 🔧 'יש X?' where X is a category -> category_browse (shows options, escalate=false)
+    if (yehCat) {
       return "category_browse"
     }
     return "stock"
@@ -426,6 +426,31 @@ export function recognize(
         escalate: ruleRef.requiresEscalation(ctxRef),
         debug: { topMatches: [{ id: refSel.id, name: refSel.name, score: 999 }], hasStrongProduct: true, category: null },
       }
+    }
+  }
+
+  // 🔧 'עוד' / bare number / selection after a list, even when recognizeMore at top missed it
+  // (covers category_browse lists where options were stored in session)
+  if (pendingOptions.length > 0 && recognizeMore(message)) {
+    let nextOffset = pendingOffset + 5
+    if (nextOffset >= pendingOptions.length) nextOffset = 0
+    const ctxMore: IntentContext = {
+      userMessage: message,
+      product: null,
+      matches: [],
+      quantity: null,
+      category: null,
+      categoryProducts: [],
+      needsConfirmation: false,
+      options: pendingOptions,
+      optionsOffset: nextOffset,
+    }
+    return {
+      intent: "category_browse",
+      context: ctxMore,
+      response: formatOptions(pendingOptions, "עוד אפשרויות:", nextOffset),
+      escalate: false,
+      debug: { topMatches: [], hasStrongProduct: false, category: null },
     }
   }
 
@@ -677,6 +702,26 @@ export function recognize(
       } else {
         intent = "escalate_other"
       }
+    }
+  } else if ((intent === "escalate_other") && pendingOptions.length > 0) {
+    // 🔧 keyword matched escalate_other but we're mid-list -> keep showing options
+    const ctxKeep: IntentContext = {
+      userMessage: message,
+      product: null,
+      matches: [],
+      quantity: null,
+      category: null,
+      categoryProducts: [],
+      needsConfirmation: false,
+      options: pendingOptions,
+      optionsOffset: pendingOffset,
+    }
+    return {
+      intent: "category_browse",
+      context: ctxKeep,
+      response: formatOptions(pendingOptions, "הנה האפשרויות:", pendingOffset),
+      escalate: false,
+      debug: { topMatches: [], hasStrongProduct: false, category: null },
     }
   } else if (intent === "send_photo" && !hasStrongProduct) {
     category = recognizeCategory(message)
