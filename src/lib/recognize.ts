@@ -428,7 +428,10 @@ export function recognize(
   const ORDER_URGENT = /דחוק|הרגיל שלי|אני לוקח|תכין לי|תוסיף לי/
   const BROWSE_PATTERN = /^ו?מה יש (לך |לכם )?[לב]/
   // order keywords (urgent / explicit) win over a delivery mention in same message
-  if (ORDER_URGENT.test(message) && intent !== "debt") {
+  const PRICE_INQUIRY_OVERRIDE = /הנחה|מחיר טוב|כמה זה יורד|מחיר סיטוני|מחיר סיטונאי/
+  if (PRICE_INQUIRY_OVERRIDE.test(message) && intent !== "debt") {
+    intent = "price"
+  } else if (ORDER_URGENT.test(message) && intent !== "debt") {
     intent = "order"
   } else if (DELIVERY_FOLLOWUP.test(message)) {
     // "ומה עם משלוח?" / "ומתי יגיע המשלוח הבא?" = delivery, גם כהמשך שיחה
@@ -436,8 +439,9 @@ export function recognize(
   } else if (BROWSE_PATTERN.test(message.trim())) {
     const browseCategory = recognizeCategory(message)
     if (browseCategory) {
-      // "מה יש לך לX" / "ומה יש לך בX" = category_browse (מציג אפשרויות, לא escalate)
-      intent = "category_browse"
+      // "מה יש לך לX" / "ומה יש לך בX" - אם יש pendingOptions זו המשך שיחה = stock,
+      // אחרת category_browse (שניהם מציגים אפשרויות, לא escalate).
+      intent = pendingOptions.length > 0 ? "stock" : "category_browse"
       category = browseCategory
     }
   }

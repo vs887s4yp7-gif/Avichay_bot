@@ -122,8 +122,27 @@ export async function POST(req: NextRequest) {
   // recognize
   // ----------------------------------------------------------------
   const t0 = Date.now()
-  const result = recognize(message, catalog, session.options, session.offset, session.lastProduct)
+  let result = recognize(message, catalog, session.options, session.offset, session.lastProduct)
   const elapsed = Date.now() - t0
+
+  // 🔧 follow-up product context: if this turn resolved no product but the
+  // previous turn did, and the intent is product-dependent (price/stock/send_photo),
+  // inject the remembered product and re-run the template + escalation.
+  if (
+    !result.context.product &&
+    session.lastProduct &&
+    (result.intent === "price" || result.intent === "stock" || result.intent === "send_photo")
+  ) {
+    const { INTENT_RULES } = await import("@/lib/intents")
+    const injectedCtx = { ...result.context, product: session.lastProduct }
+    const rule = INTENT_RULES[result.intent]
+    result = {
+      ...result,
+      context: injectedCtx,
+      response: rule.template(injectedCtx),
+      escalate: rule.requiresEscalation(injectedCtx),
+    }
+  }
 
   // ----------------------------------------------------------------
   // עדכון session + לוגינג
@@ -138,7 +157,7 @@ export async function POST(req: NextRequest) {
   // selections still resolve against the last shown list.
   const keepOptions = newOptions.length >= 2
     ? newOptions
-    : (result.intent === "stock" && result.context.product ? session.options : session.options)
+    : session.options
   const keepOffset = newOptions.length >= 2 ? newOffset : session.offset
   setSession(from, {
     options: keepOptions,
