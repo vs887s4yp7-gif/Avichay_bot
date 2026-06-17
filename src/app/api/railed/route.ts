@@ -93,10 +93,13 @@ export async function POST(req: NextRequest) {
   let from: string
   let message: string
 
+  let clientSession: { optionIds?: string[]; offset?: number; lastProductId?: string } | null = null
   try {
     const body = await req.json()
     from = String(body.from ?? "unknown").trim()
     message = String(body.message ?? "").trim()
+    // fallback session מהקליינט (למקרה של cold start)
+    if (body.sessionState) clientSession = body.sessionState
   } catch {
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 })
   }
@@ -116,7 +119,24 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "catalog unavailable" }, { status: 500 })
   }
 
-  const session = getSession(from)
+  let session = getSession(from)
+  // אם session ריק (cold start) ויש fallback מהקליינט — שחזר מהם
+  if (session.options.length === 0 && clientSession) {
+    const catalog2 = catalog  // already loaded
+    const restoredOptions = clientSession.optionIds
+      ? clientSession.optionIds.map(id => catalog2.find(p => p.id === id)).filter(Boolean) as Product[]
+      : []
+    const restoredLastProduct = clientSession.lastProductId
+      ? (catalog2.find(p => p.id === clientSession!.lastProductId) ?? null)
+      : null
+    if (restoredOptions.length > 0 || restoredLastProduct) {
+      session = {
+        options: restoredOptions,
+        offset: clientSession.offset ?? 0,
+        lastProduct: restoredLastProduct,
+      }
+    }
+  }
 
   // ----------------------------------------------------------------
   // recognize
@@ -216,12 +236,20 @@ export async function POST(req: NextRequest) {
     elapsed,
   }))
 
+  // session state לקליינט — לשחזור במקרה cold start
+  const sessionState = {
+    optionIds: keepOptions.map(p => p.id),
+    offset: keepOffset,
+    lastProductId: newLastProduct?.id ?? null,
+  }
+
   return NextResponse.json({
     response: cleanResponse,
     escalate: result.escalate,
     intent: result.intent,
     imageUrl,
     images,  // 🆕 carousel - כל התמונות
+    sessionState,  // 🆕 קליינט מחזיר בבקשה הבאה כ-fallback
     debug: {
       topMatch: result.debug.topMatches[0] ?? null,
       hasStrongProduct: result.debug.hasStrongProduct,

@@ -14,7 +14,7 @@
 import { useState, useRef, useEffect } from "react"
 
 type Message = {
-  role: "user" | "bot" | "avichai"
+  role: "user" | "bot"
   text: string
   escalate?: boolean
   intent?: string
@@ -35,40 +35,12 @@ export default function RailedUI() {
   const [loading, setLoading] = useState(false)
   const [from] = useState(() => `test_${Math.random().toString(36).slice(2, 7)}`)
   const sessionStateRef = useRef<Record<string, unknown> | null>(null)
-  const lastAvichaiTsRef = useRef<number>(0)
   const bottomRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" })
   }, [messages])
-
-  // ── Polling for Avichai replies ────────────────────────────────
-  useEffect(() => {
-    const interval = setInterval(async () => {
-      try {
-        const res = await fetch(
-          `/api/chat/${encodeURIComponent(from)}/messages?since=${lastAvichaiTsRef.current}`
-        )
-        if (!res.ok) return
-        const data = await res.json()
-        const newMsgs: { text: string; ts: number }[] = data.messages ?? []
-        if (newMsgs.length > 0) {
-          const latest = Math.max(...newMsgs.map((m) => m.ts))
-          lastAvichaiTsRef.current = latest
-          setMessages((prev) => [
-            ...prev,
-            ...newMsgs.map((m) => ({
-              role: "avichai" as const,
-              text: m.text,
-              ts: m.ts,
-            })),
-          ])
-        }
-      } catch {}
-    }, 2500)
-    return () => clearInterval(interval)
-  }, [from])
 
   async function send(text: string) {
     const trimmed = text.trim()
@@ -142,11 +114,6 @@ export default function RailedUI() {
       <div style={{ width: "100%", maxWidth: 480, flex: 1, overflowY: "auto", display: "flex", flexDirection: "column", gap: 8, paddingBottom: 8 }}>
         {messages.map((m, i) => (
           <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: m.role === "user" ? "flex-end" : "flex-start" }}>
-            {m.role === "avichai" && (
-              <div style={{ fontSize: 10, color: "#60a5fa", marginBottom: 2, paddingLeft: 4 }}>
-                👨‍💼 אביחי
-              </div>
-            )}
             {m.role === "bot" && m.intent && (
               <div style={{ fontSize: 10, color: "#475569", marginBottom: 2, paddingRight: 4, direction: "ltr" }}>
                 {m.intent}{m.escalate ? " · escalate 🙏" : ""}
@@ -189,8 +156,8 @@ export default function RailedUI() {
             )}
             <div style={{
               maxWidth: "85%",
-              background: m.role === "user" ? "#2563eb" : m.role === "avichai" ? "#1e3a5f" : m.escalate ? "#3d2a1e" : "#1e2a1e",
-              color: m.role === "user" ? "#fff" : m.role === "avichai" ? "#93c5fd" : m.escalate ? "#fcd34d" : "#a7f3d0",
+              background: m.role === "user" ? "#2563eb" : m.escalate ? "#3d2a1e" : "#1e2a1e",
+              color: m.role === "user" ? "#fff" : m.escalate ? "#fcd34d" : "#a7f3d0",
               borderRadius: m.role === "user" ? "18px 18px 4px 18px" : "18px 18px 18px 4px",
               padding: "10px 14px",
               fontSize: 14,
@@ -198,7 +165,7 @@ export default function RailedUI() {
               whiteSpace: "pre-wrap",
               direction: "rtl",
               textAlign: "right",
-              border: m.role === "avichai" ? "1px solid #3b82f6" : m.escalate && m.role === "bot" ? "1px solid #92400e" : "none",
+              border: m.escalate && m.role === "bot" ? "1px solid #92400e" : "none",
             }}>
               {m.text}
             </div>
