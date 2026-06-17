@@ -187,6 +187,9 @@ const WEAK_INTENT_MAX_LENGTH = 35
 // 🔧 2026-06-17: "יש X?" - הודעה קצרה שמתחילה ב"יש " = שאלת מלאי
 const YEH_STOCK_PATTERN = /^יש\s+\S/
 
+// קטגוריות/מוצרים שמילת "צעצועים"/"toys" כללית מתפרשת כשאלת מלאי כללית
+const GENERAL_TOYS_PATTERN = /צעצועים|\btoys?\b|וטייגר|בריכ/i
+
 // ביטויי ברכה אישית/חברתית שאמורים ללכת לאביחי, לא לבוט
 const PERSONAL_GREETING_PHRASES = [
   "יום לא דברנו", "לא מצליח", "כאן שוב", "כמה יום", "לא מצליח להתחבר", "בעיה", "בעיות",
@@ -418,7 +421,7 @@ export function recognize(
 
   // 🔧 follow-up "ומה עם X" / "ומה יש לך בX" אחרי רשימה = stock (המשך שיחה).
   // אם אין pendingOptions ומדובר בקטגוריה -> category_browse.
-  const DELIVERY_FOLLOWUP = /משלוח|משלח|דליברי|יגיע המשלוח|המשלוח הבא/
+  const DELIVERY_FOLLOWUP = /משלוח|משלח|דליברי|יגיע המשלוח|המשלוח הבא|מתי יגיע|מתי מגיע/
   const BROWSE_PATTERN = /^ו?מה יש (לך |לכם )?[לב]/
   if (DELIVERY_FOLLOWUP.test(message)) {
     // נשאיר ל-keyword matching של delivery לטפל; לא נחטוף לקטגוריה
@@ -426,11 +429,8 @@ export function recognize(
   } else if (BROWSE_PATTERN.test(message.trim())) {
     const browseCategory = recognizeCategory(message)
     if (browseCategory) {
-      if (pendingOptions.length > 0) {
-        intent = "stock"
-      } else {
-        intent = "category_browse"
-      }
+      // "ומה יש לך בX" - if it's a follow-up referencing a specific category like סלים → stock
+      intent = "stock"
       category = browseCategory
     }
   }
@@ -467,6 +467,34 @@ export function recognize(
     }
   }
   // 🔧 bare/loose number after a list that recognizeSelection missed (offset/format) → still treat as selection
+  // moved earlier-style: handle even if a quantity heuristic set intent, when message is JUST a number
+  if (pendingOptions.length > 0) {
+    const bareEarly = message.trim().match(/^([1-9][0-9]?)[.!?]*$/)
+    if (bareEarly) {
+      const nE = parseInt(bareEarly[1], 10)
+      const idxE = nE - 1
+      if (idxE >= 0 && idxE < pendingOptions.length) {
+        const selE = pendingOptions[idxE]
+        const ctxE: IntentContext = {
+          userMessage: message,
+          product: selE,
+          matches: [selE],
+          quantity: null,
+          category: null,
+          categoryProducts: [],
+          needsConfirmation: false,
+          options: [],
+        }
+        return {
+          intent: "stock",
+          context: ctxE,
+          response: INTENT_RULES.stock.template(ctxE),
+          escalate: false,
+          debug: { topMatches: [{ id: selE.id, name: selE.name, score: 999 }], hasStrongProduct: true, category: null },
+        }
+      }
+    }
+  }
   if (intent === null && pendingOptions.length > 0) {
     const bare = message.trim().match(/^([1-9][0-9]?)[.!?]*$/)
     if (bare) {
@@ -526,14 +554,26 @@ export function recognize(
       intent = "stock"
     } else {
       category = recognizeCategory(message)
-      intent = category ? "category_browse" : "escalate_other"
+      if (category) {
+        intent = "category_browse"
+      } else if (GENERAL_TOYS_PATTERN.test(message)) {
+        intent = "category_browse"
+        category = "games_puzzles"
+      } else {
+        intent = "escalate_other"
+      }
     }
   } else if (intent === "send_photo" && !hasStrongProduct) {
     category = recognizeCategory(message)
   } else if (intent === "stock" && !hasStrongProduct && !category) {
     // 🔧 stock query (יש X?) with no product: try category, else keep stock w/ category fallback
     const stockCat = recognizeCategory(message)
-    if (stockCat) category = stockCat
+    if (stockCat) {
+      category = stockCat
+    } else if (GENERAL_TOYS_PATTERN.test(message)) {
+      // "יש לך צעצועים חדשים?" / "יש וטייגר?" - general toy inquiry: answer as category browse w/ samples, do not escalate
+      category = "games_puzzles"
+    }
   } else if (PRODUCT_DEPENDENT_INTENTS.includes(intent) && !hasStrongProduct) {
     // 🔧 stock without a strong product but with a recognized category:
     // keep intent=stock and load category products so the bot answers
