@@ -54,7 +54,7 @@ const GENERIC_TOKENS = new Set([
 // Tokenize - נרמול והכנת מילים לחיפוש
 // ================================================================
 export function tokenize(text: string): string[] {
-  const raw = text
+  const raw = String(text ?? "")
     .toLowerCase()
     .replace(/[^\u0590-\u05FFa-z0-9\s"']/g, " ") // השאר עברית/אנגלית/מספרים
     .replace(/["']/g, "") // גרשיים (ס"מ -> סמ)
@@ -104,11 +104,11 @@ export function searchCatalog(message: string, products: Product[]): ScoredProdu
   for (const product of products) {
     let score = 0
     const strongEvidence: string[] = []
-    const nameLower = product.name.toLowerCase()
+    const nameLower = (product.name ?? "").toLowerCase()
     const descLower = (product.description ?? "").toLowerCase()
     const catLower = (product.category ?? "").toLowerCase()
     const subcatLower = (product.subcategory ?? "").toLowerCase()
-    const tagsLower = product.tags.map((t) => t.toLowerCase())
+    const tagsLower = (product.tags ?? []).map((t) => (t ?? "").toLowerCase())
 
     for (const token of tokens) {
       const tagHit = tagsLower.some((t) => t.includes(token) || token.includes(t))
@@ -164,7 +164,7 @@ export function extractQuantity(message: string): number | null {
 // recognizeCategory - זיהוי קטגוריה לפי CATEGORY_RULES
 // ================================================================
 export function recognizeCategory(message: string): CategoryKey | null {
-  const normalized = message.toLowerCase()
+  const normalized = String(message ?? "").toLowerCase()
   for (const [key, rule] of Object.entries(CATEGORY_RULES)) {
     for (const keyword of rule.keywords) {
       if (normalized.includes(keyword.toLowerCase())) {
@@ -293,8 +293,12 @@ export function recognize(
   message: string,
   catalog: Product[],
   pendingOptions: Product[] = [],
-  pendingOffset = 0
+  pendingOffset = 0,
+  hintProduct: Product | null = null
 ): RecognitionResult {
+  message = String(message ?? "")
+  catalog = Array.isArray(catalog) ? catalog : []
+  pendingOptions = Array.isArray(pendingOptions) ? pendingOptions : []
   // -1. "עוד"? -> דף הבא מתוך אותו pool (pendingOptions), בלי לחשב מחדש
   if (pendingOptions.length > 0 && recognizeMore(message)) {
     const nextOffset = pendingOffset + 5
@@ -361,7 +365,7 @@ export function recognize(
   const top = evidenced[0] ?? matches[0]
   const hasStrongProduct =
     !!top && top.score >= MIN_SCORE_THRESHOLD && top.strongEvidence.length >= 1
-  const product = hasStrongProduct ? top.product : null
+  const product = hasStrongProduct ? top.product : (hintProduct ?? null)
   // תיקו בצמרת: 2+ מוצרים *שונים* עם ראיות באותו score = עמימות אמיתית
   // ("בלון" מתאים ל-3 מוצרי בלונים שונים) -> חובה לשאול
   //

@@ -28,11 +28,11 @@ import type { Product } from "@/lib/types"
 //   await kv.set(`railed:${from}`, newSession, { ex: 3600 })
 //
 // כרגע: Map בזיכרון (מתאפס ב-cold start, מספיק להדגמה/POC)
-type Session = { options: Product[]; offset: number }
+type Session = { options: Product[]; offset: number; lastProduct: Product | null }
 const sessionStore = new Map<string, Session>()
 
 function getSession(from: string): Session {
-  return sessionStore.get(from) ?? { options: [], offset: 0 }
+  return sessionStore.get(from) ?? { options: [], offset: 0, lastProduct: null }
 }
 function setSession(from: string, session: Session): void {
   sessionStore.set(from, session)
@@ -122,7 +122,7 @@ export async function POST(req: NextRequest) {
   // recognize
   // ----------------------------------------------------------------
   const t0 = Date.now()
-  const result = recognize(message, catalog, session.options, session.offset)
+  const result = recognize(message, catalog, session.options, session.offset, session.lastProduct)
   const elapsed = Date.now() - t0
 
   // ----------------------------------------------------------------
@@ -130,12 +130,14 @@ export async function POST(req: NextRequest) {
   // ----------------------------------------------------------------
   const newOptions = result.context.options ?? []
   const newOffset = result.context.optionsOffset ?? 0
+  // If this turn resolved a product, remember it; otherwise keep previous lastProduct.
+  const newLastProduct = result.context.product ?? session.lastProduct
 
-  if (newOptions.length >= 2) {
-    setSession(from, { options: newOptions, offset: newOffset })
-  } else {
-    clearSession(from)
-  }
+  setSession(from, {
+    options: newOptions.length >= 2 ? newOptions : [],
+    offset: newOptions.length >= 2 ? newOffset : 0,
+    lastProduct: newLastProduct,
+  })
 
   // לוג כל turn
   logTurn(from, message, result, newOptions.length)
