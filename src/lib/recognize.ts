@@ -195,8 +195,11 @@ const PERSONAL_GREETING_PHRASES = [
 function matchIntentByKeywords(message: string): Intent | null {
   const normalized = message.toLowerCase().trim()
 
-  // "יש X?" קצרה (עד 30 תווים) שמתחילה ב"יש" → stock ישירות
+  // "יש X?" קצרה (עד 30 תווים) שמתחילה ב"יש":
+  // אם זוהתה קטגוריה → category_browse (מציג אפשרויות, לא escalate, מאפשר בחירת מספר).
+  // אחרת → stock.
   if (YEH_STOCK_PATTERN.test(normalized) && normalized.length <= 30) {
+    if (recognizeCategory(normalized)) return "category_browse"
     return "stock"
   }
 
@@ -388,6 +391,11 @@ export function recognize(
 
   // 2. זיהוי intent ראשוני
   let intent = matchIntentByKeywords(message)
+  // 🔧 confirmation קצר ("זה בסדר", "כן זה בסדר") אחרי הצעה = אישור, לא escalate
+  const CONFIRM_PATTERN = /^(כן,?\s*)?זה בסדר[!.?]*$|^בסדר גמור[!.?]*$|^אוקיי?,?\s*זה בסדר[!.?]*$/
+  if (intent === null && CONFIRM_PATTERN.test(message.trim())) {
+    intent = "thanks_closing"
+  }
   const intentWasKeywordMatched = intent !== null // האם intent זוהה דרך keyword מפורש
   let category: CategoryKey | null = null
 
@@ -403,9 +411,9 @@ export function recognize(
     intent = "order"
   }
 
-  // 🔧 "מה יש לך לX" / "מה יש לX" = עיון בקטגוריה תמיד
-  const BROWSE_PATTERN = /^מה יש (לך |לכם )?ל/
-  if (intent !== null && BROWSE_PATTERN.test(message.trim())) {
+  // 🔧 "מה יש לך לX" / "מה יש לX" / "ומה יש לך לX" / "ומה עם X" = עיון בקטגוריה
+  const BROWSE_PATTERN = /^ו?מה יש (לך |לכם )?ל|^ו?מה עם /
+  if (BROWSE_PATTERN.test(message.trim())) {
     const browseCategory = recognizeCategory(message)
     if (browseCategory) {
       intent = "category_browse"
