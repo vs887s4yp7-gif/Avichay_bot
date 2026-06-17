@@ -198,9 +198,7 @@ function matchIntentByKeywords(message: string): Intent | null {
   // "יש X?" קצרה (עד 30 תווים) שמתחילה ב"יש":
   // אם זוהתה קטגוריה → category_browse (מציג אפשרויות, לא escalate, מאפשר בחירת מספר).
   // אחרת → stock.
-  if (YEH_STOCK_PATTERN.test(normalized) && normalized.length <= 30) {
-    const cat = recognizeCategory(normalized)
-    if (cat) return "category_browse"
+  if (YEH_STOCK_PATTERN.test(normalized) && normalized.length <= 40) {
     return "stock"
   }
 
@@ -348,7 +346,7 @@ export function recognize(
       intent: "stock",
       context,
       response: rule.template(context),
-      escalate: rule.requiresEscalation(context),
+      escalate: false,
       debug: { topMatches: [{ id: selected.id, name: selected.name, score: 999 }], hasStrongProduct: true, category: null },
     }
   }
@@ -452,7 +450,7 @@ export function recognize(
         intent: "stock",
         context: ctx2,
         response: r2.template(ctx2),
-        escalate: r2.requiresEscalation(ctx2),
+        escalate: false,
         debug: { topMatches: [{ id: numSel.id, name: numSel.name, score: 999 }], hasStrongProduct: true, category: null },
       }
     }

@@ -236,7 +236,9 @@ export const INTENT_RULES: Record<Intent, IntentRule> = {
       // 🔧 2026-06-17: שאלות כמות בקרטון = שאלת מחיר/פרטים
       "כמה בקרטון", "כמה קרטון", "כמות בקרטון", "כמה יח בקרטון", "כמה יש בקרטון", "כמה יה בקרטון",
       // follow-up מחיר ללא מוצר מפורש
-      "כמה עכשיו", "זה יקר"],
+      "כמה עכשיו", "זה יקר",
+      // 🔧 round 4: שאלות מחיר סיטוני/עונתי/כמותי = price (לא discount)
+      "מחיר סיטונאי", "מחיר סיטוני", "כמה מחיר סיטוני", "כמה זה יורד", "לוקח הרבה", "מחיר טוב", "יש מחיר טוב", "מחיר טוב יותר"],
     priority: 10,
     template: (ctx) => {
       if (!ctx.product) {
@@ -278,16 +280,16 @@ export const INTENT_RULES: Record<Intent, IntentRule> = {
       "הגיעו", "הגיעה סדרה"],
     priority: 8,
     template: (ctx) => {
+      const catProducts = ctx.categoryProducts ?? []
+      if (!ctx.product && catProducts.length > 0) {
+        return formatOptions(catProducts, `יש לנו כמה אפשרויות${ctx.category ? ` ב${CATEGORY_RULES[ctx.category].displayName}` : ""}:`, ctx.optionsOffset ?? 0)
+      }
       if (!ctx.product) {
         return "לא מצאתי את זה בקטלוג שלי, מעביר לאביחי לבדיקה 🙏"
       }
       const p = ctx.product
       if (p.price === null || p.cartonQty === null) {
         return `${p.name} - יש לנו, אבל צריך לבדוק מחיר/כמות עדכניים מול אביחי 🙏`
-      }
-      const catProducts = ctx.categoryProducts ?? []
-      if (!ctx.product && catProducts.length > 0) {
-        return formatOptions(catProducts, `יש לנו כמה אפשרויות${ctx.category ? ` ב${CATEGORY_RULES[ctx.category].displayName}` : ""}:`, ctx.optionsOffset ?? 0)
       }
       if (ctx.needsConfirmation) {
         const opts = ctx.options ?? []
@@ -297,8 +299,9 @@ export const INTENT_RULES: Record<Intent, IntentRule> = {
       return `כן, יש! ${p.name} [[PRODUCT:${p.id}]] - ₪${p.price}, כמות בקרטון: ${p.cartonQty} יח'`
     },
     requiresEscalation: (ctx) => {
-      if (ctx.product && ctx.product.price !== null && ctx.product.cartonQty !== null) return false
       if (!ctx.product && (ctx.categoryProducts ?? []).length > 0) return false
+      if (ctx.product && ctx.product.price !== null && ctx.product.cartonQty !== null) return false
+      if (ctx.product) return false
       return true
     },
   },
@@ -358,7 +361,7 @@ export const INTENT_RULES: Record<Intent, IntentRule> = {
   // ──────────────────────────────────────────────────────────
   discount: {
     intent: "discount",
-    keywords: ["הנחה", "הנחות", "מחיר סיטונאי", "מחיר סיטוני", "מחיר טוב יותר", "אפשר זול יותר", "VIP", "יש הנחה", "כמה זה יורד", "לוקח הרבה", "מחיר טוב"],
+    keywords: ["הנחה", "הנחות", "מחיר טוב יותר", "אפשר זול יותר", "VIP"],
     priority: 13,
     template: () => "על הנחות/כמויות גדולות אביחי מתאם אישית - מעביר אליו 🙏",
     requiresEscalation: () => true,
