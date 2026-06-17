@@ -418,11 +418,11 @@ export function recognize(
 
   // 🔧 follow-up "ומה עם X" / "ומה יש לך בX" אחרי רשימה = stock (המשך שיחה).
   // אם אין pendingOptions ומדובר בקטגוריה -> category_browse.
-  const DELIVERY_FOLLOWUP = /משלוח|משלח|דליברי|יגיע|מגיע/
+  const DELIVERY_FOLLOWUP = /משלוח|משלח|דליברי|יגיע המשלוח|המשלוח הבא/
   const BROWSE_PATTERN = /^ו?מה יש (לך |לכם )?[לב]|^ו?מה עם /
   if (DELIVERY_FOLLOWUP.test(message)) {
     // נשאיר ל-keyword matching של delivery לטפל; לא נחטוף לקטגוריה
-    if (intent === null) intent = "delivery"
+    intent = "delivery"
   } else if (BROWSE_PATTERN.test(message.trim())) {
     const browseCategory = recognizeCategory(message)
     if (browseCategory) {
@@ -478,6 +478,10 @@ export function recognize(
     }
   } else if (intent === "send_photo" && !hasStrongProduct) {
     category = recognizeCategory(message)
+  } else if (intent === "stock" && !hasStrongProduct && !category) {
+    // 🔧 stock query (יש X?) with no product: try category, else keep stock w/ category fallback
+    const stockCat = recognizeCategory(message)
+    if (stockCat) category = stockCat
   } else if (PRODUCT_DEPENDENT_INTENTS.includes(intent) && !hasStrongProduct) {
     // 🔧 stock without a strong product but with a recognized category:
     // keep intent=stock and load category products so the bot answers
@@ -500,7 +504,9 @@ export function recognize(
   const optionsPool =
     intent === "category_browse" || intent === "send_photo"
       ? categoryProducts
-      : evidenced.map((m) => m.product).slice(0, 10)
+      : (intent === "stock" && !product && categoryProducts.length > 0)
+        ? categoryProducts
+        : evidenced.map((m) => m.product).slice(0, 10)
 
   const context: IntentContext = {
     userMessage: message,

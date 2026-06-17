@@ -230,7 +230,7 @@ export const INTENT_RULES: Record<Intent, IntentRule> = {
   // ──────────────────────────────────────────────────────────
   price: {
     intent: "price",
-    keywords: ["מחיר", "כמה עולה", "כמה עולים", "עולה", "עולים", "עלות", "₪", "כמה זה",
+    keywords: ["מחיר", "כמה עולה", "כמה עולים", "עולה", "עולים", "עלות", "₪", "כמה זה", "מחיר טוב", "הנחה",
       "כמה הגלואו", "כמה הבלון", "כמה עולים הבלון", "כמה זה הגלואו",
       // 🔧 learning loop: שאלות מחיר ללא שם מוצר מלא (הלקוח רואה תמונה)
       "כמה הפשוט", "כמה ה", "כמה זה עולה", "כמה הסלים", "כמה הסליים",
@@ -243,6 +243,10 @@ export const INTENT_RULES: Record<Intent, IntentRule> = {
     priority: 10,
     template: (ctx) => {
       if (!ctx.product) {
+        const GENERAL_PRICE = ["מחיר סיטוני", "מחיר סיטונאי", "כמה זה יורד", "מחיר טוב", "הנחה", "לוקח הרבה"]
+        if (GENERAL_PRICE.some(p => ctx.userMessage.includes(p))) {
+          return "המחירים שלנו הם מחירי סיטונאות. על כמויות גדולות / הנחות מיוחדות - אשמח לחבר אותך לאביחי שמתאם אישית 🙏"
+        }
         return "לא מצאתי את המוצר הזה בקטלוג שלי, מעביר לאביחי לבדיקה 🙏"
       }
       const p = ctx.product
@@ -256,8 +260,12 @@ export const INTENT_RULES: Record<Intent, IntentRule> = {
       }
       return `${p.name} [[PRODUCT:${p.id}]] - ₪${p.price}, כמות בקרטון: ${p.cartonQty} יח'`
     },
-    requiresEscalation: (ctx) =>
-      !ctx.product || ctx.product.price === null || ctx.product.cartonQty === null,
+    requiresEscalation: (ctx) => {
+      // 🔧 שאלת מחיר כללית (סיטוני/הנחה/כמותי) ללא מוצר = לא מסלים, עונים
+      const GENERAL_PRICE = ["מחיר סיטוני", "מחיר סיטונאי", "כמה זה יורד", "מחיר טוב", "הנחה", "לוקח הרבה"]
+      if (!ctx.product && GENERAL_PRICE.some(p => ctx.userMessage.includes(p))) return false
+      return !ctx.product || ctx.product.price === null || ctx.product.cartonQty === null
+    },
   },
 
   // ──────────────────────────────────────────────────────────
