@@ -133,9 +133,16 @@ export async function POST(req: NextRequest) {
   // If this turn resolved a product, remember it; otherwise keep previous lastProduct.
   const newLastProduct = result.context.product ?? session.lastProduct
 
+  // Keep prior options alive when this turn didn't produce a new list
+  // (e.g. a bare number selection or follow-up) so subsequent "עוד"/number
+  // selections still resolve against the last shown list.
+  const keepOptions = newOptions.length >= 2
+    ? newOptions
+    : (result.intent === "stock" && result.context.product ? session.options : session.options)
+  const keepOffset = newOptions.length >= 2 ? newOffset : session.offset
   setSession(from, {
-    options: newOptions.length >= 2 ? newOptions : [],
-    offset: newOptions.length >= 2 ? newOffset : 0,
+    options: keepOptions,
+    offset: keepOffset,
     lastProduct: newLastProduct,
   })
 

@@ -421,7 +421,7 @@ export function recognize(
 
   // 🔧 follow-up "ומה עם X" / "ומה יש לך בX" אחרי רשימה = stock (המשך שיחה).
   // אם אין pendingOptions ומדובר בקטגוריה -> category_browse.
-  const DELIVERY_FOLLOWUP = /משלוח|משלח|דליברי|יגיע המשלוח|המשלוח הבא|מתי יגיע|מתי מגיע/
+  const DELIVERY_FOLLOWUP = /משלוח|משלח|דליברי|יגיע המשלוח|המשלוח הבא|מתי יגיע|מתי מגיע|ומה עם משלוח|מתי יגיע המשלוח הבא/
   const BROWSE_PATTERN = /^ו?מה יש (לך |לכם )?[לב]/
   if (DELIVERY_FOLLOWUP.test(message)) {
     // נשאיר ל-keyword matching של delivery לטפל; לא נחטוף לקטגוריה
@@ -429,8 +429,8 @@ export function recognize(
   } else if (BROWSE_PATTERN.test(message.trim())) {
     const browseCategory = recognizeCategory(message)
     if (browseCategory) {
-      // "ומה יש לך בX" - if it's a follow-up referencing a specific category like סלים → stock
-      intent = "stock"
+      // "מה יש לך לX" / "ומה יש לך בX" = browse the category (show options, no escalate)
+      intent = "category_browse"
       category = browseCategory
     }
   }
