@@ -151,6 +151,7 @@ export async function POST(req: NextRequest) {
   if (
     !result.context.product &&
     session.lastProduct &&
+    (result.context.options ?? []).length === 0 &&
     (result.intent === "price" || result.intent === "stock" || result.intent === "send_photo")
   ) {
     const { INTENT_RULES } = await import("@/lib/intents")
